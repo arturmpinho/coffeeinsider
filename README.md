@@ -1,4 +1,4 @@
-# **The Coffee Palate**
+# **Coffee Insider**
 
 ![Mokup Image](wireframes/mokup_image.png)
 
