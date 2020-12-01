@@ -5,7 +5,16 @@
 ---
 
 ## **Project Goal** 
+The world of coffee might be one of the most complex in the commodites universe. This complexity is not only visable at the farm level, where new coffee varietals are being engineered
+and planted in order to achieve higher yields and rust-resistant plants, but through the entire supply chain.
 
+Due to this complexity, trying to simplify the commercial and logistic side of any business is crucial in the commodities world. If attainned, it can exponetially strenght relationships 
+and minimize potential future disputes.
+
+Therefore, the main goal of the COFFEE iNSIDER, is to provide the user with an easy accessible and intuitive tool to both suppliers and customers, in order to increase the efficiency 
+of the negotiation process and consequently have parameterized all the components of the logistic process. 
+
+Thank you for visting my project!
 
 ---
 <a></a>
