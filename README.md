@@ -127,15 +127,16 @@ After running some trials, I have opted out for the below set of fonts to be use
 ##### Overall content
 [Libre Frankline](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts")
 
-
 In my opinion, these 3 fonts work very well together. From the bold, easy-readable and attractive [Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont "Google Fonts") 
 font to be used in the Main Headings, creating an interesting contrast with the [Lora](https://fonts.google.com/specimen/Lora?query=lora "Google Fonts") font in the sub-headings and 
 finilizing wth the overall content font, [Libre Frankline](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts"), which embeeds itself very well with the first two. Also,
 this font reflects reliability, which is of extreme importance when developing a business website.
 
-
 #### Icons
 
+Throuhg out the website, I will be using icons provided by [FontAwesome](https://fontawesome.com/ "FontAwesome").
+
+The icons uses are self-explanatory and aid the navigation of the user by bringing an intuitive imagery to the website.
 
 #### Colors
 
