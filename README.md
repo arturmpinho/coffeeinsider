@@ -203,24 +203,44 @@ The icons uses are self-explanatory and aid the navigation of the user by bringi
 <a></a>
 
 ### **Languages**
+* [HTML](https://www.w3.org/MarkUp/1995-archive/html-spec.html "HTML")
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html "CSS")
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "Javascript")
 
 [[Back to top]](#table-of-contents)
 
 <a></a>
 
 ### **Libraries**
+* [FontAwesome](https://fontawesome.com/ "FontAwesome")
+* [Google Fonts](https://fonts.google.com/ "Google Fonts")
+* [Unsplash](https://unsplash.com/ "Unsplash")
 
 [[Back to top]](#table-of-contents)
 
 <a></a>
 
 ### **Frameworks**
+* [Bootstrap](https://getbootstrap.com/ "Bootstrap")
 
 [[Back to top]](#table-of-contents)
 
 <a></a>
 
 ### **Tools**
+* [Git](https://git-scm.com/ "Git")
+* [Gitpod](https://gitpod.io/ "Gitpod")
+* [Balsamiq](https://balsamiq.com/ "Balsamiq")
+* [Font Joy](https://fontjoy.com/ "Font Joy")
+* [Coolors](https://coolors.co/ "Coolors")
+* [Contrast-Checker](https://coolors.co/contrast-checker "Contrast Checker")
+* [TinyPNG](https://tinypng.com/ "Tiny PNG")
+* [Favicon](https://favicon.io/favicon-converter/ "Favcicon")
+* [Techsini](http://techsini.com/multi-mockup/ "Techsini")
+* [W3C-Markup-validation](https://validator.w3.org/ "Markup Validator")
+* [W3C-Jigsaw](https://jigsaw.w3.org/css-validator/ "Jigsaw Validator")
+* [W3C-Spell Checker](https://www.w3.org/2002/01/spellchecker "Spell Checker")
+* [Google-Lightouse](https://developers.google.com/web/tools/lighthouse "Google Lighthouse") 
 
 [[Back to top]](#table-of-contents)
 
