@@ -113,8 +113,33 @@ Thank you for visting my project!
 
 ### **Design Choices**
 #### Fonts
+
+In order to find the best font pairing to my project, I have used the font pairing generator website [Font Joy](https://fontjoy.com/ "Font Joy")
+
+After running some trials, I have opted out for the below set of fonts to be used throught out the website.
+
+##### Main Headings
+[Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont "Google Fonts")
+
+##### Sub-headings/stand-out text
+[Lora](https://fonts.google.com/specimen/Lora?query=lora "Google Fonts")
+
+##### Overall content
+[Libre Frankline](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts")
+
+
+In my opinion, these 3 fonts work very well together. From the bold, easy-readable and attractive [Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont "Google Fonts") 
+font to be used in the Main Headings, creating an interesting contrast with the [Lora](https://fonts.google.com/specimen/Lora?query=lora "Google Fonts") font in the sub-headings and 
+finilizing wth the overall content font, [Libre Frankline](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts"), which embeeds itself very well with the first two. Also,
+this font reflects reliability, which is of extreme importance when developing a business website.
+
+
 #### Icons
+
+
 #### Colors
+
+
 
 ![Color Scheme](wireframes/coffee_insider_color_scheme.png)
 
