@@ -90,6 +90,13 @@ Thank you for visting my project!
 
 ### **User Goals and Stories**
 #### **Goals**
+As a user I aim for:
+* An intuitive and easy to navigate website.
+* Visually attractive pages.
+* Concise and accurate information.
+* Minimalistic pages without distracting contents.
+* Appealing call-to-actions.
+
 #### **Stories**
 
 [[Back to top]](#table-of-contents)
