@@ -118,10 +118,16 @@ As a user, I want to:
 * Clear graphics.
 * Immeadiate feedback on data inputs and/or submissions.
 * Accurate unit conversions.
-* Good responsiveness across multiple devices
+* Good responsiveness across multiple devices.
 
 #### **Expectations**
-
+* Gracious feedback handling an error.
+* Maximum of 2 clicks to reach any given page.
+* External links shall open in a new tab.
+* Internal links must work properly.
+* External information must be provided by reliable sources.
+* Visual effects are appealing but not distracting.
+* Approprite feedback after submitting offer request.
 
 [[Back to top]](#table-of-contents)
 
