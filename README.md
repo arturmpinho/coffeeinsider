@@ -140,9 +140,38 @@ The icons uses are self-explanatory and aid the navigation of the user by bringi
 
 #### Colors
 
+Being the main purpose of this website to support B2B relationships in coffee trading, I have selected a simple color palette of 3 colors, each one with a specific meaning in the business world.
+
+![Color Scheme](wireframes/ci-color-palette.png)
+
+* Jet: #2D2926
+Whilst some might see black as a pessimistic color, there are several shades that attenuate this feeling, and bring out in the target audience a feling of confidence, sophistication and comfort.
+These feelings are usually consider a plus in any business relationship, reason why I have chosen for the Jet (black) color.
+
+This color is meant to be used as the main text-color, or in specific parts of the website as a backgroun-color, in contrast with the the Fire Opal or Ivory colors.
+
+* Fire Opal: #ED665A;
+The Fire Opal color also gives the feeling to the user of confidence. As it can be considered as an attention-getting color and energizing, I aim to use it as the color for icons and buttons throughout 
+the website.
+
+* Ivory: #F4F9E9;
+In contrast with the previous colors, the Ivory bring outs as sense of calmness and relaxation, which is extremely important in every B2B relationship.
 
 
-![Color Scheme](wireframes/coffee_insider_color_scheme.png)
+While creating this color scheme, I have resorted to the [Contrast-Checker](https://coolors.co/contrast-checker) tool to guarantee a good readability for the user and decide the possible color-pairings
+possible to be used throuought the page.
+
+
+|Text color  	|Background color  	|Result   	|
+|---	        |---	            |---	    |
+|Jet   	        |Fire Opal         	|Good     	|
+|Fire Opal   	|Jet               	|Good       |
+|Jet   	        |Ivory              |Super     	|
+|Ivory          |Jet                |Super      |
+|Fire Opal      |Ivory              |Very Poor 	|
+|Ivory          |Fire Opal          |Very Poor  |
+
+Therefore, the last 2 pairings are excluded from the design choices.
 
 
 #### Structure
