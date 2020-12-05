@@ -113,6 +113,13 @@ As a user, I want to:
 
 ### **User Requirements and Expectations**
 #### **Requirements**
+* Easy navigation.
+* Reliable information.
+* Clear graphics.
+* Immeadiate feedback on data inputs and/or submissions.
+* Accurate unit conversions.
+* Good responsiveness across multiple devices
+
 #### **Expectations**
 
 
