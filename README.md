@@ -102,6 +102,7 @@ As a user, I want to:
 * Access easily my target page depending on the subject being dicussed with my business relationship.
 * Calculate the approximate transit time of my coffee.
 * Easily convert common units used across the coffee businesses worldwide (i.e bags of 70Kg to pounds, USc/Lb to USD/Kg, etc).
+* Have the total price of coffee in my local currency.
 * Have an overview of macroeconomic indicators of countries I am doing business with.
 * Place and order request via the website.
 * Easily find the company's contacts.
