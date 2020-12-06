@@ -248,6 +248,12 @@ Therefore, the last 2 pairings are excluded from the design choices.
 
 ### **Existing Features**
 
+#### ***Navigation: Floating Action Button***
+
+The navigation will be supported in all devices with a Floating Action Button (FAB) instead of using a navigation bar.
+
+This option allows the user to navigate across multiple pages via an intuitive option that accompanies the user through all its navigation and, at the same time, saves some real-estate. 
+
 [[Back to top]](#table-of-contents)
 
 <a></a>
@@ -320,7 +326,7 @@ Therefore, the last 2 pairings are excluded from the design choices.
 
 <a></a>
 
-### **Test 1: XXXXXX**
+### **Test 1: Responsiveness**
 
 #### **User Stories and Requirements** ####
 
