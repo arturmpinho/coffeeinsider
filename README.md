@@ -135,6 +135,12 @@ As a user, I want to:
 
 ### **Company Goals**
 
+* Provide the employees with a tool to aid the negotiation process.
+* Give potential customers an easy way to request an offer.
+* Access relevant information of potential customers country.
+* Display accurate route and transit times between ports of origin and destination.
+* Show relevant economic and coffee related news.
+
 [[Back to top]](#table-of-contents)
 
 <a></a>
