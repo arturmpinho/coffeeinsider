@@ -254,13 +254,21 @@ The navigation will be supported in all devices with a Floating Action Button (F
 
 This option allows the user to navigate across multiple pages via an intuitive option that accompanies the user through all its navigation and, at the same time, saves some real-estate.
 
-#### ***Landing page***
+#### ***Landing Page***
 
 The landing page merely displays the title of the website with a small introductory paragraph. 
 
 This is followed by a giant centered radial FAB, that includes a menu with internal links to the other pages, each one with a representative icon.
 
 On the bottom of the page, a footer is displayed with the company contacts and social links.
+
+#### ***Route overview***
+
+The route overview page gives the user the option to choose out of a dropdown list box the port of origin and the port of destination.
+
+Automatically, a preview of the route will be displayed in a map, followed by the information of the estimate transit time.
+
+The FAB is present on the bottom right of the page.
 
 [[Back to top]](#table-of-contents)
 
