@@ -328,6 +328,7 @@ the sense of being under control of his/her actions.
 * [Font Joy](https://fontjoy.com/ "Font Joy")
 * [Coolors](https://coolors.co/ "Coolors")
 * [Contrast-Checker](https://coolors.co/contrast-checker "Contrast Checker")
+* [Free Logo Design](https://www.freelogodesign.org "Free Logo Design")
 * [TinyPNG](https://tinypng.com/ "Tiny PNG")
 * [Favicon](https://favicon.io/favicon-converter/ "Favcicon")
 * [Techsini](http://techsini.com/multi-mockup/ "Techsini")
