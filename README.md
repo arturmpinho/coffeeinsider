@@ -268,7 +268,19 @@ The route overview page gives the user the option to choose out of a dropdown li
 
 Automatically, a preview of the route will be displayed in a map, followed by the information of the estimate transit time.
 
-The FAB is present on the bottom right of the page.
+The FAB is present at the bottom right of the page.
+
+#### ***Offer request & Unit conversion***
+
+This section of the webpage will be divided into 3 parts.
+
+First, the user will be confrontated with an accordion that will have included a form to request a personalized offer for the coffe he/she is looking for.
+
+Secondly, as the previous last section of the accordion, the user will have the option to choose the units he/she wants to be working with, including weight and currency, as well
+as inputing his/her price idea and immeadiately receive the conversions.
+
+Thirdly, right after submitting the form, a module will pop-up confirming that the offer request has been sent, with an overview of the request. At the same moment, a confirmation 
+email will be sent to the user and a request email to the company.
 
 [[Back to top]](#table-of-contents)
 
