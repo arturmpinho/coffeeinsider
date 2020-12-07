@@ -282,6 +282,11 @@ as inputing his/her price idea and immeadiately receive the conversions.
 Thirdly, right after submitting the form, a module will pop-up confirming that the offer request has been sent, with an overview of the request. At the same moment, a confirmation 
 email will be sent to the user and a request email to the company.
 
+#### ***Footer/Contacts***
+The footer will include the points of contact with the company, devided into direct contacts and social links, the later represented solely by its representative icon from
+[FontAwesome](https://fontawesome.com/ "FontAwesome").
+
+
 [[Back to top]](#table-of-contents)
 
 <a></a>
