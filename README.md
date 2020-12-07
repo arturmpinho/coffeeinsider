@@ -286,6 +286,9 @@ email will be sent to the user and a request email to the company.
 The footer will include the points of contact with the company, devided into direct contacts and social links, the later represented solely by its representative icon from
 [FontAwesome](https://fontawesome.com/ "FontAwesome").
 
+#### ***Modal***
+The modal implemented when summiting the form, is one of the best ways to issue immeadiate feedback to the user. This addresses this user need and at the same times gives the user
+the sense of being under control of his/her actions.
 
 [[Back to top]](#table-of-contents)
 
