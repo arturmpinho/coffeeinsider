@@ -33,13 +33,7 @@ Thank you for visting my project!
 
 2. [Wireframes](#wireframes)
  
-    2.1 [Mobile](#mobile)
- 
-    2.2 [Tablet](#tablet)
- 
-    2.3 [Desktop](#desktop)
- 
-    2.4 [Changes throughout the coding](#changes-throughout-the-coding)
+    2.1 [Changes throughout the coding](#changes-throughout-the-coding)
 
 3. [Features](#features)
  
@@ -218,17 +212,11 @@ Therefore, the last 2 pairings are excluded from the design choices.
 
 ## **Wireframes**
 
-<a></a>
+[Small devices](wireframes/small-devices.png)
 
-### **Mobile** ###
+[Medium Devices](wireframes/medium-devices.png)
 
-<a></a>
-
-### **Tablet** ###
-
-<a></a>
-
-### **Desktop** ###
+[Large devices](wireframes/large-devices.png)
 
 <a></a>
 
