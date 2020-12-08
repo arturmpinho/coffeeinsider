@@ -10,4 +10,18 @@ body {
     font-size: 1.6rem;
   }
 
-  
+  /* Logo & Header*/
+#logo {
+    width: min(max(2rem, 7vw), 8rem);
+    height: auto;
+    margin-left: 0;
+    padding: 0;
+}
+
+#main-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: min(max(2rem, 7vw), 8rem);
+    font-weight: 900;
+    text-align: center;
+    padding: 0;
+}
