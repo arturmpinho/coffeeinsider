@@ -154,7 +154,7 @@ After running some trials, I have opted out for the below set of fonts to be use
 [Lora](https://fonts.google.com/specimen/Lora?query=lora "Google Fonts")
 
 ##### Overall content
-[Libre Frankline](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts")
+[Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts")
 
 In my opinion, these 3 fonts work very well together. From the bold, easy-readable and attractive [Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont "Google Fonts") 
 font to be used in the Main Headings, creating an interesting contrast with the [Lora](https://fonts.google.com/specimen/Lora?query=lora "Google Fonts") font in the sub-headings and 
