@@ -27,6 +27,16 @@ body {
     padding: 0;
 }
 
+/* Hero Image */
+
+#hero-img {
+    background-image: url(../images/container-yard.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 35vh; 
+}
+
 /* Floating Action Button */
 
 a, a:hover, a:focus, a:active {
