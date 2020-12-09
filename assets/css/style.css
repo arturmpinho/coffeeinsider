@@ -27,6 +27,13 @@ body {
     padding: 0;
 }
 
+/* Intro Text */
+
+#intro-text {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 /* Hero Image */
 
 #hero-img {
@@ -34,7 +41,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 35vh; 
+    height: 30vh; 
 }
 
 /* Floating Action Button */
@@ -68,12 +75,13 @@ a, a:hover, a:focus, a:active {
     font-size: 5rem;
 } */
 
-/* #fab-container {
-    position: absolute;
+#fab-container {
+    height:40vh;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%); 
-} */
+    transform: translateX(-50%) translateY(-50%);  */
+}
 
 
 /* Footer */
