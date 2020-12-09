@@ -27,6 +27,23 @@ body {
     padding: 0;
 }
 
+/* Floating Action Button */
+.center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#main-btn {
+    font-size: 10rem;
+}
+
+.sub-btn {
+    font-size: 5rem;
+}
+
+
 /* Footer */
 
 #footer-container {
