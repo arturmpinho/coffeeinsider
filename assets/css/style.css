@@ -62,18 +62,20 @@ a, a:hover, a:focus, a:active {
     color: #ed665a;
 }
 
-#main-btn-lock:hover, #main-btn-lock:active {
+.sub-btns {
+    font-size: 5rem;
+    align-self: center;
+    display: none;
+}
+
+#main-btn-lock:hover, #main-btn-lock:active,
+.sub-btns:hover, .sub-btns:active {
     cursor: pointer;
     transform: scale(1.3);
     color: #ed665a;
 }
 
-
 /* -----------------------To be used if/when necessary */
-
-/* .sub-btn {
-    font-size: 5rem;
-} */
 
 #fab-container {
     height:40vh;
