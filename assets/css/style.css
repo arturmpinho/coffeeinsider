@@ -75,6 +75,9 @@ a, a:hover, a:focus, a:active {
     color: #ed665a;
 }
 
+.hide {
+    display: none;
+}
 /* -----------------------To be used if/when necessary */
 
 #fab-container {

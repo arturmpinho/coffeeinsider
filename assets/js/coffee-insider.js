@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#main-btn-lock").click(function(e) {
         e.preventDefault();
         $(this).hide();
-        $("#click-note").hide();
+        $("#click-note").toggleClass("hide");
         $("#main-btn-unlock").show();
         $(".sub-btns").show();
     })
@@ -13,7 +13,7 @@ $(document).ready(function() {
         $("#main-btn-unlock").click(function(e) {
         e.preventDefault();
         $(this).hide();
-        $("#click-note").show();
+        $("#click-note").toggleClass("hide");
         $("#main-btn-lock").show();
         $(".sub-btns").hide();
     })
