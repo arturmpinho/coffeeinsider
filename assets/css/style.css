@@ -53,7 +53,7 @@ a, a:hover, a:focus, a:active {
 
 #main-btn-lock,
 #main-btn-unlock {
-    font-size: 10rem;
+    font-size: min(max(7rem, 8vw), 10rem);
 }
  
 #main-btn-unlock {
@@ -63,7 +63,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .sub-btns {
-    font-size: 5rem;
+    font-size: min(max(3rem, 2vw), 5rem);
     align-self: center;
     display: none;
 }
@@ -78,22 +78,10 @@ a, a:hover, a:focus, a:active {
 .hide {
     display: none;
 }
-/* -----------------------To be used if/when necessary */
-
-#fab-container {
-    height:40vh;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);  */
-}
-
 
 /* Footer */
 
 #footer-container {
-    margin: 0;
-    bottom: 0;
     padding: 1rem 5rem;
 }
 
