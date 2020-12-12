@@ -34,14 +34,22 @@ body {
     text-align: center;
 }
 
-/* Hero Image */
+/* Hero Images */
 
-#hero-img {
+.hero-imgs {
     background-image: url(../images/container-yard.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 30vh; 
+}
+
+#hero-img-index {
+    background-image: url(../images/container-yard.jpg);
+}
+
+#hero-img-routes {
+    background-image: url(../images/night-vessel.jpg);
 }
 
 /* Floating Action Button */
