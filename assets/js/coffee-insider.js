@@ -10,7 +10,7 @@ $(document).ready(function() {
         $(".sub-btns").show();
     })
 
-        $("#main-btn-unlock").click(function(e) {
+    $("#main-btn-unlock").click(function(e) {
         e.preventDefault();
         $(this).hide();
         $("#click-note").toggleClass("hide");

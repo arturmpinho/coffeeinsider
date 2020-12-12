@@ -87,6 +87,13 @@ a, a:hover, a:focus, a:active {
     display: none;
 }
 
+.float {
+    position: fixed;
+    right: 3vw;
+    bottom: 3vw;
+    transform: none !important;
+    }
+
 /* Footer */
 
 #footer-container {
