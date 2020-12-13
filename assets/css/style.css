@@ -94,6 +94,15 @@ a, a:hover, a:focus, a:active {
     z-index: 999;
 }
 
+/* Route Estimated Transit Time */
+
+.dropdown-box {
+    margin-top: 1rem;
+    background-color: #ed665a;
+    font-size: min(max(1.6rem, 2vw), 2rem);
+    font-weight: 900;
+}
+
 /* Footer */
 
 #footer-container {
