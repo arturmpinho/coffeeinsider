@@ -89,10 +89,10 @@ a, a:hover, a:focus, a:active {
 
 .float {
     position: fixed;
-    right: 3vw;
-    bottom: 3vw;
-    transform: none !important;
-    }
+    right: 8vw;
+    bottom: 3vh;
+    z-index: 999;
+}
 
 /* Footer */
 
