@@ -107,6 +107,25 @@ a, a:hover, a:focus, a:active {
     font-weight: 900;
 }
 
+
+/* Unit Conversion section */
+
+.btn {
+    font-size: min(max(1.6rem, 2vw), 2rem);
+    color: #F4F9E9;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.btn:hover, .btn:active {
+    cursor: pointer;
+    color: #ed665a;
+}
+
+.card-header {
+    border-left: solid 2vw #ed665a;
+}
+
 /* Footer */
 
 #footer-container {
