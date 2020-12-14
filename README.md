@@ -330,6 +330,7 @@ the sense of being under control of his/her actions.
 * [Contrast-Checker](https://coolors.co/contrast-checker "Contrast Checker")
 * [Free Logo Design](https://www.freelogodesign.org "Free Logo Design")
 * [TinyPNG](https://tinypng.com/ "Tiny PNG")
+* [ConvertCSV](https://www.convertcsv.com/csv-to-json.htm "ConvertCSV")
 * [Favicon](https://favicon.io/favicon-converter/ "Favcicon")
 * [Techsini](http://techsini.com/multi-mockup/ "Techsini")
 * [W3C-Markup-validation](https://validator.w3.org/ "Markup Validator")
@@ -398,6 +399,9 @@ the sense of being under control of his/her actions.
 ### **Credits**
 #### **Media**
 #### **Content**
+##### **JSON files**
+
+coffee.json: www.supremo.be and http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf
 
 [[Back to top]](#table-of-contents)
 
