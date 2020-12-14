@@ -52,6 +52,10 @@ body {
     background-image: url(../images/night-vessel.jpg);
 }
 
+#hero-img-calc {
+    background-image: url(../images/calculator.jpg);
+}
+
 /* Floating Action Button */
 
 a, a:hover, a:focus, a:active {
