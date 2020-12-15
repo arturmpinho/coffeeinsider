@@ -126,6 +126,21 @@ a, a:hover, a:focus, a:active {
     border-left: solid 2vw #ed665a;
 }
 
+.shipmonth {
+    width: 75%;
+    max-width: 768px;
+    cursor: pointer;
+    border: solid 1px #ed665a;
+    background-color: inherit;
+    color: #F4F9E9;
+    text-align: center;
+}
+
+table button:hover, table button:active, table button:focus {
+    cursor: pointer;
+    background-color: #ed665a;    
+}
+
 /* Footer */
 
 #footer-container {
