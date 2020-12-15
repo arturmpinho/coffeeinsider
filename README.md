@@ -385,6 +385,11 @@ calc.html -> Quantity Input field allows decimal numbers
 
 Added 'min="0"' as an attribute of the input element.
 
+##### **Bug** #####
+calc.html -> for on click of TAB key is not focusing on the next field
+##### **(Potential) Corrections** #####
+
+Added tabindex="num" as an attribute of the input and select elements
 
 [[Back to top]](#table-of-contents)
 
