@@ -412,8 +412,10 @@ Added tabindex="num" as an attribute of the input and select elements
 <a></a>
 
 ### **Credits**
+* [MDN WebDocs](https://developer.mozilla.org/ "MDN WebDocs")
 #### **Media**
 #### **Content**
+*[Incoterms 2020](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms")
 ##### **JSON files**
 
 coffee.json: www.supremo.be and http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf
