@@ -374,7 +374,17 @@ the sense of being under control of his/her actions.
 #### **Known Bugs and Corrections** ####
 
 ##### **Bug** #####
+calc.html -> Input field allows negative numbers
 ##### **(Potential) Corrections** #####
+
+Added 'min="0"' as an attribute of the input element.
+
+##### **Bug** #####
+calc.html -> Quantity Input field allows decimal numbers
+##### **(Potential) Corrections** #####
+
+Added 'min="0"' as an attribute of the input element.
+
 
 [[Back to top]](#table-of-contents)
 
