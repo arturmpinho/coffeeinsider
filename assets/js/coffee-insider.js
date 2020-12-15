@@ -21,16 +21,42 @@ $(document).ready(function() {
 
 /* Coffees Select List */
 
-let dropdown = $('.dropdownCoffee');
+let dropdownCoffee = $('.dropdownCoffee');
 
-dropdown.empty();
-dropdown.append('<option selected="true">Select your Coffee</option>');
-dropdown.prop('selectedIndex', 0);
+dropdownCoffee.empty();
+dropdownCoffee.append('<option selected="true">Select your Coffee</option>');
+dropdownCoffee.prop('selectedIndex', 0);
 
-const url = 'assets/js/coffees.json';
+const dropdownCoffeeUrl = 'assets/js/coffees.json';
 
-$.getJSON(url, function (data) {
+$.getJSON(dropdownCoffeeUrl, function (data) {
   $.each(data, function (key, entry) {
-    dropdown.append($('<option></option>').text(`${entry.country} - ${entry.coffees}`));
+    dropdownCoffee.append($('<option></option>').text(`${entry.country} - ${entry.coffees}`));
+  })
+});
+
+/* Coffees Select List */
+
+let dropdownMetrics = $('.dropdownMetrics');
+let netWeight = "";
+let unit = "";
+
+dropdownMetrics.empty();
+dropdownMetrics.append('<option selected="true">Kg/Lbs/Bags</option>');
+dropdownMetrics.prop('selectedIndex', 0);
+
+const dropdownMetricsUrl = 'assets/js/metrics.json';
+
+$.getJSON(dropdownMetricsUrl, function (data) {
+  $.each(data, function (key, entry) {
+    if(typeof(entry.netWeight || entry.unit) === 'object') {
+        netWeight = "";
+        unit = "";
+    } else {
+        netWeight = entry.netWeight;
+        unit = entry.unit;
+    }
+    
+    dropdownMetrics.append($('<option></option>').text(`${netWeight} ${entry.metric} ${unit}`));
   })
 });
