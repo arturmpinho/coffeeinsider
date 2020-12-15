@@ -60,3 +60,32 @@ $.getJSON(dropdownMetricsUrl, function (data) {
     dropdownMetrics.append($('<option></option>').text(`${netWeight} ${entry.metric} ${unit}`));
   })
 });
+
+/* Datepicker */
+
+// Based and adapted from: https://www.codeply.com/go/fVMtEP6yNw/javascript-loop-date-months
+
+const getMonths = function(startDate, endDate){
+    var monthsOutput = [];
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    while (startDate <= endDate) {
+        let shippingMonth = `${months[startDate.getMonth()]} ${startDate.getFullYear()}`;
+        monthsOutput.push({
+            shippingMonth:shippingMonth,
+        });
+        startDate.setMonth(startDate.getMonth() + 1);
+    }
+    return monthsOutput;
+};
+
+today = new Date()
+let year = today.getFullYear();
+let month = today.getMonth();
+let day = today.getDate();
+let finalDate = new Date(year + 1, month, day)
+
+let displayMonths = getMonths(today,finalDate);
+for (let m in displayMonths) {
+    $('#shipping-options').append(`<button type="button" class="col-4 shipmonths"> ${displayMonths[m].shippingMonth} </button>`)
+}
