@@ -1,0 +1,54 @@
+{
+   "1": {
+      "name": "Ex Works",
+      "abbreviation": "EXW"
+   },
+   "2": {
+      "name": "Free Carrier",
+      "abbreviation": "FCA"
+   },
+   "3": {
+      "name": " Carriage Paid To",
+      "abbreviation": "CPT"
+   },
+   "4": {
+      "name": "Carriage and Insurance Paid To",
+      "abbreviation": "CIP"
+   },
+   "5": {
+      "name": "Delivered at Place",
+      "abbreviation": "DAP"
+   },
+   "6": {
+      "name": "Delivered at Place Unloaded",
+      "abbreviation": "DPU"
+   },
+   "7": {
+      "name": "Delivered Duty Paid",
+      "abbreviation": "DDP"
+   },
+   "8": {
+      "name": "Free Alongside Ship",
+      "abbreviation": "FAS"
+   },
+   "9": {
+      "name": "Free On Board",
+      "abbreviation": "FOB | "
+   },
+   "10": {
+      "name": "Cost and Freight",
+      "abbreviation": "CFR"
+   },
+   "11": {
+      "name": "Cost Insurance and Freight",
+      "abbreviation": "CIF"
+   }
+}
+
+
+
+
+
+
+
+
