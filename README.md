@@ -391,6 +391,12 @@ calc.html -> for on click of TAB key is not focusing on the next field
 
 Added tabindex="num" as an attribute of the input and select elements
 
+##### **Bug** #####
+calc.html -> anchor tag oc incoterms does not allow spacing before and after.
+##### **(Potential) Corrections** #####
+
+Unfixed at the moment
+
 [[Back to top]](#table-of-contents)
 
 ---
