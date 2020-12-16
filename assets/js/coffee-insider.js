@@ -37,19 +37,19 @@ $.getJSON(dropdownCoffeeUrl, function (data) {
 
 /* Coffees Select List */
 
-let dropdownMetrics = $('.dropdownMetrics');
+let dropdownMetrics = $(".dropdownMetrics");
 let netWeight = "";
 let unit = "";
 
 dropdownMetrics.empty();
-dropdownMetrics.append('<option selected="true">Kg/Lbs/Bags</option>');
-dropdownMetrics.prop('selectedIndex', 0);
+dropdownMetrics.append(`<option selected="true">Kg/Lbs/Bags</option>`);
+dropdownMetrics.prop("selectedIndex", 0);
 
-const dropdownMetricsUrl = 'assets/js/metrics.json';
+const dropdownMetricsUrl = "assets/js/metrics.json";
 
 $.getJSON(dropdownMetricsUrl, function (data) {
   $.each(data, function (key, entry) {
-    if(typeof(entry.netWeight || entry.unit) === 'object') {
+    if(typeof(entry.netWeight || entry.unit) === "object") {
         netWeight = "";
         unit = "";
     } else {
@@ -57,7 +57,7 @@ $.getJSON(dropdownMetricsUrl, function (data) {
         unit = entry.unit;
     }
     
-    dropdownMetrics.append($('<option></option>').text(`${netWeight} ${entry.metric} ${unit}`));
+    dropdownMetrics.append($("<option></option>").text(`${netWeight} ${entry.metric} ${unit}`));
   })
 });
 
@@ -89,3 +89,13 @@ let displayMonths = getMonths(today,finalDate);
 for (let m in displayMonths) {
     $('#shipping-options').append(`<button type="button" class="col-4 shipmonths"> ${displayMonths[m].shippingMonth} </button>`)
 }
+
+// Incoterms
+
+const incotermsUrl = 'assets/js/incoterms.json';
+
+$.getJSON(incotermsUrl, function (data) {
+    $.each(data, function (key, entry) {
+        $("#incoterms").append($(`<button type="button" class="col incoterms"> ${entry.abbreviation}</button>`));
+     })
+});
