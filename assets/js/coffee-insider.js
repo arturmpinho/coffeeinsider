@@ -35,7 +35,6 @@ $.getJSON(dropdownCoffeeUrl, function (data) {
   })
 });
 
-/* Coffees Select List */
 
 let dropdownMetrics = $(".dropdownMetrics");
 let netWeight = "";
@@ -61,7 +60,7 @@ $.getJSON(dropdownMetricsUrl, function (data) {
   })
 });
 
-/* Datepicker */
+/* Shipping months */
 
 // Based and adapted from: https://www.codeply.com/go/fVMtEP6yNw/javascript-loop-date-months
 
@@ -87,7 +86,7 @@ let finalDate = new Date(year + 1, month, day)
 
 let displayMonths = getMonths(today,finalDate);
 for (let m in displayMonths) {
-    $('#shipping-options').append(`<button type="button" class="col-4 shipmonths"> ${displayMonths[m].shippingMonth} </button>`)
+    $('#shipping-options').append(`<input type="button" class="col-4 shipmonths" value="${displayMonths[m].shippingMonth}">`)
 }
 
 // Incoterms
@@ -96,6 +95,12 @@ const incotermsUrl = 'assets/js/incoterms.json';
 
 $.getJSON(incotermsUrl, function (data) {
     $.each(data, function (key, entry) {
-        $("#incoterms").append($(`<button type="button" class="col incoterms"> ${entry.abbreviation}</button>`));
+        $("#incoterms").append($(`<input type="button" class="col incoterms" value="${entry.abbreviation}">`));
      })
 });
+
+// Price Idea
+
+/* Not functioning load method due to CORS
+$("#ice-price").load("https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc") */
+

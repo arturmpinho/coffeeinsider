@@ -376,26 +376,39 @@ the sense of being under control of his/her actions.
 ##### **Bug** #####
 calc.html -> Input field allows negative numbers
 ##### **(Potential) Corrections** #####
-
 Added 'min="0"' as an attribute of the input element.
 
 ##### **Bug** #####
 calc.html -> Quantity Input field allows decimal numbers
 ##### **(Potential) Corrections** #####
-
 Added 'min="0"' as an attribute of the input element.
 
 ##### **Bug** #####
 calc.html -> for on click of TAB key is not focusing on the next field
 ##### **(Potential) Corrections** #####
-
 Added tabindex="num" as an attribute of the input and select elements
 
 ##### **Bug** #####
 calc.html -> anchor tag oc incoterms does not allow spacing before and after.
 ##### **(Potential) Corrections** #####
-
 Unfixed at the moment
+
+##### **Bug** #####
+Access to XMLHttpRequest at 'https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc' from origin 'https://8000-e4e47aac-b552-443c-afb5-41a2746ebb9d.ws-eu03.gitpod.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+##### **(Potential) Corrections** #####
+Not possible use the load method form jQuery to present the external website info on calc.html.
+
+Therefore, I started implementing this feature with an <iframe> instead.
+
+Nonethless, this option also retreives the following error originated externally:
+
+    Uncaught TypeError: Cannot read property 'querySelector' of undefined
+    at getElement (tradingcharts-emailsignup.js:265)
+    at tradingcharts-emailsignup.js:34
+ 
+ Additional research [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies "MDN") raises other several concerns with this option.
+
+In the end, I am using solely an external link so user can access the current market prices of the coffee futures for their reference.
 
 [[Back to top]](#table-of-contents)
 
