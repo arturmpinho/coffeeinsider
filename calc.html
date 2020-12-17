@@ -83,7 +83,7 @@
                 </div>  
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body container-fluid">
-                        <div class="row d-flex justify-content-center text-center">
+                        <form class="row d-flex justify-content-center text-center">
                             <div class="col-6 col-md-3 form-group pl-4 pr-0">
                                 <label for="TypeOfCoffee">Type of Coffee</label>
                                 <select class="form-control form-control-lg dropdownCoffee" id="TypeOfCoffee1" tabindex="1">
@@ -118,7 +118,7 @@
                                 <select class="form-control form-control-lg dropdownMetrics" id="QuantityUnit5" tabindex="15">
                                 </select>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -189,8 +189,18 @@
                 <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
                     <div class="card-body container d-flex justify-content-center">
                         <div class="row">
-                            <div class="col-6 d-flex justify-content-center">
-                                <input type="number" min="1" step="any" />
+                            <ol>
+                                <div class="col-12 d-flex justify-content-center" id="selected-coffees1">
+                                </div>
+                                <div class="col-12 d-flex justify-content-center" id="selected-coffees2">
+                                </div>
+                                <div class="col-12 d-flex justify-content-center" id="selected-coffees3">
+                                </div>
+                                <div class="col-12 d-flex justify-content-center" id="selected-coffees4">
+                                </div>
+                                <div class="col-12 d-flex justify-content-center" id="selected-coffees5">
+                                </div>
+                            </ol>
                             </div>
                         </div>
                     </div>
@@ -213,8 +223,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     
 

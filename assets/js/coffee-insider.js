@@ -21,17 +21,27 @@ $(document).ready(function() {
 
 /* Coffees Select List */
 
-let dropdownCoffee = $('.dropdownCoffee');
+let dropdownCoffee1 = $('#TypeOfCoffee1');
+let dropdownCoffee2 = $('#TypeOfCoffee2');
+let dropdownCoffee3 = $('#TypeOfCoffee3');
+let dropdownCoffee4 = $('#TypeOfCoffee4');
+let dropdownCoffee5 = $('#TypeOfCoffee5');
 
-dropdownCoffee.empty();
-dropdownCoffee.append('<option selected="true">Select your Coffee</option>');
-dropdownCoffee.prop('selectedIndex', 0);
+let dropdownCoffee = $('.dropdownCoffee')
+// dropdownCoffee.empty();
+dropdownCoffee.append('<option selected>Select your Coffee</option>');
+// dropdownCoffee.prop('selectedIndex', 0);
 
 const dropdownCoffeeUrl = 'assets/js/coffees.json';
 
 $.getJSON(dropdownCoffeeUrl, function (data) {
   $.each(data, function (key, entry) {
-    dropdownCoffee.append($('<option></option>').text(`${entry.country} - ${entry.coffees}`));
+    dropdownCoffee1.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
+    dropdownCoffee2.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
+    dropdownCoffee3.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
+    dropdownCoffee4.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
+    dropdownCoffee5.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
+
   })
 });
 
@@ -104,3 +114,24 @@ $.getJSON(incotermsUrl, function (data) {
 /* Not functioning load method due to CORS
 $("#ice-price").load("https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc") */
 
+
+$("#TypeOfCoffee1").change(function() {
+    let dropdownCoffee1 = $("#TypeOfCoffee1 :selected").val();
+    $("#selected-coffees1" ).html($(`<p id="coffee1">${dropdownCoffee1} <input type="number" class="differential" name="differential" min="0" step="0.05"> USc/Lb</p>`));
+});
+$("#TypeOfCoffee2").change(function() {
+    let dropdownCoffee2 = $("#TypeOfCoffee2 :selected").val();
+    $("#selected-coffees2" ).html($(`<p id="coffee2">${dropdownCoffee2} <input type="number" class="differential" name="differential" min="0" step="0.05"> USc/Lb</p>`));
+});
+$("#TypeOfCoffee3").change(function() {
+    let dropdownCoffee3 = $("#TypeOfCoffee3 :selected").val();
+    $("#selected-coffees3" ).html($(`<p id="coffee3">${dropdownCoffee3} <input type="number" class="differential" name="differential" min="0" step="0.05"> USc/Lb</p>`));
+});
+$("#TypeOfCoffee4").change(function() {
+    let dropdownCoffee4 = $("#TypeOfCoffee4 :selected").val();
+    $("#selected-coffees4" ).html($(`<p id="coffee4">${dropdownCoffee4} <input type="number" class="differential" name="differential" min="0" step="0.05"> USc/Lb</p>`));
+});
+$("#TypeOfCoffee5").change(function() {
+    let dropdownCoffee5 = $("#TypeOfCoffee5 :selected").val();
+    $("#selected-coffees5" ).html($(`<p id="coffee5">${dropdownCoffee5} <input type="number" class="differential" name="differential" min="0" step="0.05"> USc/Lb</p>`));
+});
