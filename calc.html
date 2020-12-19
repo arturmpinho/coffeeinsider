@@ -81,42 +81,22 @@
                         </button>
                     </h5>
                 </div>  
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body container-fluid">
                         <form class="row d-flex justify-content-center text-center">
-                            <div class="col-6 col-md-3 form-group pl-4 pr-0">
-                                <label for="TypeOfCoffee">Type of Coffee</label>
-                                <select class="form-control form-control-lg dropdownCoffee" id="TypeOfCoffee1" tabindex="1">
-                                </select>
-                                <select class="form-control form-control-lg dropdownCoffee" id="TypeOfCoffee2" tabindex="4">
-                                </select>
-                                <select class="form-control form-control-lg dropdownCoffee" id="TypeOfCoffee3" tabindex="7">
-                                </select>
-                                <select class="form-control form-control-lg dropdownCoffee" id="TypeOfCoffee4" tabindex="10">
-                                </select>
-                                <select class="form-control form-control-lg dropdownCoffee" id="TypeOfCoffee5" tabindex="13">
-                                </select>
-                            </div>
-                            <div class="col-3 col-md-2 form-group pl-2 pr-2">
-                                <label for="QuantityOfCoffee">Quantity</label>
-                                <input type="number" min="0" class="form-control form-control-lg" id="QuantityOfCoffee1" placeholder="Amount of Coffee" tabindex="2">
-                                <input type="number" min="0" class="form-control form-control-lg" id="QuantityOfCoffee2" placeholder="Amount of Coffee" tabindex="5">
-                                <input type="number" min="0" class="form-control form-control-lg" id="QuantityOfCoffee3" placeholder="Amount of Coffee" tabindex="8">
-                                <input type="number" min="0" class="form-control form-control-lg" id="QuantityOfCoffee4" placeholder="Amount of Coffee" tabindex="11">
-                                <input type="number" min="0" class="form-control form-control-lg" id="QuantityOfCoffee5" placeholder="Amount of Coffee" tabindex="14">
-                            </div>
-                            <div class="col-3 col-md-2 form-group pr-4 pl-0">
-                                <label for="QuantityUnit">Unit</label>
-                                <select class="form-control form-control-lg dropdownMetrics" id="QuantityUnit1" tabindex="3"> 
-                                </select>
-                                <select class="form-control form-control-lg dropdownMetrics" id="QuantityUnit2" tabindex="6">
-                                </select>
-                                <select class="form-control form-control-lg dropdownMetrics" id="QuantityUnit3" tabindex="9">
-                                </select>
-                                <select class="form-control form-control-lg dropdownMetrics" id="QuantityUnit4" tabindex="12">
-                                </select>
-                                <select class="form-control form-control-lg dropdownMetrics" id="QuantityUnit5" tabindex="15">
-                                </select>
+                            <button class="btn ci-btns col-12 d-flex" id="add-coffee-btn"><i class="fas fa-plus"></i> Add Coffee</button>
+                            <div class="coffee-selection">
+                                <div class="col-12">
+                                    <div class="form-group d-flex">
+                                        <label for="default-selection">Select your Coffees</label>
+                                        <select class="form-control form-control-lg coffees-list" id="default-selection"></select>
+                                        <label for="default-quantity">Quantity</label>
+                                        <input type="number" min="0" class="form-control form-control-lg" id="default-quantity" placeholder="Amount of Coffee">
+                                        <label for="defaul-metrics">Unit</label>
+                                        <select class="form-control form-control-lg metrics-list" id="defaul-metrics"> 
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -215,35 +195,33 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="container">
-                                <form method="post">
-                                    <fieldset id="fieldset-center">
-                                        <span>Contact us</span>
-                                        <div class="form-group">
-                                            <div class="col-sm-8">
-                                                <input id="fname" name="name" type="text" placeholder="Name" class="form-control" required>
-                                            </div>
+                                <form>
+                                    <span>Contact us</span>
+                                    <div class="form-group">
+                                        <div class="col-sm-8">
+                                            <input id="fname" name="name" type="text" placeholder="Name" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-8">
-                                                <input id="cname" name="name" type="text" placeholder="Company Name" class="form-control" required>
-                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-8">
+                                            <input id="cname" name="name" type="text" placeholder="Company Name" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-8">
-                                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control" required>
-                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-8">
+                                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-8">
-                                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control" required>
-                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-8">
-                                                <button type="submit" class="btn">Check my Overview</button>
-                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-8">
+                                            <button type="submit" class="btn ci-btns" data-toggle="modal" data-target="#overview-modal" id="btn-overview">Check my Overview</button>
                                         </div>
-                                    </fieldset>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -252,6 +230,31 @@
             </div>
         </div>
     </section>
+<!-- Modal Overview -->
+
+        <div class="modal fade" id="overview-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="overview">My Overview</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="my-overview">
+                        <div id="my-overview1"></div>
+                        <div id="my-overview2"></div>
+                        <div id="my-overview3"></div>
+                        <div id="my-overview4"></div>
+                        <div id="my-overview5"></div>
+                                            </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn ci-btns">Request an Offer</button>
+                        <button type="button" class="btn ci-btns" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <footer class="container-fluid mt-5" id="footer-container">
         <div class="row">

@@ -98,6 +98,26 @@ a, a:hover, a:focus, a:active {
     z-index: 999;
 }
 
+/* Buttons */
+.btn {
+    font-size: min(max(1.6rem, 2vw), 2rem);
+    color: #F4F9E9;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.btn:hover, .btn:active {
+    cursor: pointer;
+    color: #ed665a;
+}
+
+.ci-btns {
+    background-color: #2D2926;
+    border-radius: 5%;
+    border: solid 0.2rem #ed665a; 
+}
+
+
 /* Route Estimated Transit Time */
 
 .dropdown-box {
@@ -110,17 +130,6 @@ a, a:hover, a:focus, a:active {
 
 /* Unit Conversion section */
 
-.btn {
-    font-size: min(max(1.6rem, 2vw), 2rem);
-    color: #F4F9E9;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-.btn:hover, .btn:active {
-    cursor: pointer;
-    color: #ed665a;
-}
 
 .card-header {
     border-left: solid 2vw #ed665a;
@@ -142,6 +151,12 @@ a, a:hover, a:focus, a:active {
     cursor: pointer;
     background-color: #ed665a;    
 }
+
+/* Overview */
+#my-overview {
+    color: #2D2926;
+}
+
 
 /* Footer */
 
