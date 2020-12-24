@@ -84,20 +84,21 @@
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body container-fluid">
                         <form class="row d-flex justify-content-center text-center">
-                            <button class="btn ci-btns col-12 d-flex" id="add-coffee-btn"><i class="fas fa-plus"></i> Add Coffee</button>
                             <div class="coffee-selection">
-                                <div class="col-12">
-                                    <div class="form-group d-flex">
-                                        <label for="default-selection">Select your Coffees</label>
-                                        <select class="form-control form-control-lg coffees-list" id="default-selection"></select>
-                                        <label for="default-quantity">Quantity</label>
-                                        <input type="number" min="0" class="form-control form-control-lg" id="default-quantity" placeholder="Amount of Coffee">
-                                        <label for="defaul-metrics">Unit</label>
-                                        <select class="form-control form-control-lg metrics-list" id="defaul-metrics"> 
+                                <div class="form-group col-12 default-group">
+                                    <div class="d-flex">
+                                        <select class="form-control form-control-lg coffees-list" id="default-selection" onchange="addOptions(this)">
+                                            <option>Select your coffee</option>
                                         </select>
-                                    </div>
+                                        <div class="d-flex metrics">
+                                            <input type="number" min="0" class="form-control form-control-lg amount" placeholder="Amount of Coffee">
+                                            <div class="form-control form-control-lg units" id="default-units"> 
+                                            </div>
+                                        </div>
+                                     </div>
                                 </div>
                             </div>
+                            <button class="btn ci-btns col-12" id="add-coffee-btn"><i class="fas fa-plus"></i> Add Coffee</button>
                         </form>
                     </div>
                 </div>

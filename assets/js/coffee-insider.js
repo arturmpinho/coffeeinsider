@@ -30,7 +30,8 @@ const dropDownCoffeeUrl = "assets/js/coffees.json";
 $( document ).ready(function () {
     $.getJSON(dropDownCoffeeUrl, function (data) {
         $.each(data, function (key, entry) {
-        $("#default-selection").append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`);
+        $("#default-selection").append(`<option id="${key}" value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`);
+        // $("#default-units").html(`<span>Bags of ${entry.netWeight} ${entry.unit}</span>`);
         })
     });
 });
@@ -38,7 +39,7 @@ $( document ).ready(function () {
     const maxCoffees = 10;
     const addButton = $("#add-coffee-btn");
     const coffeeSelection = $(".coffee-selection");
-    const addCoffee = `<div class="col-12"><div class="form-group"><select class="form-control form-control-lg coffees-list" id="${genNewId()}"></select><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div>`;
+    const addCoffee = `<div class="form-group col-12"><div class="d-flex"><select class="form-control form-control-lg coffees-list" id="${genNewId()}" onChange="addOptions(this)"></select><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div></div>`;
     let x = 1;
     
     $(addButton).click(function(e){
@@ -46,66 +47,38 @@ $( document ).ready(function () {
         if(x < maxCoffees){ 
             x++; 
             $(coffeeSelection).append(addCoffee);
+            $(".coffees-list").append(`<option>Select your coffee</option>`)
         }
          $.getJSON(dropDownCoffeeUrl, function (data) {
             $.each(data, function (key, entry) {
-            $('.coffees-list').append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
+            $(".coffees-list").append(`<option id="${key}" value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
             })
         });
     });
-    
+
 function removeDiv(e) {
     $(e).parent("div").remove();
 }
 
-let dropdownMetrics = $(".dropdownMetrics");
-let netWeight = "";
-let unit = "";
-
-dropdownMetrics.append(`<option selected="true">Kg/Lbs/Bags</option>`);
-
-const dropdownMetricsUrl = "assets/js/metrics.json";
-
-$.getJSON(dropdownMetricsUrl, function (data) {
-  $.each(data, function (key, entry) {
-    if(typeof(entry.netWeight || entry.unit) === "object") {
-        netWeight = "";
-        unit = "";
-    } else {
-        netWeight = entry.netWeight;
-        unit = entry.unit;
+function addOptions(e) {
+    if ($(e).siblings('.metrics').length == 0) {
+       if($(e).children("option:selected").val() != "Select your coffee") {
+        $(`<div class="d-flex metrics">
+           <input type="number" min="0" class="form-control form-control-lg amount" placeholder="Amount of Coffee">
+           <div class="form-control form-control-lg units"></div>
+           </div>`).insertAfter($(e));
     }
-    
-    dropdownMetrics.append($("<option></option>").text(`${netWeight} ${entry.metric} ${unit}`));
-  })
-});
-
-
-
-
-// let dropdownCoffee1 = $('#TypeOfCoffee1');
-// let dropdownCoffee2 = $('#TypeOfCoffee2');
-// let dropdownCoffee3 = $('#TypeOfCoffee3');
-// let dropdownCoffee4 = $('#TypeOfCoffee4');
-// let dropdownCoffee5 = $('#TypeOfCoffee5');
-
-// let dropdownCoffee = $('.dropdownCoffee')
-// dropdownCoffee.append('<option selected>Select your Coffee</option>');
-
-// const dropdownCoffeeUrl = 'assets/js/coffees.json';
-
-// $.getJSON(dropdownCoffeeUrl, function (data) {
-//   $.each(data, function (key, entry) {
-//     dropdownCoffee1.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
-//     dropdownCoffee2.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
-//     dropdownCoffee3.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
-//     dropdownCoffee4.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
-//     dropdownCoffee5.append(`<option value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
-
-//   })
-// });
-
-
+}
+       if($(e).children("option:selected").val() != "Select your coffee") {
+            $.getJSON(dropDownCoffeeUrl, function (data) {
+                $.each(data, function (key, entry) {
+                    if (($(e).children("option:selected").attr('id')) == key) {
+                        $(e).siblings('.metrics').children('.units').html(`<span>Bags of ${entry.netWeight} ${entry.unit}</span>`)
+                    }
+                })
+            })
+       }
+};
 
 /* Shipping months */
 
@@ -187,24 +160,28 @@ $("#TypeOfCoffee5").change(function() {
 
 
 let selectedCoffees = [];
+let coffeeAmount = []; 
 $("#btn-overview").click(function(e) {
     e.preventDefault();
+    while(selectedCoffees.length>0){
+            selectedCoffees.pop();
+        };
     $('.coffees-list').each(function() {
-        selectedCoffees.push($(this).children("option:selected").val()); 
+        selectedCoffees.push($(this).children("option:selected").val());
+        coffeeAmount.push($(this).siblings('.metrics').children('.amount').val());
     })
-    console.log(selectedCoffees)
+
+        console.log(selectedCoffees, coffeeAmount)
+
+    // while(coffeeAmount.length>0){
+    //         coffeeAmount.pop();
+    //     };
+    // $('.coffees-list').siblings('.metrics').each(function() {
+    //     coffeeAmount.push($(this).children(".amount").val()); 
+    // })
     // let selectedcoffees = $("select.coffees-list").children("option:selected").val()
-    // console.log(selectedcoffees)
 
  
-    //console.log($(".coffees-list").children("option:selected")).val()
-
-
-    // let dropdownCoffee11 = $("#TypeOfCoffee1 :selected").val();
-    // if (dropdownCoffee11 != "Select your Coffee") {
-    //     $("#my-overview1").html($(`<div>${$("#coffee1").text().slice(0,-7)} - ${$("#differential1").val()} USc/Lb</div>`))
-    // };
-    // // $("#my-overview1").html($(`<div>${$("#coffee1").text().slice(0,-7)} - ${$("#differential1").val()} USc/Lb</div>`))
 
     $("#overview-modal").modal("show");
 
