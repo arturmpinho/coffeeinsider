@@ -156,7 +156,7 @@ $('.contract-options').click(function(){
 });
  
 // Overview
-
+let selectedCountries = []
 let selectedCoffees = [];
 let coffeeAmount = [];
 $("#btn-overview").click(function(e) {
@@ -167,24 +167,52 @@ $("#btn-overview").click(function(e) {
     while(selectedCoffees.length > 0){
         selectedCoffees.pop();
     };
+    while(coffeeAmount.length > 0){
+        coffeeAmount.pop();
+    };
     
     $(".coffees-list").each(function() {
         selectedCoffees.push($(this).children("option:selected").val());
         coffeeAmount.push($(this).siblings('.metrics').children('.amount').val());
     });
-    let mergedList = [];
+   
+    let mergedOverviewList = [];
     let i = 0;
     while (i < selectedCoffees.length) {
-        mergedList.push(selectedCoffees[i], coffeeAmount[i]);
+        mergedOverviewList.push(selectedCoffees[i], coffeeAmount[i]);
         i++;
     }
     let j = 0;
     $("#selected-coffees").empty();
-    while (j < mergedList.length) {
-        $("#selected-coffees").append($(`<p>${mergedList[j]} - ${mergedList[j + 1]}</p>`));
-        j += 2;
+
+    while (j < mergedOverviewList.length) {
+        // $("#selected-coffees").append($(`<p>${mergedOverviewList[j]} - ${mergedOverviewList[j + 1]}</p>`));
+        let newString = mergedOverviewList[j].split("-");
+        let amount = mergedOverviewList[j + 1];
+        let countryString = newString[0].trim();
+        let coffeesString = newString[1].trim();
+
+
+        $.getJSON(dropDownCoffeeUrl, function (data) {
+                $.each(data, function (key, entry) {
+                    // console.log(newString[0])
+                    // console.log(entry.country);
+                    if (countryString == entry.country && coffeesString == entry.coffees) {
+                         $("#selected-coffees").append($(`<p> ${countryString} - ${coffeesString}:  ${amount} Bags of ${entry.netWeight} ${entry.unit}</p>`));
+
+                };
+            })            
+        })
+      j += 2;
     }
 
+    //  $.getJSON(dropDownCoffeeUrl, function (data) {
+    //             $.each(data, function (key, entry) {
+    //                 if (($(e).children("option:selected").attr('id')) == key) {
+    //                     $(e).siblings('.metrics').children('.units').html(`<span>Bags of ${entry.netWeight} ${entry.unit}</span>`)
+    //                 }
+    //             })
+    //         })
     
     $("#selected-shipping").html($(`<div >${selectedMonth}</div>`));
     $("#selected-contract").html($(`<div >${selectedContract}</div>`));
