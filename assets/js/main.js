@@ -98,7 +98,7 @@ const getMonths = function(startDate, endDate){
     return monthsOutput;
 };
 
-today = new Date()
+today = new Date();
 let year = today.getFullYear();
 let month = today.getMonth();
 let day = today.getDate();
@@ -106,7 +106,7 @@ let finalDate = new Date(year + 1, month, day)
 
 let displayMonths = getMonths(today,finalDate);
 for (let m in displayMonths) {
-    $('#shipping-options').append(`<input type="button" class="col-4 shipmonths" value="${displayMonths[m].shippingMonth}">`)
+    $('#shipping-options').append(`<button class="col-4 shipmonths" value="${displayMonths[m].shippingMonth}">${displayMonths[m].shippingMonth}</button>`)
 }
 
 // Incoterms
@@ -115,7 +115,7 @@ const incotermsUrl = 'assets/js/incoterms.json';
 
 $.getJSON(incotermsUrl, function (data) {
     $.each(data, function (key, entry) {
-        $("#incoterms").append($(`<input type="button" class="col incoterms" value="${entry.abbreviation}">`));
+        $("#incoterms").append($(`<button class="col incoterms">${entry.abbreviation}</button>`));
      })
 });
 
@@ -156,22 +156,34 @@ $("#TypeOfCoffee5").change(function() {
 });
 
 
+    
+    let selectedMonth = [];
+    $('.shipmonths').click(function(){
+    while(selectedMonth.length>0){
+        selectedMonth.pop();
+    };
+    selectedMonth.push($(this).val())
+    });
+
+ 
 // Overview
 
-
 let selectedCoffees = [];
-let coffeeAmount = []; 
+let coffeeAmount = [];
 $("#btn-overview").click(function(e) {
     e.preventDefault();
     while(selectedCoffees.length>0){
-            selectedCoffees.pop();
+        selectedCoffees.pop();
         };
-    $('.coffees-list').each(function() {
+    $(".coffees-list").each(function() {
         selectedCoffees.push($(this).children("option:selected").val());
         coffeeAmount.push($(this).siblings('.metrics').children('.amount').val());
-    })
+    });
 
-        console.log(selectedCoffees, coffeeAmount)
+   
+    $("#my-overview").html($(`<div >${selectedCoffees} ${coffeeAmount}</div>`));
+    $("#my-overview").html($(`<div >${selectedMonth}</div>`));
+
 
     // while(coffeeAmount.length>0){
     //         coffeeAmount.pop();

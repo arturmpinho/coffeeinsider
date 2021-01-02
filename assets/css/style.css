@@ -153,6 +153,12 @@ a, a:hover, a:focus, a:active {
 }
 
 /* Overview */
+#overview {
+    color: #2D2926;
+    font-weight: 900;
+    font-size: min(max(1.6rem, 2vw), 2rem);
+}
+
 #my-overview {
     color: #2D2926;
 }
