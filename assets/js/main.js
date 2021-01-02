@@ -186,17 +186,14 @@ $("#btn-overview").click(function(e) {
     $("#selected-coffees").empty();
 
     while (j < mergedOverviewList.length) {
-        // $("#selected-coffees").append($(`<p>${mergedOverviewList[j]} - ${mergedOverviewList[j + 1]}</p>`));
-        let newString = mergedOverviewList[j].split("-");
+        let splittedOverviewList = mergedOverviewList[j].split("-");
         let amount = mergedOverviewList[j + 1];
-        let countryString = newString[0].trim();
-        let coffeesString = newString[1].trim();
+        let countryString = splittedOverviewList[0].trim();
+        let coffeesString = splittedOverviewList[1].trim();
 
 
         $.getJSON(dropDownCoffeeUrl, function (data) {
                 $.each(data, function (key, entry) {
-                    // console.log(newString[0])
-                    // console.log(entry.country);
                     if (countryString == entry.country && coffeesString == entry.coffees) {
                          $("#selected-coffees").append($(`<p> ${countryString} - ${coffeesString}:  ${amount} Bags of ${entry.netWeight} ${entry.unit}</p>`));
 
@@ -205,14 +202,6 @@ $("#btn-overview").click(function(e) {
         })
       j += 2;
     }
-
-    //  $.getJSON(dropDownCoffeeUrl, function (data) {
-    //             $.each(data, function (key, entry) {
-    //                 if (($(e).children("option:selected").attr('id')) == key) {
-    //                     $(e).siblings('.metrics').children('.units').html(`<span>Bags of ${entry.netWeight} ${entry.unit}</span>`)
-    //                 }
-    //             })
-    //         })
     
     $("#selected-shipping").html($(`<div >${selectedMonth}</div>`));
     $("#selected-contract").html($(`<div >${selectedContract}</div>`));
