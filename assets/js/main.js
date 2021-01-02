@@ -36,11 +36,11 @@ $( document ).ready(function () {
     });
 });
 
-    const maxCoffees = 10;
-    const addButton = $("#add-coffee-btn");
-    const coffeeSelection = $(".coffee-selection");
-    const addCoffee = `<div class="form-group col-12"><div class="d-flex"><select class="form-control form-control-lg coffees-list" id="${genNewId()}" onChange="addOptions(this)"></select><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div></div>`;
-    let x = 1;
+const maxCoffees = 10;
+const addButton = $("#add-coffee-btn");
+const coffeeSelection = $(".coffee-selection");
+const addCoffee = `<div class="form-group col-12"><div class="d-flex"><select class="form-control form-control-lg coffees-list" id="${genNewId()}" onChange="addOptions(this)"></select><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div></div>`;
+let x = 1;
     
     $(addButton).click(function(e){
         e.preventDefault();
@@ -115,9 +115,10 @@ const incotermsUrl = 'assets/js/incoterms.json';
 
 $.getJSON(incotermsUrl, function (data) {
     $.each(data, function (key, entry) {
-        $("#incoterms").append($(`<button class="col incoterms">${entry.abbreviation}</button>`));
+        $('#incoterm-options').append(`<button class="col incoterms" value="${entry.abbreviation}">${entry.abbreviation}</button>`)
      })
 });
+
 
 // Price Idea
 
@@ -125,76 +126,70 @@ $.getJSON(incotermsUrl, function (data) {
 $("#ice-price").load("https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc") */
 
 
-$("#TypeOfCoffee1").change(function() {
-    let dropdownCoffee1 = $("#TypeOfCoffee1 :selected").val();
-    $("#selected-coffees1" ).html($(`<p id="coffee1">${dropdownCoffee1} <input type="number" id="differential1" name="differential1" min="0" step="0.05" placeholder="differential" required> USc/Lb</p>`));
-    $("#my-overview1").html($(`<div>${dropdownCoffee1}</div>`));
-
-});
-$("#TypeOfCoffee2").change(function() {
-    let dropdownCoffee2 = $("#TypeOfCoffee2 :selected").val();
-    $("#selected-coffees2" ).html($(`<p id="coffee2">${dropdownCoffee2} <input type="number" id="differential2" name="differentia2" min="0" step="0.05" placeholder="differential" required> USc/Lb</p>`));
-    $("#my-overview2").html($(`<div>${dropdownCoffee2}</div>`));
-
-});
-$("#TypeOfCoffee3").change(function() {
-    let dropdownCoffee3 = $("#TypeOfCoffee3 :selected").val();
-    $("#selected-coffees3" ).html($(`<p id="coffee3">${dropdownCoffee3} <input type="number" id="differential3" name="differentia3" min="0" step="0.05" placeholder="differential" required> USc/Lb</p>`));
-    $("#my-overview3").html($(`<div>${dropdownCoffee3}</div>`));
-
-});
-$("#TypeOfCoffee4").change(function() {
-    let dropdownCoffee4 = $("#TypeOfCoffee4 :selected").val();
-    $("#selected-coffees4" ).html($(`<p id="coffee4">${dropdownCoffee4} <input type="number" id="differential4" name="differentia4" min="0" step="0.05" placeholder="differential" required> USc/Lb</p>`));
-    $("#my-overview4").html($(`<div>${dropdownCoffee4}</div>`));
-
-});
-$("#TypeOfCoffee5").change(function() {
-    let dropdownCoffee5 = $("#TypeOfCoffee5 :selected").val();
-    $("#selected-coffees5" ).html($(`<p id="coffee5">${dropdownCoffee5} <input type="number" id="differential5" name="differentia5" min="0" step="0.05" placeholder="differential" required> USc/Lb</p>`));
-    $("#my-overview5").html($(`<div>${dropdownCoffee5}</div>`));
-});
-
-
+// Get selected shipping month 
     
-    let selectedMonth = [];
-    $('.shipmonths').click(function(){
+let selectedMonth = [];
+$('.shipmonths').click(function(){
     while(selectedMonth.length>0){
         selectedMonth.pop();
     };
     selectedMonth.push($(this).val())
-    });
+});
 
+
+// Get selected Incoterm
+
+// let selectedIncoterm = [];
+// $('.incoterms').click(function(){
+//     console.log("hello");
+// });
+
+
+// Get selected contract options
+
+let selectedContract = [];
+$('.contract-options').click(function(){
+    while(selectedContract.length>0){
+        selectedContract.pop();
+    };
+    selectedContract.push($(this).val())
+});
  
 // Overview
 
 let selectedCoffees = [];
 let coffeeAmount = [];
 $("#btn-overview").click(function(e) {
+    
     e.preventDefault();
-    while(selectedCoffees.length>0){
+    $("#overview-modal").modal("show");
+    
+    while(selectedCoffees.length > 0){
         selectedCoffees.pop();
-        };
+    };
+    
     $(".coffees-list").each(function() {
         selectedCoffees.push($(this).children("option:selected").val());
         coffeeAmount.push($(this).siblings('.metrics').children('.amount').val());
     });
+    let mergedList = [];
+    let i = 0;
+    while (i < selectedCoffees.length) {
+        mergedList.push(selectedCoffees[i], coffeeAmount[i]);
+        i++;
+    }
+    let j = 0;
+    $("#selected-coffees").empty();
+    while (j < mergedList.length) {
+        $("#selected-coffees").append($(`<p>${mergedList[j]} - ${mergedList[j + 1]}</p>`));
+        j += 2;
+    }
+
+    
+    $("#selected-shipping").html($(`<div >${selectedMonth}</div>`));
+    $("#selected-contract").html($(`<div >${selectedContract}</div>`));
 
    
-    $("#my-overview").html($(`<div >${selectedCoffees} ${coffeeAmount}</div>`));
-    $("#my-overview").html($(`<div >${selectedMonth}</div>`));
-
-
-    // while(coffeeAmount.length>0){
-    //         coffeeAmount.pop();
-    //     };
-    // $('.coffees-list').siblings('.metrics').each(function() {
-    //     coffeeAmount.push($(this).children(".amount").val()); 
-    // })
-    // let selectedcoffees = $("select.coffees-list").children("option:selected").val()
-
- 
-
-    $("#overview-modal").modal("show");
 
 }); 
+

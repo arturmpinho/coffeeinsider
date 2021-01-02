@@ -111,7 +111,7 @@
                         </button>
                     </h5>
                 </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body container">
                         <div class="row" id="shipping-options">
                         </div>                    
@@ -130,7 +130,7 @@
                     <div class="card-body">
                         <p class="d-flex justify-content-center mb-3">You can read more about the Incoterms® <a href="https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/" target="_blank"> here</a>.</p>
                         <div class="container">
-                            <div class="row" id="incoterms">
+                            <div class="row" id="incoterm-options">
                             </div> 
                         </div>
                     </div>
@@ -147,14 +147,16 @@
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                     <div class="card-body">
                         <div class="btn-group btn-group-toggle d-flex justify-content-around" data-toggle="buttons">
-                            <label class="btn">
+                            <button class="col contract-options" value="GCA Contract">GCA</button>
+                            <button class="col contract-options" value="ESCC Contract">ESCC</button>
+                            <!-- <label class="btn">
                                 <i class="fas fa-globe-americas"></i>
                                 <input type="radio" name="GCA-contract" id="GCA-contract" autocomplete="off" checked> GCA
                             </label>
                             <label class="btn">
                                 <i class="fas fa-globe-europe"></i>
                                 <input type="radio" name="ESCC-contract" id="ESCC-contract" autocomplete="off"> ESCC
-                            </label>
+                            </label> -->
                         </div>
                     </div>
                 </div>
@@ -233,23 +235,28 @@
     </section>
 <!-- Modal Overview -->
 
-        <div class="modal fade" id="overview-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="overview">My Overview</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" id="my-overview"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn ci-btns">Request an Offer</button>
-                        <button type="button" class="btn ci-btns" data-dismiss="modal">Close</button>
-                    </div>
+    <div class="modal fade" id="overview-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="overview">My Overview</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="my-overview">
+                    <div id="selected-coffees"></div>
+                    <div id="selected-shipping"></div>
+                    <div id="selected-incoterm"></div>
+                    <div id="selected-contract"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn ci-btns">Request an Offer</button>
+                    <button type="button" class="btn ci-btns" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="container-fluid mt-5" id="footer-container">
         <div class="row">
