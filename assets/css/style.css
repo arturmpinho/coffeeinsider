@@ -52,8 +52,8 @@ body {
     background-image: url(../images/night-vessel.jpg);
 }
 
-#hero-img-calc {
-    background-image: url(../images/calculator.jpg);
+#hero-img-mug {
+    background-image: url(../images/coffee-mug.jpg);
 }
 
 /* Floating Action Button */
@@ -152,6 +152,17 @@ a, a:hover, a:focus, a:active {
     background-color: #ed665a;    
 }
 
+
+/* Contact Form */
+
+#contact-form {
+    text-align: -webkit-center;
+}
+
+.form-control {
+    font-size: inherit;
+}
+
 /* Overview */
 #overview {
     color: #2D2926;
@@ -163,6 +174,10 @@ a, a:hover, a:focus, a:active {
     color: #2D2926;
 }
 
+textarea {
+    width: 100%;
+    height: auto;
+}
 
 /* Footer */
 

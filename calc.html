@@ -36,7 +36,7 @@
     <!-- Hero Container -->
 
     <section>
-        <div class="hero-imgs" id="hero-img-calc"></div>
+        <div class="hero-imgs" id="hero-img-mug"></div>
     </section>    
 
     <!-- Floating action button -->
@@ -48,7 +48,7 @@
                     <i class="fas fa-home"></i>
                 </a>
                 <a href="calc.html" class="sub-btns">
-                    <i class="fas fa-calculator"></i>
+                    <i class="fas fa-handshake"></i>
                 </a>
                 <a href="routes.html" class="sub-btns">
                     <i class="fas fa-ship"></i>          
@@ -74,7 +74,7 @@
         <div class="container-fluid mb-5">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-self-center mt-5">
-                    <span id="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <span id="intro-text">Let's talk business. Follow the steps below and receive your personalized offer.</span>
                 </div>
             </div>
         </div>
@@ -104,7 +104,9 @@
                                      </div>
                                 </div>
                             </div>
-                            <button class="btn ci-btns col-12" id="add-coffee-btn"><i class="fas fa-plus"></i> Add Coffee</button>
+                            <div class="col-sm-12">
+                                <button  class="btn ci-btns" id="add-coffee-btn"><i class="fas fa-plus"></i> Add Coffee</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -153,8 +155,8 @@
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                     <div class="card-body">
                         <div class="btn-group btn-group-toggle d-flex justify-content-around" data-toggle="buttons">
-                            <button class="col contract-options" value="GCA Contract">GCA</button>
-                            <button class="col contract-options" value="ESCC Contract">ESCC</button>
+                            <button class="col-sm-3 contract-options btn ci-btns" value="GCA Contract"><i class="fas fa-globe-americas"></i> GCA</button>
+                            <button class="col-sm-3 contract-options btn ci-btns" value="ESCC Contract"><i class="fas fa-globe-europe"></i> ESCC</button>
                             <!-- <label class="btn">
                                 <i class="fas fa-globe-americas"></i>
                                 <input type="radio" name="GCA-contract" id="GCA-contract" autocomplete="off" checked> GCA
@@ -204,8 +206,8 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="container">
-                                <form>
-                                    <span>Contact us</span>
+                                <form id="contact-form">
+                                    <span>Please fill in your contact details</span>
                                     <div class="form-group">
                                         <div class="col-sm-8">
                                             <input id="fname" name="name" type="text" placeholder="Name" class="form-control">
@@ -251,13 +253,13 @@
                         </button>
                     </div>
                     <div class="modal-body" id="my-overview" name="my-overview">
-                        <form onsubmit="return sendMail(this);">
-                            <input type="text" name="test" id="test">
-                        <div name="selectedCoffees" id="selected-coffees"></div>
-                        <div id="selected-shipping"></div>
-                        <div id="selected-incoterm"></div>
-                        <div id="selected-contract"></div>
-                         <button type="submit" class="btn ci-btns">Request an Offer</button>
+                        <form name="overviewform" onsubmit="return sendMail(this);">
+                            <textarea id="selected-coffees" type="text" name="selectedCoffeesBulk"></textarea>
+                            <div id="selected-shipping"></div>
+                            <div id="selected-incoterm"></div>
+                            <div id="selected-contract"></div>
+                            <button type="button" onclick="replacen()">Test</button>
+                            <button type="submit"  class="btn ci-btns">Request an Offer</button>
                         </form>
                     </div>
                     <div class="modal-footer">

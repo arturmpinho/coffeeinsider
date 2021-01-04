@@ -195,8 +195,7 @@ $("#btn-overview").click(function(e) {
         $.getJSON(dropDownCoffeeUrl, function (data) {
                 $.each(data, function (key, entry) {
                     if (countryString == entry.country && coffeesString == entry.coffees) {
-                         $("#selected-coffees").append($(`<p> ${countryString} - ${coffeesString}:  ${amount} Bags of ${entry.netWeight} ${entry.unit}</p>`));
-
+                        document.overviewform.selectedCoffeesBulk.value += countryString + " " + coffeesString + ': ' + amount + ' Bags of ' + entry.netWeight + " " + entry.unit + '<br>';
                 };
             })            
         })
@@ -205,8 +204,13 @@ $("#btn-overview").click(function(e) {
     
     $("#selected-shipping").html($(`<div >${selectedMonth}</div>`));
     $("#selected-contract").html($(`<div >${selectedContract}</div>`));
-
-   
+    
 
 }); 
 
+
+function replacen() {
+    console.log($('#selected-coffees').val()); 
+//     $('#selected-coffees').val().replace(/\n/g, '<br />');
+//     console.log($('#selected-coffees').val().replace(/\n/g, '<br>'));
+};
