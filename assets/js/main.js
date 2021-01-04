@@ -191,7 +191,9 @@ $("#btn-overview").click(function(e) {
         $.getJSON(dropDownCoffeeUrl, function (data) {
                 $.each(data, function (key, entry) {
                     if (countryString == entry.country && coffeesString == entry.coffees) {
-                        document.overviewform.selectedCoffeesBulk.value += countryString + " " + coffeesString + ': ' + amount + ' Bags of ' + entry.netWeight + " " + entry.unit + '<br>';
+                        $('#selected-coffees').append(
+                            `${countryString} ${coffeesString}: ${amount} Bags of ${entry.netWeight} ${entry.unit} \n`
+                        )
                 };
             })            
         })
