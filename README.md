@@ -415,6 +415,12 @@ calc.html -> on click funtion of incoterms is not pushing value to selectedIncot
 ##### **(Potential) Corrections** #####
 Moved .incoterms click function inside the getJSON funtction
 
+##### **Bug** #####
+calc.html -> EmailJS receives overview content in a single line.
+##### **(Potential) Corrections** #####
+"overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "<br>"),
+
+
 [[Back to top]](#table-of-contents)
 
 ---
