@@ -109,25 +109,6 @@ for (let m in displayMonths) {
     $('#shipping-options').append(`<button class="col-4 shipmonths" value="${displayMonths[m].shippingMonth}">${displayMonths[m].shippingMonth}</button>`)
 }
 
-// Incoterms
-
-const incotermsUrl = 'assets/js/incoterms.json';
-
-$.getJSON(incotermsUrl, function (data) {
-    $.each(data, function (key, entry) {
-        $('#incoterm-options').append(`<button class="col incoterms" value="${entry.abbreviation}">${entry.abbreviation}</button>`)
-     })
-});
-
-
-// Price Idea
-
-/* Not functioning load method due to CORS
-$("#ice-price").load("https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc") */
-
-
-// Get selected shipping month 
-    
 let selectedMonth = [];
 $('.shipmonths').click(function(){
     while(selectedMonth.length>0){
@@ -136,16 +117,25 @@ $('.shipmonths').click(function(){
     selectedMonth.push($(this).val())
 });
 
+// Incoterms
 
-// Get selected Incoterm
+const incotermsUrl = 'assets/js/incoterms.json';
+let selectedIncoterm = [];
 
-// let selectedIncoterm = [];
-// $('.incoterms').click(function(){
-//     console.log("hello");
-// });
+$.getJSON(incotermsUrl, function (data) {
+    $.each(data, function (key, entry) {
+        $('#incoterm-options').append(`<button class="col incoterms" value="${entry.abbreviation}">${entry.abbreviation}</button>`)
+     })
 
+        $('.incoterms').click(function(){
+            while(selectedIncoterm.length>0){
+                selectedIncoterm.pop();
+            };
+        selectedIncoterm.push($(this).val())
+    });
+});
 
-// Get selected contract options
+// Base Contract
 
 let selectedContract = [];
 $('.contract-options').click(function(){
@@ -154,6 +144,12 @@ $('.contract-options').click(function(){
     };
     selectedContract.push($(this).val())
 });
+
+// Price Idea
+
+/* Not functioning load method due to CORS
+$("#ice-price").load("https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc") */
+
  
 // Overview
 let selectedCountries = []
@@ -203,6 +199,7 @@ $("#btn-overview").click(function(e) {
     }
     
     $("#selected-shipping").html($(`<div >${selectedMonth}</div>`));
+    $("#selected-incoterm").html($(`<div >${selectedIncoterm}</div>`));
     $("#selected-contract").html($(`<div >${selectedContract}</div>`));
     
 
