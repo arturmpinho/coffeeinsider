@@ -56,6 +56,11 @@ body {
     background-image: url(../images/coffee-mug.jpg);
 }
 
+#hero-img-news {
+    background-image: url(../images/news.jpg);
+}
+
+
 /* Floating Action Button */
 
 a, a:hover, a:focus, a:active {

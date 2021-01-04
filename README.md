@@ -410,6 +410,11 @@ Nonethless, this option also retreives the following error originated externally
 
 In the end, I am using solely an external link so user can access the current market prices of the coffee futures for their reference.
 
+##### **Bug** #####
+calc.html -> on click funtion of incoterms is not pushing value to selectedIncoterm variable
+##### **(Potential) Corrections** #####
+Moved .incoterms click function inside the getJSON funtction
+
 [[Back to top]](#table-of-contents)
 
 ---
