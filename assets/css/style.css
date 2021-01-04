@@ -184,6 +184,24 @@ textarea {
     height: auto;
 }
 
+
+/* News Cards*/
+
+.card-title-news {
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+
+.card-text-news {
+    letter-spacing: 0.2rem;
+    text-align: justify;
+}
+
+.news-date {
+    font-size: 1.2rem;
+}
+
+
 /* Footer */
 
 #footer-container {
