@@ -125,10 +125,12 @@ As a user, I want to:
 ### **Company Goals**
 
 * Provide the employees with a tool to aid the negotiation process.
-* Give potential customers an easy way to request an offer.
-* Access relevant information of potential customers country.
-* Display accurate route and transit times between ports of origin and destination.
-* Show relevant economic and coffee related news.
+* Give potential and recurring customers an easy way to request an offer.
+* Increase the commercial. 
+* Provide (mainly) small businesses with limited knowledge about logistics and the coffee sector with the most relevant information in order to conduct their businesses.
+* Expand the commercial relationships offering an appealing and informative tool for potential and recurring customers.
+* Display the latest news on coffee to both customers and employees.
+
 
 [[Back to top]](#table-of-contents)
 
