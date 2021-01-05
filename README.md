@@ -159,9 +159,9 @@ this font reflects reliability, which is of extreme importance when developing a
 
 #### Icons
 
-Throuhg out the website, I will be using icons provided by [FontAwesome](https://fontawesome.com/ "FontAwesome").
+Throughout out the website, I will be using icons provided by [FontAwesome](https://fontawesome.com/ "FontAwesome").
 
-The icons uses are self-explanatory and aid the navigation of the user by bringing an intuitive imagery to the website.
+The icons uses are self-explanatory and aid the navigation of the user, bringing an intuitive imagery to the website.
 
 #### Colors
 
@@ -170,21 +170,19 @@ Being the main purpose of this website to support B2B relationships in coffee tr
 ![Color Scheme](wireframes/ci-color-palette.png)
 
 * Jet: #2D2926
-Whilst some might see black as a pessimistic color, there are several shades that attenuate this feeling, and bring out in the target audience a feling of confidence, sophistication and comfort.
+Whilst some might see black as a pessimistic color, there are several shades that attenuate this feeling, and brings out in the target audience a feeling of confidence, sophistication and comfort.
 These feelings are usually consider a plus in any business relationship, reason why I have chosen for the Jet (black) color.
 
-This color is meant to be used as the main text-color, or in specific parts of the website as a backgroun-color, in contrast with the the Fire Opal or Ivory colors.
+This color is meant to be used as the background-color, displaying a nice contrast with the the Fire Opal or Ivory colors on evry occasion.
 
 * Fire Opal: #ED665A;
-The Fire Opal color also gives the feeling to the user of confidence. As it can be considered as an attention-getting color and energizing, I aim to use it as the color for icons and buttons throughout 
-the website.
+The Fire Opal color also gives the feeling to the user of confidence. As it can be considered as an attention-getting color and energizing, I aim to use it as the color for icons, buttons and any special feature that requires attention from the user throughout the website.
 
 * Ivory: #F4F9E9;
-In contrast with the previous colors, the Ivory bring outs as sense of calmness and relaxation, which is extremely important in every B2B relationship.
+The Ivory color bring outs as sense of calmness and relaxation, which is extremely important in every B2B relationship. For this reason, the main texts will have this color applied.
 
 
-While creating this color scheme, I have resorted to the [Contrast-Checker](https://coolors.co/contrast-checker) tool to guarantee a good readability for the user and decide the possible color-pairings
-possible to be used throuought the page.
+While creating this color scheme, I have resorted to the [Contrast-Checker](https://coolors.co/contrast-checker "Coolors") tool to guarantee a good readability for the user and decide the possible color-pairings to be used in the pages.
 
 
 |Text color  	|Background color  	|Result   	|
