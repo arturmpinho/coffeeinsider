@@ -31,7 +31,6 @@ $( document ).ready(function () {
     $.getJSON(dropDownCoffeeUrl, function (data) {
         $.each(data, function (key, entry) {
         $("#default-selection").append(`<option id="${key}" value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`);
-        // $("#default-units").html(`<span>Bags of ${entry.netWeight} ${entry.unit}</span>`);
         })
     });
 });
@@ -39,7 +38,7 @@ $( document ).ready(function () {
 const maxCoffees = 10;
 const addButton = $("#add-coffee-btn");
 const coffeeSelection = $(".coffee-selection");
-const addCoffee = `<div class="form-group col-12"><div class="d-flex"><select class="form-control form-control-lg coffees-list" id="${genNewId()}" onChange="addOptions(this)"></select><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div></div>`;
+const addCoffee = `<div class="form-group"><div class="row"><select class="form-control form-control-lg coffees-list col-12" id="${genNewId()}" onChange="addOptions(this)"></select></div><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div>`;
 let x = 1;
     
     $(addButton).click(function(e){
@@ -58,22 +57,25 @@ let x = 1;
 
 function removeDiv(e) {
     $(e).parent("div").remove();
+    x--
 }
 
 function addOptions(e) {
     if ($(e).siblings('.metrics').length == 0) {
        if($(e).children("option:selected").val() != "Select your coffee") {
-        $(`<div class="d-flex metrics">
-           <input type="number" min="0" class="form-control form-control-lg amount" placeholder="Amount of Coffee">
-           <div class="form-control form-control-lg units"></div>
-           </div>`).insertAfter($(e));
-    }
+            $(".coffees-list").addClass("col-md-6"); 
+            $(`<div class="metrics col-12 col-md-6">
+                <div class="row">
+                    <input type="number" min="0" class="form-control form-control-lg amount col-md-6" placeholder="Amount of Coffee">
+                    <div class="form-control form-control-lg units col-md-6"></div>
+            </div></div>`).insertAfter($(e));
+        }
 }
        if($(e).children("option:selected").val() != "Select your coffee") {
             $.getJSON(dropDownCoffeeUrl, function (data) {
                 $.each(data, function (key, entry) {
                     if (($(e).children("option:selected").attr('id')) == key) {
-                        $(e).siblings('.metrics').children('.units').html(`<span>Bags of ${entry.netWeight} ${entry.unit}</span>`)
+                        $(e).siblings('.metrics').children(".row").children('.units').html(`<span>Bags of ${entry.netWeight} ${entry.unit}</span>`)
                     }
                 })
             })
@@ -205,11 +207,4 @@ $("#btn-overview").click(function(e) {
     $("#selected-contract").html($(`<div >${selectedContract}</div>`));
     
 
-}); 
-
-
-function replacen() {
-    console.log($('#selected-coffees').val()); 
-//     $('#selected-coffees').val().replace(/\n/g, '<br />');
-//     console.log($('#selected-coffees').val().replace(/\n/g, '<br>'));
-};
+});
