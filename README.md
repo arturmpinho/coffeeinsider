@@ -5,14 +5,11 @@
 ---
 
 ## **Project Goal** 
-The world of coffee might be one of the most complex in the commodites universe. This complexity is not only visable at the farm level, where new coffee varietals are being engineered
-and planted in order to achieve higher yields and rust-resistant plants, but through the entire supply chain.
+The world of coffee might be one of the most complex in the commodites universe. This complexity is not only visable at the farm level, where new coffee varietals are being engineered and planted in order to achieve higher yields and rust-resistant plants, but through the entire supply chain.
 
-Due to this complexity, trying to simplify the commercial and logistic side of any business is crucial in the commodities world. If attainned, it can exponetially strenght relationships 
-and minimize potential future disputes.
+Due to this complexity, trying to simplify the commercial and logistic side of any business is crucial in the commodities world. If attainned, it can exponetially strenght relationships and minimize potential future disputes.
 
-Therefore, the main goal of the COFFEE iNSIDER, is to provide the user with an easy accessible and intuitive tool to both suppliers and customers, in order to increase the efficiency 
-of the negotiation process and consequently have parameterized all the components of the logistic process. 
+Therefore, the main goal of the COFFEE iNSIDER, is to provide the user with an easy accessible and intuitive tool to both suppliers and customers, in order to increase the efficiency of the negotiation process and consequently have parameterized all the components of the logistic process. 
 
 Thank you for visting my project!
 
@@ -94,10 +91,9 @@ As a user I aim for:
 #### **Stories**
 As a user, I want to:
 * Access easily my target page depending on the subject being dicussed with my business relationship.
-* Calculate the approximate transit time of my coffee.
-* Easily convert common units used across the coffee businesses worldwide (i.e bags of 70Kg to pounds, USc/Lb to USD/Kg, etc).
-* Have the total price of coffee in my local currency.
-* Have an overview of macroeconomic indicators of countries I am doing business with.
+* Easily consult specific logistics terms.
+* Brief unsderstanding of the 2 main the coffee contracts (GCA & ESCC).
+* Stay updated with relevant coffee-related news.
 * Place and order request via the website.
 * Easily find the company's contacts.
 * Easily find the company's social networks.
@@ -110,19 +106,17 @@ As a user, I want to:
 #### **Requirements**
 * Easy navigation.
 * Reliable information.
-* Clear graphics.
 * Immeadiate feedback on data inputs and/or submissions.
-* Accurate unit conversions.
 * Good responsiveness across multiple devices.
 
 #### **Expectations**
 * Gracious feedback handling an error.
-* Maximum of 2 clicks to reach any given page.
+* Maximum of 1 click to reach any given page in large screen devices and 2 for small and medium devices.
 * External links shall open in a new tab.
-* Internal links must work properly.
+* Internal links must work properly without breaking.
 * External information must be provided by reliable sources.
 * Visual effects are appealing but not distracting.
-* Approprite feedback after submitting offer request.
+* Appropriate feedback after submitting offer request.
 
 [[Back to top]](#table-of-contents)
 
