@@ -199,6 +199,29 @@ Therefore, the last 2 pairings are excluded from the design choices.
 
 #### Structure
 
+My website will be divided into 4 different pages:
+
+**Landing Page**
+With a B2B relationship in mind, the landing page is aimed to be straight to the point.
+
+Without any nuisance, this page offers exclusively a brief introduction to what is the Coffee Insider and a particular "navigation menu" that will display on a click/hover all the
+other relevant pages, represented by intuitive icons.
+
+**Trading Page**
+The trading page will offer a tool for companies/customers to request personalized offers for differents coffees that The Coffee Insider can provide.
+
+**News Page**
+It is always good to stay up to date, but much better when the news are exclusively about coffee. They simply taste better!
+
+The main goal of this page is to give the user the most recent news about the coffee industry, regardless if he/she is looking to buy coffee or just looking for fresh-brewed 
+coffee-related news.
+
+**Glossary Page**
+The Glossary page intends to support the user with the 'jargon' used in the coffee sector. 
+
+It will include the relevant terms regarding coffee quality from several coffee producing countries, passing by the Incoterms and finishing with the example of the 2 main base
+contracts for coffee [GCA](http://www.greencoffeeassociation.org/images/uploads/resources/PROFESSIONAL_RESOURCES_-_Contract_Terms_Conditions.pdf "Green Coffee Association") & [ESCC](https://www.ecf-coffee.org/wp-content/uploads/2020/09/European-Standard-Contract-for-Coffee-ESCC-2019-edition.pdf "European Standard Contract for Coffee"), which, ***per se***, have a deeper and more technical look onto the coffee sector, despite its limitations.
+
 [[Back to top]](#table-of-contents)
 
 ---
