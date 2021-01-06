@@ -34,6 +34,11 @@ body {
     text-align: center;
 }
 
+.small-intro-text {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
 /* Hero Images */
 
 .hero-imgs {
@@ -62,6 +67,16 @@ body {
 
 
 /* Floating Action Button */
+
+.active {
+    color: #ed665a;
+}
+
+#click-note {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;;
+}
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -157,7 +172,6 @@ a, a:hover, a:focus, a:active {
 
 /* Unit Conversion section */
 
-
 .card-header {
     border-left: solid 2vw #ed665a;
 }
@@ -244,7 +258,8 @@ a, a:hover, a:focus, a:active {
 
 /* Submit Modal */
 
-#submit-modal {
+#submit-modal,
+#error-modal {
     color: #2D2926;
 }
 
