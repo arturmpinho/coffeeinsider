@@ -179,11 +179,15 @@ a, a:hover, a:focus, a:active {
     color: #2D2926;
 }
 
-textarea {
+#selected-coffees {
     width: 100%;
     height: auto;
 }
 
+#selected-coffees:disabled {
+    background-color: #fff;
+    border-color: #ed665a;
+}
 
 /* News Cards*/
 

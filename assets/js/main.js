@@ -69,7 +69,7 @@ function addOptions(e) {
             $(".coffees-list").addClass("col-md-6"); 
             $(`<div class="metrics col-12 col-md-6">
                 <div class="row">
-                    <input type="number" min="0" class="form-control form-control-lg amount col-md-6" placeholder="Amount of Coffee">
+                    <input type="number" min="1" class="form-control form-control-lg amount col-md-6" placeholder="Amount of Coffee">
                     <div class="form-control form-control-lg units col-md-6"></div>
             </div></div>`).insertAfter($(e));
         }
@@ -150,6 +150,7 @@ $('.contract-options').click(function(){
     selectedContract.push($(this).val())
 });
 
+
 // Price Idea
 
 /* Not functioning load method due to CORS
@@ -159,11 +160,10 @@ $("#ice-price").load("https://futures.tradingcharts.com/futures/quotes/kc.html?c
 // Overview
 let selectedCountries = []
 let selectedCoffees = [];
+let insertedAmount = [];
 let coffeeAmount = [];
-$("#btn-overview").click(function(e) {
-    
+$("#contact-form").submit(function(e) {
     e.preventDefault();
-    $("#overview-modal").modal("show");
     
     while(selectedCoffees.length > 0){
         selectedCoffees.pop();
@@ -174,40 +174,69 @@ $("#btn-overview").click(function(e) {
     
     $(".coffees-list").each(function() {
         selectedCoffees.push($(this).children("option:selected").val());
-        coffeeAmount.push($(this).siblings('.metrics').children('.amount').val());
+        coffeeAmount.push($(this).siblings('.metrics').children('.row').children('.amount').val());
     });
-   
-    let mergedOverviewList = [];
-    let i = 0;
-    while (i < selectedCoffees.length) {
-        mergedOverviewList.push(selectedCoffees[i], coffeeAmount[i]);
-        i++;
-    }
-    let j = 0;
-    $("#selected-coffees").empty();
-
-    while (j < mergedOverviewList.length) {
-        let splittedOverviewList = mergedOverviewList[j].split("-");
-        let amount = mergedOverviewList[j + 1];
-        let countryString = splittedOverviewList[0].trim();
-        let coffeesString = splittedOverviewList[1].trim();
-
-
-        $.getJSON(dropDownCoffeeUrl, function (data) {
-                $.each(data, function (key, entry) {
-                    if (countryString == entry.country && coffeesString == entry.coffees) {
-                        $('#selected-coffees').append(
-                            `${countryString} ${coffeesString}: ${amount} Bags of ${entry.netWeight} ${entry.unit} \n`
-                        )
-                };
-            })            
-        })
-      j += 2;
-    }
     
-    $("#selected-shipping").html($(`<div >${selectedMonth}</div>`));
-    $("#selected-incoterm").html($(`<div >${selectedIncoterm}</div>`));
-    $("#selected-contract").html($(`<div >${selectedContract}</div>`));
-    
+    var rowsTextArea = selectedCoffees.length;
+   $('#selected-coffees').attr('rows', rowsTextArea);
 
+
+    if ($.inArray('default', selectedCoffees) >= 0 | $.inArray(undefined, coffeeAmount) >= 0 |$.inArray("", coffeeAmount) >= 0 ){
+        $("#error-modal").modal("show");
+    } else {
+        $("#overview-modal").modal("show");
+
+        let mergedOverviewList = [];
+        let i = 0;
+        while (i < selectedCoffees.length) {
+            mergedOverviewList.push(selectedCoffees[i], coffeeAmount[i]);
+            i++;
+        }
+        let j = 0;
+        $("#selected-coffees").empty();
+
+        while (j < mergedOverviewList.length) {
+            let splittedOverviewList = mergedOverviewList[j].split("-");
+            let amount = mergedOverviewList[j + 1];
+            let countryString = splittedOverviewList[0].trim();
+            let coffeesString = splittedOverviewList[1].trim();
+
+
+            $.getJSON(dropDownCoffeeUrl, function (data) {
+                    $.each(data, function (key, entry) {
+                        if (countryString == entry.country && coffeesString == entry.coffees) {
+                            $('#selected-coffees').append(
+                                `${countryString} ${coffeesString}: ${amount} Bags of ${entry.netWeight} ${entry.unit} \n`
+                            )
+                    };
+                })            
+            })
+        j += 2;
+        }
+
+
+        // Contact info input
+
+        const fullName = $("#fname").val();
+        const companyName = $("#cname").val();
+        const email = $("#email").val();
+        const phone = $("#phone").val();
+        if (selectedMonth.length != 0) {
+            $("#selected-shipping").html($(`<p>Preferred shipping month: ${selectedMonth}</p>`));
+        }
+        if (selectedIncoterm.length != 0) {
+            $("#selected-incoterm").html($(`<p>Delivery terms: ${selectedIncoterm}</p>`));
+        }
+        if (selectedContract.length != 0) {
+            $("#selected-contract").html($(`<p>Terms and conditions based on ${selectedContract}</p>`));
+        }
+        $("#contact-info").html($(`
+            <div>
+                <span class="d-block">Full name: ${fullName} </span>
+                <span class="d-block">Company name: ${companyName} </span>
+                <span class="d-block">Email Address: ${email}</span>
+                <span class="d-block mb-4">Phone Number: ${phone}</span>
+            </div>
+        `));
+    }
 });
