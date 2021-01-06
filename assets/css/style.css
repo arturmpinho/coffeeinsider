@@ -106,9 +106,23 @@ a, a:hover, a:focus, a:active {
 /* Buttons */
 .btn {
     font-size: min(max(1.6rem, 2vw), 2rem);
-    color: #F4F9E9;
-    font-weight: 900;
-    text-transform: uppercase;
+    color: #F4F9E9 !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    
+}
+.btn-primary {
+    background-color: transparent !important;
+    border: none !important;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #2D2926;
+    border: none;
+    
 }
 
 .btn:hover, .btn:active {
@@ -179,7 +193,16 @@ a, a:hover, a:focus, a:active {
     font-size: inherit;
 }
 
+/* General Modal Styling */
+
+.close {
+    font-size: 3rem;
+    color: #2D2926;
+    opacity: 1;
+}
+
 /* Overview */
+
 #overview {
     color: #2D2926;
     font-weight: 900;
@@ -190,14 +213,18 @@ a, a:hover, a:focus, a:active {
     color: #2D2926;
 }
 
-#selected-coffees,
-#contact-info {
+
+#selected-coffees::-webkit-scrollbar {
+   display: none;
+ }
+
+#selected-coffees {
     width: 100%;
     height: auto;
+    overflow:auto
 }
 
-#selected-coffees:disabled,
-#contact-info:disabled {
+#selected-coffees:disabled {
     background-color: #fff;
     border-color: #ed665a;
     color: #2D2926;

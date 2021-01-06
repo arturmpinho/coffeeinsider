@@ -8,7 +8,6 @@ $.ajax({
 }).done(function(result){
 
     for (let i = 0; i<result.response.docs.length; i++) {
-        console.log(result.response.docs[i]);
         let div = document.getElementById("news");
         div.innerHTML += `  <div class="col-md-6 col-lg-4">
                                 <div class="card bg-transparent">
