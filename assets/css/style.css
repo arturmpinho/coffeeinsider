@@ -268,34 +268,31 @@ a, a:hover, a:focus, a:active {
 
 
 .heading {
-    color: #fff;
+    color: #F4F9E9;
     font-size: 2.5rem;
 }
 
 .sub-heading {
-    color: #fff;
+    color: #F4F9E9;
     font-size: 2rem;
 }
 
 .country-button:hover {
-    color: #ed665a;
+    background-color: #ed665a;
+    color: #F4F9E9;
 }
-
-.country-button i:hover {
-    color: #ed665a;
-}
-
 
 .links {
-    background-color: #ed665a ;
-    border-radius: 1rem;
+    background-color: #2D2926 ;
+    border: 1px solid #ed665a;
     padding: 1rem;
     margin-top: 2rem;
+    display: inline-block;
 }
 
 .links:hover {
-    background-color: #b54e45;
-}
+    background-color: #ed665a;
+    color: #F4F9E9;}
 
 .paragraph {
     font-size: 1.4rem ;
@@ -324,7 +321,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .additional-info a:hover{
-    color: #b54e45;
+    text-decoration: underline;
 }
 
 

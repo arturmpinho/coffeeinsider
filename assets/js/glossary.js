@@ -8,11 +8,12 @@ $( document).ready(function () {
         $.each(countries, function(i, e) {
             if ($.inArray(e, result) == -1) result.push(e);
         });
+        console.log(result)
         $.each( result, function( item, value ) {
             var trimmedValue =  value.replace(/ /g,'');
             $('.coffee-info').append(`
                 <div class="row"">
-                    <a data-bs-toggle="collapse" href="#${trimmedValue}" data-bs-target="#${trimmedValue}" role="button" aria-expanded="false" aria-controls="${trimmedValue}" class="col-12 country-button mt-4">
+                    <a data-bs-toggle="collapse" href="#${trimmedValue}" data-bs-target="#${trimmedValue}" role="button" aria-expanded="false" aria-controls="${trimmedValue}" class="col-12 country-button p-3 mt-4">
                         ${value} <i class="fas fa-caret-down"></i>
                     </a>
                 </div>
