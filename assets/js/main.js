@@ -46,14 +46,17 @@ let x = 1;
         if(x < maxCoffees){ 
             x++; 
             $(coffeeSelection).append(addCoffee);
-            $(".coffees-list").append(`<option>Select your coffee</option>`)
+            $(".coffees-list").last().append(`<option value="default">Select your coffee</option>`)
         }
-         $.getJSON(dropDownCoffeeUrl, function (data) {
+        
+
+        $.getJSON(dropDownCoffeeUrl, function (data) {
             $.each(data, function (key, entry) {
-            $(".coffees-list").append(`<option id="${key}" value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
+                $(".coffees-list").last().append(`<option id="${key}" value="${entry.country} - ${entry.coffees}">${entry.country} - ${entry.coffees}</option>`)
             })
-        });
+        });     
     });
+
 
 function removeDiv(e) {
     $(e).parent("div").remove();
