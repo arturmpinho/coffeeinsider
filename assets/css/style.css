@@ -272,6 +272,18 @@ a, a:hover, a:focus, a:active {
     font-size: 2.5rem;
 }
 
+.sub-heading {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.country-button:hover {
+    color: #ed665a;
+}
+
+.country-button i:hover {
+    color: #ed665a;
+}
 
 
 .links {
@@ -284,6 +296,19 @@ a, a:hover, a:focus, a:active {
 .links:hover {
     background-color: #b54e45;
 }
+
+.paragraph {
+    font-size: 1.4rem ;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #2D2926;
+    color: #F4F9E9;
+    border: 1px solid #ed665a;
+    margin-top: 1rem;
+}
+
 
 .contract-img img{
     width: 100%;

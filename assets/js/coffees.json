@@ -6,7 +6,8 @@
       "abbreviation": "UGQ",
       "screenSize": "14",
       "netWeight": 70,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Usual Good Quality: max 1.5% of the beans under screen size 14 but over screen size 12"
    },
    "2": {
       "country": "Colombia",
@@ -15,7 +16,8 @@
       "abbreviation": "EP",
       "screenSize": "15",
       "netWeight": 70,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "European Preparation refers to the hand process of removing defective beans and foreign matter (pebbles) from a given amount of green beans. European Preparation allows up to 8 defects per 300g of beans."
    },
    "3": {
       "country": "Colombia",
@@ -24,7 +26,8 @@
       "abbreviation": null,
       "screenSize": "16",
       "netWeight": 70,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screen size of 16, with tolerance of 5% of the beans at screen size 14"
    },
    "4": {
       "country": "Colombia",
@@ -33,7 +36,8 @@
       "abbreviation": null,
       "screenSize": "17",
       "netWeight": 70,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Max 5% of the beans under screen size 17 but over screen size 14."
    },
    "5": {
       "country": "Colombia",
@@ -42,7 +46,8 @@
       "abbreviation": null,
       "screenSize": "18",
       "netWeight": 70,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Supremo 18 coffee is one of the largest size available with a flexibility of 5% maximum of the beans allowed under this screen size."
    },
    "6": {
       "country": "Colombia",
@@ -51,7 +56,8 @@
       "abbreviation": null,
       "screenSize": "19",
       "netWeight": 70,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Premium is the largest screen size available with a flexibility of 5% maximum of the beans allowed under a screen size of 19."
    },
    "7": {
       "country": "Brazil",
@@ -60,7 +66,8 @@
       "abbreviation": null,
       "screenSize": "17/18",
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screen size of 17/18, fine roast, strictly soft, fine cup."
    },
    "8": {
       "country": "Brazil",
@@ -69,52 +76,58 @@
       "abbreviation": null,
       "screenSize": "14/16",
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screen size of 14/16, good raoast, strictly soft, good cup (sometimes referred to as ‘Swedish preparation’). "
    },
    "9": {
-      "country": "Côte d'Ivoire",
+      "country": "Ivory Coast",
       "type": "Robusta",
       "coffees": "Grade 0",
       "abbreviation": null,
       "screenSize": "18",
       "netWeight": 65,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Milled over screen size 18. Tolerance: max 6% below screen size 18 and max 1% below screen size 16. Max defects allowed: 60"
    },
    "10": {
-      "country": "Côte d'Ivoire",
+      "country": "Ivory Coast",
       "type": "Robusta",
       "coffees": "Grade 1",
       "abbreviation": null,
       "screenSize": "18",
       "netWeight": 65,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Passing screen 18, milled over screen size 16. Tolerance: Max 20% above screen size 18, max 6% above screen size 16 and max 1% below screen size 14. Max defect allowed: 60"
    },
    "11": {
-      "country": "Côte d'Ivoire",
+      "country": "Ivory Coast",
       "type": "Robusta",
       "coffees": "Grade 2",
       "abbreviation": null,
       "screenSize": "16",
       "netWeight": 65,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Passing screen size 16, milled over screen size 14. Tolerance: max 20% above screen size 16, Max 6% below screen size 14 and max 1% below screen size 12. Max defects allowed: 90"
    },
    "12": {
-      "country": "Côte d'Ivoire",
+      "country": "Ivory Coast",
       "type": "Robusta",
       "coffees": "Grade 3",
       "abbreviation": null,
       "screenSize": "14",
       "netWeight": 65,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Passing screen size 14, milled over screen size 12. Tolerance: max 20% above screen size 14, max 6% below screen size 12 and max 1% below screen size 10. Max defects allowed: 120"
    },
    "13": {
-      "country": "Côte d'Ivoire",
+      "country": "Ivory Coast",
       "type": "Robusta",
       "coffees": "Grade 4",
       "abbreviation": null,
       "screenSize": "12",
       "netWeight": 65,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "20% above screen size 12. Tolerance: 6% below screen size 10. Max defects allowed: Unspecified"
    },
    "14": {
       "country": "Ethiopia",
@@ -123,7 +136,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "The bulk of unwashed Ethiopian Arabicas of which the major component is coffee from Kaffa and Illubabor regions. The liquor is plain indicating that good quality coffees are present in the mixture. Grade 5 (max 46 - 100 defects per 300 grams). Usual Good Quality"
    },
    "15": {
       "country": "Ethiopia",
@@ -132,7 +146,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "About 87% above screen size 14. Solid and slightly coated. Usually pointed acidity. Medium to full body and balanced. Needs more heat to obtain well developed roast."
    },
    "16": {
       "country": "Ethiopia",
@@ -141,7 +156,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Guji coffees offer a complex, yet balanced, cup profile that does well in both filter and espresso. Certification options are plentiful, as well as processing techniques."
    },
    "17": {
       "country": "Ethiopia",
@@ -150,7 +166,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Grade 3 meaning maximum between 13 and 25 defects per 300 grams of beans."
    },
    "18": {
       "country": "Ethiopia",
@@ -159,7 +176,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Usually good quality means grade 3 (max 13 to 25 defects per 300 grams) or 4 (max 25 - 45 defects per 300 grams)."
    },
    "19": {
       "country": "Guatemala",
@@ -168,7 +186,8 @@
       "abbreviation": "EP",
       "screenSize": "15",
       "netWeight": 150,
-      "unit": "Lbs"
+      "unit": "Lbs",
+      "classification": "100% above screen size 15 (with a tolerance of 5% above screen size 14). Max 8 defects per 300 grams of beans."
    },
    "20": {
       "country": "Guatemala",
@@ -177,7 +196,8 @@
       "abbreviation": "AP",
       "screenSize": "13",
       "netWeight": 150,
-      "unit": "Lbs"
+      "unit": "Lbs",
+      "classification": "100% above screen size 13. Max 23 defects per 300 grams of beans. "
    },
    "21": {
       "country": "Honduras",
@@ -186,7 +206,8 @@
       "abbreviation": "EP",
       "screenSize": null,
       "netWeight": 69,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Electronically sorted, followed by hand picking."
    },
    "22": {
       "country": "Honduras",
@@ -195,7 +216,8 @@
       "abbreviation": "USP",
       "screenSize": null,
       "netWeight": 69,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Machinally cleaned and electronically sorted."
    },
    "23": {
       "country": "India",
@@ -204,7 +226,8 @@
       "abbreviation": "IAP",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "No specifications"
    },
    "24": {
       "country": "India",
@@ -213,7 +236,8 @@
       "abbreviation": "IAP",
       "screenSize": "17",
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screensize of 16 with 2% tolerance."
    },
    "25": {
       "country": "India",
@@ -222,7 +246,8 @@
       "abbreviation": "IAP",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screensize of 15 with 2% tolerance."
    },
    "26": {
       "country": "India",
@@ -231,7 +256,8 @@
       "abbreviation": "IAP",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screensize of 14 with 2% tolerance."
    },
    "27": {
       "country": "India",
@@ -240,7 +266,8 @@
       "abbreviation": "IAP",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "No specifications"
    },
    "28": {
       "country": "India",
@@ -249,7 +276,8 @@
       "abbreviation": "IAP",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screensize of 15 with 2% tolerance."
    },
    "29": {
       "country": "India",
@@ -258,7 +286,8 @@
       "abbreviation": "IAP",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Screensize of 14 with 2% tolerance."
    },
    "30": {
       "country": "Indonesia",
@@ -267,7 +296,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Total value of defects maximum 11 per 300 grams"
    },
    "31": {
       "country": "Indonesia",
@@ -276,7 +306,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Total value of defects between 12 and 25 per 300 grams."
    },
    "32": {
       "country": "Indonesia",
@@ -285,7 +316,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Total value of defects between 16 and 24 per 300 grams."
    },
    "33": {
       "country": "Indonesia",
@@ -294,7 +326,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Total value of defects between 45 and 60 per 300 grams."
    },
    "34": {
       "country": "Indonesia",
@@ -303,7 +336,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Total value of defects between 61 and 80 per 300 grams."
    },
    "35": {
       "country": "Indonesia",
@@ -312,7 +346,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Total value of defects between 81 and 150 per 300 grams."
    },
    "36": {
       "country": "Indonesia",
@@ -321,7 +356,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Total value of defects between 151 and 225 per 300 grams."
    },
    "37": {
       "country": "Kenya",
@@ -330,7 +366,8 @@
       "abbreviation": "PB",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "PB - Peaberries"
    },
    "38": {
       "country": "Kenya",
@@ -339,7 +376,8 @@
       "abbreviation": "AA",
       "screenSize": "17/18",
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "AA - Screen size of 17 and 18 (= 7.2 mm)"
    },
    "39": {
       "country": "Kenya",
@@ -348,7 +386,8 @@
       "abbreviation": "AB",
       "screenSize": "15/16",
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "AB - Screen size of 15 and 16 (= 6.6 mm)"
    },
    "40": {
       "country": "Kenya",
@@ -357,7 +396,8 @@
       "abbreviation": "C",
       "screenSize": "14/15",
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "C - Screen sizes of 14 and 15"
    },
    "41": {
       "country": "Kenya",
@@ -366,7 +406,8 @@
       "abbreviation": "E",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Elephant - when the beans separate during processing, they are chipped and called 'Ears'. This category also contains large 'Peaberries'."
    },
    "42": {
       "country": "Kenya",
@@ -375,7 +416,8 @@
       "abbreviation": "TT",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Light beans separated from AA and AB by air current"
    },
    "43": {
       "country": "Kenya",
@@ -384,7 +426,8 @@
       "abbreviation": "T",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Smaller than TT, many fragments. Light beans separated from C by air current"
    },
    "44": {
       "country": "Kenya",
@@ -393,7 +436,8 @@
       "abbreviation": "UG",
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Ungraded: all that does not fit the specific criteria for each official grade"
    },
    "45": {
       "country": "Vietnam",
@@ -402,7 +446,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Max 60 defects per 300 grams. 90% of screen size 16 with 10% of screen size 12.5 or higher."
    },
    "46": {
       "country": "Vietnam",
@@ -411,7 +456,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Max 90 defects per 300 grams. 90% of screen size 12.5 with 10% of screen size 12 or higher."
    },
    "47": {
       "country": "Vietnam",
@@ -420,7 +466,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Max 150 defects per 300 grams. 90% of screen size 12 with 10% of screen size 10 or higher."
    },
    "48": {
       "country": "Vietnam",
@@ -429,7 +476,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Max 250 defects per 300 grams. Screen size unspecified"
    },
    "49": {
       "country": "Vietnam",
@@ -438,7 +486,8 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Unspecified"
    },
    "50": {
       "country": "Vietnam",
@@ -447,6 +496,7 @@
       "abbreviation": null,
       "screenSize": null,
       "netWeight": 60,
-      "unit": "Kg"
+      "unit": "Kg",
+      "classification": "Unspecified"
    }
 }
