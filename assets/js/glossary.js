@@ -29,7 +29,7 @@ $( document).ready(function () {
                     var trimmedVal =  value.replace(/ /g,'');;
                     $('.coffee-info').children(`#${trimmedVal}`).append(`
                         <div class="col-12 col-md-4">
-                            <div class="card">
+                            <div class="card coffee-cards">
                                 <div class="ml-2 mt-3 mb-3" id="${key}">
                                     <h2 class="sub-heading"> ${entry.coffees}</h2>  
                                     <p class="paragraph"><strong>Type of coffee:</strong> ${entry.type}</p>
