@@ -1,6 +1,5 @@
 function sendMail (offerRequest) {
     emailjs.send("service_2xj7twi","template_xrx5tns", {
-        // "company_name": offerRequest.cname.value,
         "overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "<br>"),
         "selected_shipping": offerRequest.selectedShipping.value,
         "selected_incoterm": offerRequest.selectedIncoterm.value,
@@ -12,11 +11,17 @@ function sendMail (offerRequest) {
     })
     .then(
         function(response) {
-            console.log(offerRequest.selectedCoffees)
-            console.log("SUCCESS", response)
+            $("#overview-modal").modal("hide");
+            $("#submit").html("Your request has been submitted!")
+            $("#feedback").html("Thank you for you request! \n We will get back to you within 1 business day with an offer.")
+            $("#submit-modal").modal("show");
+            
         },
         function(error) {
-            console.log("FAILED", error)
+            $("#overview-modal").modal("hide");
+            $("#submit").html("Oops, something went wrong!")
+            $("#feedback").html(`Please try to submit your request again.`)
+            $("#submit-modal").modal("show");
         }
     )
     return false;

@@ -215,6 +215,12 @@ a, a:hover, a:focus, a:active {
     color: #2D2926;
 }
 
+/* Submit Modal */
+
+#submit-modal {
+    color: #2D2926;
+}
+
 /* News Cards*/
 
 .card-title-news {
