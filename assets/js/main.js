@@ -42,7 +42,7 @@ let x = 1;
         if(x < maxCoffees){ 
             x++; 
             $(coffeeSelection).append(addCoffee);
-            $(".coffees-list").last().append(`<option value="default">Select your coffee</option>`)
+            $(".coffees-list").last().append(`<option value="default">Select your coffee *</option>`)
         }
         
 
@@ -64,10 +64,12 @@ function addOptions(e) {
        if($(e).children("option:selected").val() != "Select your coffee") {
             $(".coffees-list").addClass("col-md-6"); 
             $(`<div class="metrics col-12 col-md-6">
-                <div class="row">
-                    <input type="number" min="1" class="form-control form-control-lg amount col-md-6" placeholder="Amount of Coffee">
-                    <div class="form-control form-control-lg units col-md-6"></div>
-            </div></div>`).insertAfter($(e));
+                    <div class="row">
+                        <input type="number" min="1" class="form-control form-control-lg amount col-md-6" placeholder="Amount of Coffee *">
+                        <div class="form-control form-control-lg units col-md-6"></div>
+                    </div>
+                </div>
+            `).insertAfter($(e));
         }
 }
        if($(e).children("option:selected").val() != "Select your coffee") {
@@ -156,6 +158,7 @@ $('.contract-options').click(function(){
 let selectedCountries = []
 let selectedCoffees = [];
 let insertedAmount = [];
+let selectedShippingMonth = [];
 let coffeeAmount = [];
 $("#contact-form").submit(function(e) {
     e.preventDefault();
@@ -208,29 +211,24 @@ $("#contact-form").submit(function(e) {
             })
         j += 2;
         }
-
+        if (selectedMonth.length != 0) {
+            $("#selected-shipping").val(`Preferred shipping month: ${selectedMonth}`);
+        }
+        if (selectedIncoterm.length != 0) {
+            $("#selected-incoterm").val(`Delivery terms: ${selectedIncoterm}`);
+        }
+         if (selectedContract.length != 0) {
+            $("#selected-contract").val(`Terms and conditions based on ${selectedContract}`);
+        }
         // Contact info input
 
         const fullName = $("#fname").val();
         const companyName = $("#cname").val();
         const email = $("#email").val();
         const phone = $("#phone").val();
-        if (selectedMonth.length != 0) {
-            $("#selected-shipping").html($(`<p>Preferred shipping month: ${selectedMonth}</p>`));
-        }
-        if (selectedIncoterm.length != 0) {
-            $("#selected-incoterm").html($(`<p>Delivery terms: ${selectedIncoterm}</p>`));
-        }
-        if (selectedContract.length != 0) {
-            $("#selected-contract").html($(`<p>Terms and conditions based on ${selectedContract}</p>`));
-        }
-        $("#contact-info").html($(`
-            <div>
-                <span class="d-block">Full name: ${fullName} </span>
-                <span class="d-block">Company name: ${companyName} </span>
-                <span class="d-block">Email Address: ${email}</span>
-                <span class="d-block mb-4">Phone Number: ${phone}</span>
-            </div>
-        `));
+        $("#fullname").val(fullName);
+        $("#companyname").val(companyName);
+        $("#emailaddress").val(email);
+        $("#phonenumber").val(phone);
     }
 });

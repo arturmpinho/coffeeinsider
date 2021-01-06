@@ -116,12 +116,20 @@ a, a:hover, a:focus, a:active {
     color: #ed665a;
 }
 
-.ci-btns {
-    background-color: #2D2926;
-    border-radius: 5%;
-    border: solid 0.2rem #ed665a; 
+.btn:focus {
+    box-shadow: none;
 }
 
+.ci-btns {
+    background-color: #2D2926;
+    border: solid 0.2rem #ed665a; 
+    border-radius: 0;
+}
+
+.ci-btns:hover {
+    background-color: #ed665a;
+    color: #F4F9E9;
+}
 
 /* Route Estimated Transit Time */
 
@@ -182,14 +190,29 @@ a, a:hover, a:focus, a:active {
     color: #2D2926;
 }
 
-#selected-coffees {
+#selected-coffees,
+#contact-info {
     width: 100%;
     height: auto;
 }
 
-#selected-coffees:disabled {
+#selected-coffees:disabled,
+#contact-info:disabled {
     background-color: #fff;
     border-color: #ed665a;
+    color: #2D2926;
+
+}
+
+#contact-info-label {
+    font-size: 2rem;
+}
+
+.overview-input {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    color: #2D2926;
 }
 
 /* News Cards*/

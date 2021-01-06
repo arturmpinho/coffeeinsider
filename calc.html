@@ -94,7 +94,7 @@
                                 <div class="form-group col-12 p-0 default-group">
                                     <div class="row">
                                         <select class="form-control form-control-lg coffees-list col-12" id="default-selection" onchange="addOptions(this)">
-                                            <option value="default">Select your coffee</option>
+                                            <option value="default">Select your coffee *</option>
                                         </select>
                                      </div>
                                 </div>
@@ -172,22 +172,22 @@
                                     <span>Please fill in your contact details</span>
                                     <div class="form-group">
                                         <div class="col-sm-8">
-                                            <input id="fname" name="name" type="text" placeholder="Name" class="form-control" required>
+                                            <input id="fname" name="name" type="text" placeholder="Name *" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-8">
-                                            <input id="cname" name="cname" type="text" placeholder="Company Name" class="form-control" required>
+                                            <input id="cname" name="cname" type="text" placeholder="Company Name *" class="form-control" >
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-8">
-                                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control" required> 
+                                            <input id="email" name="email" type="text" placeholder="Email Address *" class="form-control" > 
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-8">
-                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control" required>
+                                            <input id="phone" name="phone" type="text" placeholder="Phone Number *" class="form-control" >
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -229,7 +229,7 @@
 
 <!-- Modal Overview -->
     
-        <div class="modal fade" id="overview-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
+        <div class="modal fade container" id="overview-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -241,10 +241,20 @@
                     <div class="modal-body" id="my-overview" name="my-overview">
                         <form name="overviewform" onsubmit="return sendMail(this);">
                             <textarea id="selected-coffees" type="text" name="selectedCoffeesBulk" disabled></textarea>
-                            <div id="selected-shipping"></div>
-                            <div id="selected-incoterm"></div>
-                            <div id="selected-contract"></div>
-                            <div id="contact-info"></div>
+                            <input id="selected-shipping" type="text" name="selectedShipping" class="overview-input" disabled>
+                            <input id="selected-incoterm" type="text" name="selectedIncoterm" class="overview-input" disabled>
+                            <input id="selected-contract" type="text" name="selectedContract" class="overview-input" disabled>
+                            <div class="row">
+                                <h2 class="col-12 mt-4">Your contact Information:</h2>
+                                <label for="fullname" class="contact-info-label d-block col-12 col-md-6">Full Name:</label>
+                                <input id="fullname" type="text" name="fullname" class="overview-input col-12 col-md-6" disabled>
+                                <label for="companyname" class="contact-info-label d-block col-12 col-md-6">Company Name:</label>
+                                <input id="companyname" type="text" name="companyname" class="overview-input col-12 col-md-6" disabled>
+                                <label for="emailaddress" class="contact-info-label d-block col-12 col-md-6">Email Address:</label>
+                                <input id="emailaddress" type="text" name="emailaddress" class="overview-input col-12 col-md-6" disabled>
+                                <label for="phonenumber" class="contact-info-label d-block col-12 col-md-6">Phone number:</label>
+                                <input id="phonenumber" name="phonenumber" class="overview-input col-12 col-md-6" type="text" disabled>
+                            </div>
                             <button type="submit"  class="btn ci-btns">Request an Offer</button>
                         </form>
                     </div>
