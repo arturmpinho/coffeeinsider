@@ -21,10 +21,6 @@ $(document).ready(function() {
 
 /* Coffees Select List */
 
-function genNewId () {
-    var uniq = "id" + (new Date()).getTime()
-    return uniq
-}
 const dropDownCoffeeUrl = "assets/js/coffees.json";
 
 $( document ).ready(function () {
@@ -38,7 +34,7 @@ $( document ).ready(function () {
 const maxCoffees = 10;
 const addButton = $("#add-coffee-btn");
 const coffeeSelection = $(".coffee-selection");
-const addCoffee = `<div class="form-group"><div class="row"><select class="form-control form-control-lg coffees-list col-12" id="${genNewId()}" onChange="addOptions(this)"></select></div><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div>`;
+const addCoffee = `<div class="form-group"><div class="row"><select class="form-control form-control-lg coffees-list col-12"" onChange="addOptions(this)"></select></div><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div>`;
 let x = 1;
     
     $(addButton).click(function(e){
@@ -119,6 +115,8 @@ $('.shipmonths').click(function(){
     while(selectedMonth.length>0){
         selectedMonth.pop();
     };
+    $('.shipmonths').removeClass("selected-choice");
+    $(this).addClass("selected-choice");
     selectedMonth.push($(this).val())
 });
 
@@ -136,6 +134,8 @@ $.getJSON(incotermsUrl, function (data) {
             while(selectedIncoterm.length>0){
                 selectedIncoterm.pop();
             };
+        $('.incoterms').removeClass("selected-choice");
+        $(this).addClass("selected-choice");
         selectedIncoterm.push($(this).val())
     });
 });
@@ -147,16 +147,11 @@ $('.contract-options').click(function(){
     while(selectedContract.length>0){
         selectedContract.pop();
     };
+    $('.contract-options').removeClass("selected-choice");
+    $(this).addClass("selected-choice");
     selectedContract.push($(this).val())
 });
 
-
-// Price Idea
-
-/* Not functioning load method due to CORS
-$("#ice-price").load("https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc") */
-
- 
 // Overview
 let selectedCountries = []
 let selectedCoffees = [];
@@ -213,7 +208,6 @@ $("#contact-form").submit(function(e) {
             })
         j += 2;
         }
-
 
         // Contact info input
 

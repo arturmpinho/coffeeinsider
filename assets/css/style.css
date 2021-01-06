@@ -141,7 +141,8 @@ a, a:hover, a:focus, a:active {
 }
 
 .shipmonths,
-.incoterms {
+.incoterms,
+.inactive {
     width: 75%;
     max-width: 768px;
     cursor: pointer;
@@ -152,9 +153,11 @@ a, a:hover, a:focus, a:active {
 }
 
 .shipmonths:hover, .shipmonths:active, .shipmonths:focus,
-.incoterms:hover, .incoterms:active, .incoterms:focus {
+.incoterms:hover, .incoterms:active, .incoterms:focus, .selected-choice {
     cursor: pointer;
-    background-color: #ed665a;    
+    background-color: #ed665a;
+    outline: none;    
+    color: #F4F9E9 !important;
 }
 
 
