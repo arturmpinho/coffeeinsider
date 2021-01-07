@@ -184,8 +184,14 @@ $("#contact-form").submit(function(e) {
     var rowsTextArea = selectedCoffees.length;
    $('#selected-coffees').attr('rows', rowsTextArea);
 
+    let invalidAmountInput = false;
+    for (let i = 0; i < coffeeAmount.length; i++) {
+        if (coffeeAmount[i] <= 0) {
+            invalidAmountInput = true;
+        }           
+    }
 
-    if ($.inArray('default', selectedCoffees) >= 0 | $.inArray(undefined, coffeeAmount) >= 0 |$.inArray("", coffeeAmount) >= 0 ){
+    if ($.inArray('default', selectedCoffees) >= 0 | $.inArray(undefined, coffeeAmount) >= 0 |$.inArray("", coffeeAmount) >= 0 | invalidAmountInput == true){
         $("#error-modal").modal("show");
     } else {
         $("#overview-modal").modal("show");
