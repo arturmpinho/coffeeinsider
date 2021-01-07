@@ -1,6 +1,7 @@
 const apiKey = "Jxt0w4CNFEgH6AGwj6Rdc6VhMU6UGphm"
 
 let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coffee&api-key=${apiKey}`;
+let newsDiv = document.getElementById("news");
 
 $('#loader').show();
 $('#news-section').hide();
@@ -12,8 +13,7 @@ $.ajax({
 }).done(function(result){
 
     for (let i = 0; i<result.response.docs.length; i++) {
-        let div = document.getElementById("news");
-        div.innerHTML += `  <div class="col-md-6 col-lg-4">
+        newsDiv.innerHTML += `<div class="col-md-6 col-lg-4">
                                 <div class="card bg-transparent">
                                     <img src="https://static01.nyt.com/${result.response.docs[i].multimedia[32].url}" class="card-img-top" alt="News thumbnail">
                                     <div class="card-body">
@@ -30,4 +30,9 @@ $.ajax({
     $("#intro-text").removeClass('overlay');
     $('#footer-container').removeClass('overlay');
 }).fail(function(err){
+    $('#loader').hide();
+    $('#news-section').show();
+    $("#intro-text").removeClass('overlay');
+    $('#footer-container').removeClass('overlay');
+    newsDiv.innerHTML += "<p class='text-center w-100' id='loading-error'>Looks like something went wrong. Please try again.</p>"
 });
