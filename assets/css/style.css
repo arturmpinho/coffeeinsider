@@ -281,10 +281,6 @@ a, a:hover, a:focus, a:active {
 
 /* Glossary page */
 
-#glossary-intro-heading {
-    text-transform: uppercase;
-}
-
 .heading {
     color: #F4F9E9;
     font-size: 2.5rem;
@@ -317,13 +313,13 @@ a, a:hover, a:focus, a:active {
     margin: 0 auto;
 }
 
-.coffee-cards {
+.coffee-cards,
+.incoterms-cards {
     background-color: #2D2926;
     color: #F4F9E9;
     border: 1px solid #ed665a;
     margin-top: 1rem;
 }
-
 
 .contract-img img{
     width: 100%;

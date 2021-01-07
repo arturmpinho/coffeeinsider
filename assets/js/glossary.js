@@ -1,5 +1,5 @@
 let countries = [];
-var result = [];
+let result = [];
 $( document).ready(function () {
     $.getJSON(dropDownCoffeeUrl, function (data) {
         $.each(data, function (key, entry) {
@@ -8,9 +8,8 @@ $( document).ready(function () {
         $.each(countries, function(i, e) {
             if ($.inArray(e, result) == -1) result.push(e);
         });
-       // console.log(result)
-        $.each( result, function( item, value ) {
-            var trimmedValue =  value.replace(/ /g,'');
+        $.each( result, function(item, value) {
+            let trimmedValue =  value.replace(/ /g,'');
             $('.coffee-info').append(`
                 <div class="row"">
                     <a data-bs-toggle="collapse" href="#${trimmedValue}" data-bs-target="#${trimmedValue}" role="button" aria-expanded="false" aria-controls="${trimmedValue}" class="col-12 country-button p-3 mt-4">
@@ -18,15 +17,14 @@ $( document).ready(function () {
                     </a>
                 </div>
                 <div class="collapse row" id="${trimmedValue}">
-                    
                 </div>
             `)
         });
         
         $.each(data, function (key, entry) {
-            $.each( result, function( item, value ) {
+            $.each( result, function(item, value) {
                 if (value == entry.country) {
-                    var trimmedVal =  value.replace(/ /g,'');;
+                    let trimmedVal = value.replace(/ /g,'');;
                     $('.coffee-info').children(`#${trimmedVal}`).append(`
                         <div class="col-12 col-md-4">
                             <div class="card coffee-cards">
@@ -48,4 +46,26 @@ $( document).ready(function () {
             })
         })
     });
+    let incoterms = []
+    let output = []
+
+    $.getJSON(incotermsUrl, function (data) {
+        $.each(data, function (key,entry) {
+            incoterms.push(entry);
+        });
+
+        $.each(incoterms, function(key, entry) {
+            $('.incoterms-info').append(`
+                <div class="row incoterms-cards">
+                    <h2 class="col-12 incoterm-heading">${entry.abbreviation} - ${entry.name}</h2>
+                    <p class="col-md-4 ml-4 responsibility">Seller's responsibility: </p>
+                    <p class="col-md-7 responsibility">${entry.responsibilitySeller}</p>
+                    <p class="col-md-4 ml-4 responsibility">Buyer's responsibility: </p>
+                    <p class="col-md-7 responsibility">${entry.responsibilityBuyer}</p>
+                    <p class="col-md-4 ml-4 responsibility">Transfer of Risk: </p>
+                    <p class="col-md-7 responsibility">${entry.transferOfRisk}</p>
+                </div>`
+            )
+        });
+    })
 });
