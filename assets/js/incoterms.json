@@ -1,48 +1,81 @@
 {
    "1": {
       "name": "Ex Works",
-      "abbreviation": "EXW"
-   },
+      "abbreviation": "EXW",
+      "responsibilitySeller": "Until the goods leave the factory",
+      "responsibilityBuyer": "As of the moment the goods leave the factory",
+      "transferOfRisk": "As of the moment the goods leave the factory"
+    },
    "2": {
       "name": "Free Carrier",
-      "abbreviation": "FCA"
+      "abbreviation": "FCA",
+      "responsibilitySeller": "Until goods are passed to first carrier",
+      "responsibilityBuyer": "As of the moment the goods have been passed to first carrier",
+      "transferOfRisk": "As of the moment the goods have been passed to first carrier"
    },
    "3": {
       "name": " Carriage Paid To",
-      "abbreviation": "CPT"
+      "abbreviation": "CPT",
+      "responsibilitySeller": "Until goods arrive at warehouse of the buyer",
+      "responsibilityBuyer": "As of the moment the goods arrive at their warehouse",
+      "transferOfRisk": "As of the moment the goods have been passed to first carrier"
    },
    "4": {
       "name": "Carriage and Insurance Paid To",
-      "abbreviation": "CIP"
-   },
+      "abbreviation": "CIP",
+      "responsibilitySeller": "Until goods arrive at warehouse of the buyer",
+      "responsibilityBuyer": "As of the moment the goods arrive at their warehouse",
+      "transferOfRisk": "As of the moment the goods have been passed to first carrier"   
+    },
    "5": {
       "name": "Delivered at Place",
-      "abbreviation": "DAP"
-   },
+      "abbreviation": "DAP",
+      "responsibilitySeller": "Until goods are delivered at final destination",
+      "responsibilityBuyer": "As of the moment the goods are delivered at final destination",
+      "transferOfRisk": "As of the moment the goods are delivered at final destination"   
+    },
    "6": {
       "name": "Delivered at Place Unloaded",
-      "abbreviation": "DPU"
-   },
+      "abbreviation": "DPU",
+      "responsibilitySeller": "Until goods arrive at warehouse of the buyer",
+      "responsibilityBuyer": "As of the moment the goods arrive at their warehouse",
+      "transferOfRisk": "As of the moment the goods arrive at their warehouse"   
+    },
    "7": {
       "name": "Delivered Duty Paid",
-      "abbreviation": "DDP"
-   },
+      "abbreviation": "DDP",
+      "responsibilitySeller": "Until goods are delivered at final destination",
+      "responsibilityBuyer": "As of the moment the goods are delivered at final destination",
+      "transferOfRisk": "As of the moment the goods are delivered at final destination"   
+    },
    "8": {
       "name": "Free Alongside Ship",
-      "abbreviation": "FAS"
-   },
+      "abbreviation": "FAS",
+      "responsibilitySeller": "Until goods are placed alongside ship",
+      "responsibilityBuyer": "As of the moment the goods are placed alongside ship",
+      "transferOfRisk": "As of the moment the goods are placed alongside ship"   
+    },
    "9": {
       "name": "Free On Board",
-      "abbreviation": "FOB"
-   },
+      "abbreviation": "FOB",
+      "responsibilitySeller": "Until goods are about to cross the railing of the vessel",
+      "responsibilityBuyer": "As of the moment the goods cross the railing of the vessel",
+      "transferOfRisk": "As of the moment the goods cross the railing of the vessel"   
+    },
    "10": {
       "name": "Cost and Freight",
-      "abbreviation": "CFR"
-   },
+      "abbreviation": "CFR",
+      "responsibilitySeller": "Until goods arrive at port of destination",
+      "responsibilityBuyer": "As of the moment the goods arrive at port of destination",
+      "transferOfRisk": "As of the moment the goods cross the railing of the vessel"   
+    },
    "11": {
       "name": "Cost Insurance and Freight",
-      "abbreviation": "CIF"
-   }
+      "abbreviation": "CIF",
+      "responsibilitySeller": "Until goods arrive at port of destination",
+      "responsibilityBuyer": "As of the moment the goods arrive at port of destination",
+      "transferOfRisk": "As of the moment the goods cross the railing of the vessel"   
+    }
 }
 
 
