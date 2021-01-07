@@ -12,14 +12,14 @@ function sendMail (offerRequest) {
     .then(
         function(response) {
             $("#overview-modal").modal("hide");
-            $("#submit").html("Your request has been submitted!")
+            $("#confirmation").html("Your request has been submitted!")
             $("#feedback").html("Thank you for you request! \n We will get back to you within 1 business day with an offer.")
             $("#submit-modal").modal("show");
             
         },
         function(error) {
             $("#overview-modal").modal("hide");
-            $("#submit").html("Oops, something went wrong!")
+            $("#confirmation").html("Oops, something went wrong!")
             $("#feedback").html(`Please try to submit your request again.`)
             $("#submit-modal").modal("show");
         }

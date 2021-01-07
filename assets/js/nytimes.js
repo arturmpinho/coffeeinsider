@@ -2,6 +2,10 @@ const apiKey = "Jxt0w4CNFEgH6AGwj6Rdc6VhMU6UGphm"
 
 let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coffee&api-key=${apiKey}`;
 
+$('#loader').show();
+$('#news-section').hide();
+$("#intro-text").addClass('overlay');
+$('#footer-container').addClass('overlay');
 $.ajax({
     url: url,
     method: "GET",
@@ -21,5 +25,9 @@ $.ajax({
                                 </div>
                             </div>`
         }
+    $('#loader').hide();
+    $('#news-section').show();
+    $("#intro-text").removeClass('overlay');
+    $('#footer-container').removeClass('overlay');
 }).fail(function(err){
 });

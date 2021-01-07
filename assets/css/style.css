@@ -279,6 +279,40 @@ a, a:hover, a:focus, a:active {
     font-size: 1.2rem;
 }
 
+/* Loading spinner and overlay */
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  z-index: 1;
+  width: 15rem;
+  height: 15rem;
+  margin: -7rem 0 0 -7rem;
+  border: 3rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3rem solid #ed665a;
+  border-left: 3rem solid #ed665a;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.overlay {
+    opacity: 0.1;
+}
+
+
 /* Glossary page */
 
 .heading {
@@ -289,6 +323,10 @@ a, a:hover, a:focus, a:active {
 .sub-heading {
     color: #F4F9E9;
     font-size: 2rem;
+}
+
+.incoterm-heading {
+    margin-top: 1rem;
 }
 
 .country-button:hover {

@@ -70,7 +70,7 @@
     </section>
 
     <!-- Conversion section -->
-    <section>
+    <section id="trading-container">
         <div class="container-fluid mb-5">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-self-center mt-5">
@@ -207,7 +207,7 @@
 
 <!-- Modal when coffees and amount are not selected / filled in -->
     
-        <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
+        <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="error" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -229,7 +229,7 @@
 
 <!-- Modal Overview -->
     
-        <div class="modal fade container-fluid" id="overview-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
+        <div class="modal fade container-fluid" id="overview-modal" tabindex="-1" role="dialog" aria-labelledby="overview" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -238,9 +238,9 @@
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body" id="my-overview" name="my-overview">
+                    <div class="modal-body" id="my-overview">
                         <form name="overviewform" onsubmit="return sendMail(this);">
-                            <textarea id="selected-coffees" type="text" name="selectedCoffeesBulk" disabled></textarea>
+                            <textarea id="selected-coffees" name="selectedCoffeesBulk" disabled></textarea>
                             <input id="selected-shipping" type="text" name="selectedShipping" class="overview-input" disabled>
                             <input id="selected-incoterm" type="text" name="selectedIncoterm" class="overview-input" disabled>
                             <input id="selected-contract" type="text" name="selectedContract" class="overview-input" disabled>
@@ -268,11 +268,11 @@
     
 <!-- Modal Email has been sent -->
     
-        <div class="modal fade" id="submit-modal" tabindex="-1" role="dialog" aria-labelledby="Overview Modal" aria-hidden="true">
+        <div class="modal fade" id="submit-modal" tabindex="-1" role="dialog" aria-labelledby="confirmation" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title" id="submit"></h3>
+                        <h3 class="modal-title" id="confirmation"></h3>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>

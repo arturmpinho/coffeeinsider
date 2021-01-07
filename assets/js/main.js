@@ -4,6 +4,9 @@ $(document).ready(function() {
     
     $("#main-btn-lock").click(function(e) {
         e.preventDefault();
+        $('#glossary-container').addClass('overlay');
+        $('#news-container').addClass('overlay');
+        $('#trading-container').addClass('overlay');
         $(this).hide();
         $("#click-note").toggleClass("hide");
         $("#main-btn-unlock").show();
@@ -12,6 +15,9 @@ $(document).ready(function() {
 
     $("#main-btn-unlock").click(function(e) {
         e.preventDefault();
+        $('#glossary-container').removeClass('overlay');
+        $('#news-container').removeClass('overlay');
+        $('#trading-container').removeClass('overlay')
         $(this).hide();
         $("#click-note").toggleClass("hide");
         $("#main-btn-lock").show();

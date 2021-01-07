@@ -58,12 +58,12 @@ $( document).ready(function () {
             $('.incoterms-info').append(`
                 <div class="row incoterms-cards">
                     <h2 class="col-12 incoterm-heading">${entry.abbreviation} - ${entry.name}</h2>
-                    <p class="col-md-4 ml-4 responsibility">Seller's responsibility: </p>
-                    <p class="col-md-7 responsibility">${entry.responsibilitySeller}</p>
-                    <p class="col-md-4 ml-4 responsibility">Buyer's responsibility: </p>
-                    <p class="col-md-7 responsibility">${entry.responsibilityBuyer}</p>
-                    <p class="col-md-4 ml-4 responsibility">Transfer of Risk: </p>
-                    <p class="col-md-7 responsibility">${entry.transferOfRisk}</p>
+                    <p class="col-md-4">Seller's responsibility: </p>
+                    <p class="col-md-8 pl-5">${entry.responsibilitySeller}</p>
+                    <p class="col-md-4">Buyer's responsibility: </p>
+                    <p class="col-md-8 pl-5">${entry.responsibilityBuyer}</p>
+                    <p class="col-md-4">Transfer of Risk: </p>
+                    <p class="col-md-8 pl-5">${entry.transferOfRisk}</p>
                 </div>`
             )
         });
