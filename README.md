@@ -87,6 +87,7 @@ As a user I aim for:
 * Concise and accurate information.
 * Minimalistic pages without distracting contents.
 * Appealing call-to-actions.
+* Responsive website across multiple-devices.
 
 #### **Stories**
 As a user, I want to:
@@ -419,16 +420,24 @@ With these 4 pages, I have attainned the following features:
 ### **Test 1: Responsiveness**
 
 #### **User Stories and Requirements** ####
+* Responsive website across multiple-devices
 
 ##### **UX** #####
+The user is able to access the webiste through multiple devices without issues.
 
 ##### **Execution** #####
+To tackle this need, I have used Bootstrap across all the pages, the reason why I am confident that the responsiveness of the entire website is very good.
 
 ##### **Testing** #####
+To test the responsiveness, I have navigated through the website in multiple devices (iPhone 8, iPhone SE, Acer Spin and MacBook Air) and browsers (Chrome, Safari, Firefox, Edge and Opera Touch).
+
+Also, family and friends have tested the website in their own devices.
 
 ##### **Test result** #####
+Responsiveness is working properly across multiple browsers and devices and no responsiveness issue has been reported.
 
 ##### **Conclusion** #####
+The test passes all the criteria
 
 [[Back to top]](#table-of-contents)
 
