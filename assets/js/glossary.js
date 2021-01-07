@@ -8,7 +8,7 @@ $( document).ready(function () {
         $.each(countries, function(i, e) {
             if ($.inArray(e, result) == -1) result.push(e);
         });
-        console.log(result)
+       // console.log(result)
         $.each( result, function( item, value ) {
             var trimmedValue =  value.replace(/ /g,'');
             $('.coffee-info').append(`

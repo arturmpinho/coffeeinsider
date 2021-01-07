@@ -281,6 +281,9 @@ a, a:hover, a:focus, a:active {
 
 /* Glossary page */
 
+#glossary-intro-heading {
+    text-transform: uppercase;
+}
 
 .heading {
     color: #F4F9E9;
