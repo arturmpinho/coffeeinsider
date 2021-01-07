@@ -11,6 +11,12 @@ function sendMail (offerRequest) {
     })
     .then(
         function(response) {
+            $("#contact-form").trigger("reset");
+            $("#coffee-selection").trigger("reset");
+            $('.coffees-list').siblings('.metrics').children(".row").children('.units').html(`<span>Packaging</span>`)
+            $('.contract-options').removeClass("selected-choice");
+            $('.incoterms').removeClass("selected-choice");
+            $('.shipmonths').removeClass("selected-choice");
             $("#overview-modal").modal("hide");
             $("#confirmation").html("Your request has been submitted!")
             $("#feedback").html("Thank you for you request! \n We will get back to you within 1 business day with an offer.")

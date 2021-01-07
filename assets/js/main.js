@@ -168,7 +168,6 @@ let selectedShippingMonth = [];
 let coffeeAmount = [];
 $("#contact-form").submit(function(e) {
     e.preventDefault();
-    
     while(selectedCoffees.length > 0){
         selectedCoffees.pop();
     };
