@@ -267,25 +267,52 @@ Whilst the button and sub-buttons have been included directly in the HTML files 
 
 The rest of the landing page is self-explanatory, displaying some introductory paragraphs explaining the user what are his/her options, and by the footer the contacts and social links to the Coffee Insider.
 
-#### ***Offer Request***
+#### ***Trading Page***
 
-This section of the webpage will be divided into 3 parts.
+This page starts with an introductory paragraph, containinig an internal link to the [Glossary] in order to aid the user with the more specific terms that need to be considered at time of business within the coffee sector.
 
-First, the user will be confrontated with an accordion that will have included a form to request a personalized offer for the coffe he/she is looking for.
+Following, the main part of the trading page consists of an accordion divided into 5 areas:
+* Coffee
+* Shipping Month
+* Incoterms
+* Base Contract
+* Overview and Offer request
 
-Secondly, as the previous last section of the accordion, the user will have the option to choose the units he/she wants to be working with, including weight and currency, as well
-as inputing his/her price idea and immeadiately receive the conversions.
+To attain the ***Coffee*** area as initially displayed, I have chosen to start with a only a dropdown select list. This list is being populated through jQuery via the own created 'coffees.json' file.
 
-Thirdly, right after submitting the form, a module will pop-up confirming that the offer request has been sent, with an overview of the request. At the same moment, a confirmation 
-email will be sent to the user and a request email to the company.
+After the user selects his/her first coffee, it triggers an onChange function which will append 2 new fields to the trading.html. At this point, the user will intuitively understand that he will have to fill in the amount of bags for the selected coffee. As this field is a required field, and won't pass the form validation at a later stage, the placeholder contains an asterisk, which is commonly recognized as the sign for a required field.
+
+After his/her first selection, the user can opt for add an extra coffee or proceed to the next are inside the accordion. If he/she decides to add a new coffee by clicking the '+ Add Coffee' button, it will trigger an onClick function that will append a the dropdown select list mentioned above, and the same process starts again.
+
+In order to preserve a good UX, I have limited the amount of new inserted dropdown lists to 10, which can be considered, considering my experiecne within the coffee trading sector, as being on the high side of the amount of coffees someone might be interested in one purchase.
+
+The only difference between the first dropdown select list and the remaining ones is that these latter are accompanied by a 'trash' icon. This button when appended bring alongside with it an onClick function, that will remove the parent div from the equation.
+
+I have chosen to display it this way because, in order for someone to request an offer, it will always be necessary to have selected one type of coffee, giving the remove option only to the following one.
+
+The following step of the Order Request process is to select the ***Shipping Month***. By clicking on it, the previous ***Coffee*** area collapses and this option shows.
+
+In order to give the user the best experience possible, the shipping month selection has been implemented giving the user the option to select a given month within a one year period from the current date.
+
+To accomplish this, I have adapted the code shared by the user 'skelly' on [Codeply](https://www.codeply.com/go/fVMtEP6yNw/javascript-loop-date-months "Codeply").
+
+After selecting this option, the user can follow for the next step, ***Incoterms***. Once again, the previous area of the accordion is collapsed and the new onw shows.
+
+Within this area of the accordion, given the high specificity of the terms used, the user has the option of opening the official link of the [Incoterms](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms") to support him/her if the [Glossary] page was not enough.
+
+If all is clear, the user can pick one delivery term out of the 11 available. To attain this options, I have created a JSON file 'incoterms.json' with all the necessary information for the [Glossary] out of which I loop through all the entries and retreive the needed abbreviation, appending it as a button.
+
+Following to the next step, ***Base Contract***, the user is shown only 2 options, representative of the most common contracts that rule coffee business transactions. As these are only two, they were added directly in the trading.html.
+
+The final step of the Order request, is merely a contact form where the user will input his/her data to be used on the ***Overview***, where all the fields are required.
+
+To access the ***Overview***, the user will click the "Check my Overview" button, opening a modal displaying all the inputs passed on by the user throughout the accordion.
+
+If the user failed to input the 'Select your Coffee' and/or the 'Amount', a Warning modal will pop-up guiding the user to the first step. If contact form fields are not filled the embeeded tootips from Bootstrap for the effect will jump out.
+
+On the contrary, if all is in order, the user has the ability to review his request, and at a click of a button request a personalized offer by clicking the 'Request Offer' button. When this happens, an email is sent via emailJS to my personal email, triggering a confirmation modal and reseting the accordion completely.
 
 #### ***News Page***
-
-The route overview page gives the user the option to choose out of a dropdown list box the port of origin and the port of destination.
-
-Automatically, a preview of the route will be displayed in a map, followed by the information of the estimate transit time.
-
-The FAB is present at the bottom right of the page.
 
 #### ***Glossary***
 
@@ -303,6 +330,7 @@ the sense of being under control of his/her actions.
 <a></a>
 
 ### **Future Features**
+
 
 [[Back to top]](#table-of-contents)
 
@@ -440,6 +468,11 @@ calc.html -> EmailJS receives overview content in a single line.
 ##### **(Potential) Corrections** #####
 "overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "<br>"),
 
+##### **Bug** #####
+* When several coffees are selected, and the user decides that he/she no longer wants the first option, he/she can not deleted.
+##### **(Potential) Corrections** #####
+For the time being, the user will have to move his last choice to the first, and delete the last appended option. This might be of a slight inconvenience for the user, the reason why I will implement in future releases a delete button that will only be displayed if more coffees have been selected, bring the other options up in the div.
+
 
 [[Back to top]](#table-of-contents)
 
@@ -465,7 +498,7 @@ calc.html -> EmailJS receives overview content in a single line.
 * [MDN WebDocs](https://developer.mozilla.org/ "MDN WebDocs")
 #### **Media**
 #### **Content**
-*[Incoterms 2020](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms")
+* [Incoterms 2020](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms")
 ##### **JSON files**
 
 coffee.json: www.supremo.be and http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf
