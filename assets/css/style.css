@@ -53,8 +53,9 @@ body {
     background-image: url(../images/container-yard.jpg);
 }
 
-#hero-img-routes {
-    background-image: url(../images/night-vessel.jpg);
+#hero-img-glossary {
+    background-image: url(../images/glossary.jpg);
+    opacity: 0.7;
 }
 
 #hero-img-mug {
@@ -160,17 +161,8 @@ a, a:hover, a:focus, a:active {
     color: #F4F9E9;
 }
 
-/* Route Estimated Transit Time */
 
-.dropdown-box {
-    margin-top: 1rem;
-    background-color: #b64037;
-    font-size: min(max(1.6rem, 2vw), 2rem);
-    font-weight: 900;
-}
-
-
-/* Unit Conversion section */
+/* Offer Request section */
 
 #clarification-link {
     text-align: center;
@@ -178,11 +170,17 @@ a, a:hover, a:focus, a:active {
 }
 
 #clarification-link a {
-    color: #b64037;
+    color: #ff6356;
 }
 
 #clarification-link a:hover {
     text-decoration: underline;
+}
+
+.units {
+    background-color: #2D2926;
+    color: #F4F9E9;
+    border: none;
 }
 
 .card-header {
@@ -387,7 +385,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .additional-info a{
-    color: #b64037;
+    color: #ff6356;
 }
 
 .additional-info a:hover{

@@ -1,4 +1,4 @@
-const apiKey = "Jxt0w4CNFEgH6AGwj6Rdc6VhMU6UGphm"
+const apiKey = "Jxt0w4CNFEgH6AGwj6Rdc6VhMU6UGphm";
 
 let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coffee&api-key=${apiKey}`;
 let newsDiv = document.getElementById("news");
@@ -23,7 +23,7 @@ $.ajax({
                                     <a href="${result.response.docs[i].web_url}" target="_blank" class="btn ci-btns mb-5">Check this article</a>
                                     </div>
                                 </div>
-                            </div>`
+                            </div>`;
         }
     $('#loader').hide();
     $('#news-section').show();
@@ -34,5 +34,5 @@ $.ajax({
     $('#news-section').show();
     $("#intro-text").removeClass('overlay');
     $('#footer-container').removeClass('overlay');
-    newsDiv.innerHTML += "<p class='text-center w-100' id='loading-error'>Looks like something went wrong. Please try again.</p>"
+    newsDiv.innerHTML += "<p class='text-center w-100' id='loading-error'>Looks like something went wrong. Please try again.</p>";
 });

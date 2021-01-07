@@ -1,7 +1,9 @@
+const coffeeVariaties = "assets/js/coffees.json";
+const incotermOptions = "assets/js/incoterms.json";
 let countries = [];
 let result = [];
 $( document).ready(function () {
-    $.getJSON(dropDownCoffeeUrl, function (data) {
+    $.getJSON(coffeeVariaties, function (data) {
         $.each(data, function (key, entry) {
             countries.push(entry.country);
         });
@@ -18,13 +20,13 @@ $( document).ready(function () {
                 </div>
                 <div class="collapse row" id="${trimmedValue}">
                 </div>
-            `)
+            `);
         });
         
         $.each(data, function (key, entry) {
             $.each( result, function(item, value) {
                 if (value == entry.country) {
-                    let trimmedVal = value.replace(/ /g,'');;
+                    let trimmedVal = value.replace(/ /g,'');
                     $('.coffee-info').children(`#${trimmedVal}`).append(`
                         <div class="col-12 col-md-4">
                             <div class="card coffee-cards">
@@ -36,20 +38,19 @@ $( document).ready(function () {
                                 </div>
                             </div>
                         </div>
-                    `)
+                    `);
                     if (entry.screenSize != null) {
                         $(`#${key}`).append(`
                             <p class="paragraph"><strong>Screen size:</strong> ${entry.screenSize}</p>
-                        `)
+                        `);
                     }
                 }
-            })
-        })
+            });
+        });
     });
-    let incoterms = []
-    let output = []
+    let incoterms = [];
 
-    $.getJSON(incotermsUrl, function (data) {
+    $.getJSON(incotermOptions, function (data) {
         $.each(data, function (key,entry) {
             incoterms.push(entry);
         });
@@ -65,9 +66,9 @@ $( document).ready(function () {
                     <p class="col-md-4">Transfer of Risk: </p>
                     <p class="col-md-8 pl-5">${entry.transferOfRisk}</p>
                 </div>`
-            )
+            );
         });
-    })
+    });
 });
 
  

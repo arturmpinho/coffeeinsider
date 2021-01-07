@@ -13,22 +13,23 @@ function sendMail (offerRequest) {
         function(response) {
             $("#contact-form").trigger("reset");
             $("#coffee-selection").trigger("reset");
-            $('.coffees-list').siblings('.metrics').children(".row").children('.units').html(`<span>Packaging</span>`)
+            $('.coffees-list').siblings('.metrics').children(".row").children('.units').html(`<span>Packaging</span>`);
             $('.contract-options').removeClass("selected-choice");
             $('.incoterms').removeClass("selected-choice");
             $('.shipmonths').removeClass("selected-choice");
             $("#overview-modal").modal("hide");
-            $("#confirmation").html("Your request has been submitted!")
-            $("#feedback").html("Thank you for you request! \n We will get back to you within 1 business day with an offer.")
+            $("#confirmation").html("Your request has been submitted!");
+            $("#feedback").html("Thank you for you request! \n We will get back to you within 1 business day with an offer.");
             $("#submit-modal").modal("show");
             
         },
         function(error) {
             $("#overview-modal").modal("hide");
-            $("#confirmation").html("Oops, something went wrong!")
-            $("#feedback").html(`Please try to submit your request again.`)
+            $("#confirmation").html("Oops, something went wrong!");
+            $("#feedback").html(`Please try to submit your request again.`);
             $("#submit-modal").modal("show");
         }
-    )
+    );
     return false;
 }
+
