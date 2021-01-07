@@ -498,6 +498,25 @@ For the time being, the user will have to move his last choice to the first, and
 
 ## **Deployment**
 
+The Coffee Insider project has been deployed via GitHub after its final push.
+
+These are the deployment steps:
+
+1 - Go to settings within the corresponding repository in GitHub
+2 - Scroll down to GitHub Pages section
+3 - Choose the correspondent master branch and click save
+The page is now live on https://arturmpinho.github.io/coffeeinsider/
+
+The page updates automatically after commit and push to Github any potential change.
+
+To run the project locally:
+
+1 - Click the green Gitpod/Clone button or Download button on the Github Repository.
+2 - Copy the link shown in the Using the Clone with HTTPS option.
+3 - Open your IDE and Git Terminal.
+4 - Change the workspace directory to the location where you want to clone the Repository.
+5 - Input "git clone" followed by pasting the copied link.
+
 [[Back to top]](#table-of-contents)
 
 ---
