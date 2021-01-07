@@ -322,7 +322,11 @@ Regarding the ***Base COntracts***, these have been added directly to the glossa
 
 #### ***News Page***
 
+The ***News Page*** is a simple and eye-catching page that retreives from the external API from The New York Times, all relevant news regarding coffee.
 
+The concept is the same as the one used to retreive data from the JSON files, but in this case, being an external API, the loading time is higher than the other data gathering.
+
+For this reason, I have implemented a Loading Spinner, to pass the feeling of the machine being working for the user and not the user waiting for the machine, improving the UX.
 
 
 #### ***Footer/Contacts***
