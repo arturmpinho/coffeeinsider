@@ -304,7 +304,7 @@ If all is clear, the user can pick one delivery term out of the 11 available. To
 
 Following to the next step, ***Base Contract***, the user is shown only 2 options, representative of the most common contracts that rule coffee business transactions. As these are only two, they were added directly in the trading.html.
 
-The final step of the Order request, is merely a contact form where the user will input his/her data to be used on the ***Overview***, where all the fields are required.
+The final step of the Order Request, is merely a contact form where the user will input his/her data to be used on the ***Overview***, where all the fields are required.
 
 To access the ***Overview***, the user will click the "Check my Overview" button, opening a modal displaying all the inputs passed on by the user throughout the accordion.
 
@@ -312,9 +312,17 @@ If the user failed to input the 'Select your Coffee' and/or the 'Amount', a Warn
 
 On the contrary, if all is in order, the user has the ability to review his request, and at a click of a button request a personalized offer by clicking the 'Request Offer' button. When this happens, an email is sent via emailJS to my personal email, triggering a confirmation modal and reseting the accordion completely.
 
+#### ***Glossary Page***
+
+The ***Glossary Page*** is intended to give the user support for the most complex terms of the trading process.
+
+In order to accomplish this goal, the info displayed about ***Coffees*** and the ***Incoterms*** have its source on the respective JSON files, compiled by me. To display this info, I have looped over the files and retreived the necessary information, appending the information via jQuery in the respective IDs.
+
+Regarding the ***Base COntracts***, these have been added directly to the glossary.html via an href, giving the user access to the most updated contracts in pdf format.
+
 #### ***News Page***
 
-#### ***Glossary***
+
 
 
 #### ***Footer/Contacts***
