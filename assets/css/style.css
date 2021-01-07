@@ -172,6 +172,19 @@ a, a:hover, a:focus, a:active {
 
 /* Unit Conversion section */
 
+#clarification-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#clarification-link a {
+    color: #b64037;
+}
+
+#clarification-link a:hover {
+    text-decoration: underline;
+}
+
 .card-header {
     border-left: solid 2vw #b64037;
 }
