@@ -253,29 +253,21 @@ contracts for coffee [GCA](http://www.greencoffeeassociation.org/images/uploads/
 
 ### **Existing Features**
 
-#### ***Navigation: Floating Action Button***
+#### ***Navigation, Floating Action Button & Landing Page***
 
-The navigation will be supported in all devices with a Floating Action Button (FAB) instead of using a navigation bar.
+The navigation will be supported in all pages (except the landing page) and devices with a Floating Action Button (FAB) instead of using a common navigation bar on top of the page.
 
-This option allows the user to navigate across multiple pages via an intuitive option that accompanies the user through all its navigation and, at the same time, saves some real-estate.
+On the landing page, the same button will be displayed at the center, instead of at the right-bottom, and not floating. This is done on purpose in order to attract the attention of the user immeadiately to this button as it will be his/her navigation aid. With this, the intent is to get the user acquainted and engaged from the beginning, and not get lost because there is no navigation bar.
 
-#### ***Landing Page***
+Also, the fact that th user has to click once in order to reveal the 'tools' is intentional as it gives the sense of being in control immeadiately to the user.
 
-The landing page merely displays the title of the website with a small introductory paragraph. 
+This option allows the user to navigate across multiple pages via an intuitive option that accompanies the user through all its navigation and, at the same time, saving some real-estate.
 
-This is followed by a giant centered radial FAB, that includes a menu with internal links to the other pages, each one with a representative icon.
+Whilst the button and sub-buttons have been included directly in the HTML files and styling in CSS, I have resorted to jQuery in order to attain the interactiveness and hide/show the sub-buttons linking to the other pages.
 
-On the bottom of the page, a footer is displayed with the company contacts and social links.
+The rest of the landing page is self-explanatory, displaying some introductory paragraphs explaining the user what are his/her options, and by the footer the contacts and social links to the Coffee Insider.
 
-#### ***Route overview***
-
-The route overview page gives the user the option to choose out of a dropdown list box the port of origin and the port of destination.
-
-Automatically, a preview of the route will be displayed in a map, followed by the information of the estimate transit time.
-
-The FAB is present at the bottom right of the page.
-
-#### ***Offer request & Unit conversion***
+#### ***Offer Request***
 
 This section of the webpage will be divided into 3 parts.
 
@@ -287,12 +279,23 @@ as inputing his/her price idea and immeadiately receive the conversions.
 Thirdly, right after submitting the form, a module will pop-up confirming that the offer request has been sent, with an overview of the request. At the same moment, a confirmation 
 email will be sent to the user and a request email to the company.
 
+#### ***News Page***
+
+The route overview page gives the user the option to choose out of a dropdown list box the port of origin and the port of destination.
+
+Automatically, a preview of the route will be displayed in a map, followed by the information of the estimate transit time.
+
+The FAB is present at the bottom right of the page.
+
+#### ***Glossary***
+
+
 #### ***Footer/Contacts***
 The footer will include the points of contact with the company, devided into direct contacts and social links, the later represented solely by its representative icon from
 [FontAwesome](https://fontawesome.com/ "FontAwesome").
 
 #### ***Modal***
-The modal implemented when summiting the form, is one of the best ways to issue immeadiate feedback to the user. This addresses this user need and at the same times gives the user
+The modal implemented when submitting the form, is one of the best ways to issue immeadiate feedback to the user. This addresses this user need and at the same times gives the user
 the sense of being under control of his/her actions.
 
 [[Back to top]](#table-of-contents)
