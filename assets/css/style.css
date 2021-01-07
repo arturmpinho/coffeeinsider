@@ -258,6 +258,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .overview-input:disabled {
+    -webkit-opacity: 1;
     opacity: 1;
     color: #2D2926;
     -webkit-text-fill-color: #2D2926;
