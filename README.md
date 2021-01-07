@@ -328,14 +328,17 @@ The concept is the same as the one used to retreive data from the JSON files, bu
 
 For this reason, I have implemented a Loading Spinner, to pass the feeling of the machine being working for the user and not the user waiting for the machine, improving the UX.
 
-
 #### ***Footer/Contacts***
-The footer will include the points of contact with the company, devided into direct contacts and social links, the later represented solely by its representative icon from
+The footer includes the points of contact with the company, devided into direct contacts and social links, the later represented solely by its representative icons from
 [FontAwesome](https://fontawesome.com/ "FontAwesome").
 
-#### ***Modal***
-The modal implemented when submitting the form, is one of the best ways to issue immeadiate feedback to the user. This addresses this user need and at the same times gives the user
-the sense of being under control of his/her actions.
+
+With these 4 pages, I have attainned the following features:
+
+* Use of external API from [The NY Times](https://developer.nytimes.com/docs/articlesearch-product/1/overview "The New York Times").
+* Use of [emailJS](https://www.emailjs.com/docs/ "emailJS")
+* Form validation
+* Immeadiate feedback to user
 
 [[Back to top]](#table-of-contents)
 
