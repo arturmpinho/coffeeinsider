@@ -1,6 +1,6 @@
 # **Coffee Insider**
 
-![Mokup Image](wireframes/mokup_image.png)
+![Mokup Image](wireframes/mockup.png)
 
 ---
 
@@ -369,6 +369,7 @@ With these 4 pages, I have attainned the following features:
 <a></a>
 
 ### **Libraries**
+* [jQuery](https://jquery.com/ "jQuery")
 * [FontAwesome](https://fontawesome.com/ "FontAwesome")
 * [Google Fonts](https://fonts.google.com/ "Google Fonts")
 * [Unsplash](https://unsplash.com/ "Unsplash")
