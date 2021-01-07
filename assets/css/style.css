@@ -257,6 +257,12 @@ a, a:hover, a:focus, a:active {
     overflow:auto
 }
 
+.overview-input:disabled {
+    opacity: 1;
+    color: #2D2926;
+    -webkit-text-fill-color: #2D2926;
+}
+
 #selected-coffees:disabled,
 #selected-contract:disabled {
     background-color: #fff;
