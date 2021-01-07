@@ -239,18 +239,24 @@ a, a:hover, a:focus, a:active {
     color: #2D2926;
 }
 
+#selected-contract {
+    border: none;
+}
 
-#selected-coffees::-webkit-scrollbar {
+#selected-coffees::-webkit-scrollbar,
+#selected-contract::-webkit-scrollbar {
    display: none;
  }
 
-#selected-coffees {
+#selected-coffees,
+#selected-contract {
     width: 100%;
     height: auto;
     overflow:auto
 }
 
-#selected-coffees:disabled {
+#selected-coffees:disabled,
+#selected-contract:disabled {
     background-color: #fff;
     border-color: #b64037;
     color: #2D2926;
