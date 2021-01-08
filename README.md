@@ -51,9 +51,11 @@ Thank you for visting my project!
  
     5.2 [Test 2: Navigation](#test-2:-navigation)
  
-    5.3 [Test 3: News](#test-3:-news)
+    5.4 [Test 3: Glossary](#test-3:-glossary)
+
+    5.4 [Test 4: News](#test-4:-news)
  
-    5.4 [Test 4: Offer Request](#Test-4:-offer-request)
+    5.5 [Test 5: Offer Request](#Test-5:-offer-request)
  
 6. [Deployment](#deployment)
 
@@ -338,6 +340,7 @@ With these 4 pages, I have attainned the following features:
 * Price idea space in the trading.html to display the market prices of coffee as mentioned below in [Bugs]().
 * Unit conversion to uniform the amounts of coffee in a selected unit.
 * Calculate the Estimated Transit Time from port x to port y.
+* Give the user the option of deleting the first selected coffee as of the moment a second coffee is added and selected.
 
 [[Back to top]](#table-of-contents)
 
@@ -387,7 +390,7 @@ With these 4 pages, I have attainned the following features:
 * [Free Logo Design](https://www.freelogodesign.org "Free Logo Design")
 * [TinyPNG](https://tinypng.com/ "Tiny PNG")
 * [ConvertCSV](https://www.convertcsv.com/csv-to-json.htm "ConvertCSV")
-* [EmailJS](https://www.emailjs.com/ "EmailJS)
+* [EmailJS](https://www.emailjs.com/ "EmailJS")
 * [Favicon](https://favicon.io/favicon-converter/ "Favcicon")
 * [Techsini](http://techsini.com/multi-mockup/ "Techsini")
 * [W3C-Markup-validation](https://validator.w3.org/ "Markup Validator")
@@ -432,6 +435,7 @@ Responsiveness is working properly across multiple browsers and devices and no r
 ##### **Conclusion** #####
 The test passes all the criteria
 
+<a></a>
 
 ### **Test 2: Navigation**
 
@@ -471,8 +475,9 @@ User can easily access every page at a distance of 2 clicks and contacts and soc
 ##### **Conclusion** #####
 The test passes all the criteria.
 
+<a></a>
 
-### **Test 2: Glossary**
+### **Test 3: Glossary**
 
 #### **User Stories and Requirements** ####
 * Easily consult specific logistics terms.
@@ -501,7 +506,7 @@ Even though some additional styling can be put in place, the page fully covers i
 The test passes all the criteria.
 
 
-### **Test 3: News**
+### **Test 4: News**
 
 #### **User Stories and Requirements** ####
 * Stay updated with relevant coffee-related news.
@@ -530,7 +535,7 @@ Articles are being displayed as wanted, loading spinner works as intended and er
 The test passes all the criteria.
 
 
-### **Test 4: Offer Request**
+### **Test 5: Offer Request**
 
 #### **User Stories and Requirements** ####
 * Place an offer request via the website.
@@ -563,7 +568,7 @@ The test passes all the criteria.
 #### **Known Bugs and Corrections** ####
 
 ##### **Bug** #####
-When selecting the amount to coffee bags desired, the input field was allowing negative numbers.
+When selecting the amount of desired coffee bags, the input field is allowing negative numbers.
 ##### **(Potential) Corrections** #####
 Firstly, I have added the 'min="0"' as an attribute of the input field, only to come to the realization that this was not the way to go, as user does not submit any form when moving to the next step, thus not validating the input attribute.
 
@@ -577,7 +582,7 @@ Added 'min="0"' as an attribute of the input element. -->
 ##### **Bug** #####
 trading.html -> anchor tag oc incoterms does not allow spacing before and after.
 ##### **(Potential) Corrections** #####
-Unfixed at the moment
+Added a margin left to create the space necessary visually.
 
 ##### **Bug** #####
 Access to XMLHttpRequest at 'https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc' from origin 'https://8000-e4e47aac-b552-443c-afb5-41a2746ebb9d.ws-eu03.gitpod.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
@@ -592,7 +597,7 @@ Nonethless, this option also retreives the following error originated externally
     at getElement (tradingcharts-emailsignup.js:265)
     at tradingcharts-emailsignup.js:34
  
- Additional research [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies "MDN") raises other several concerns with this option.
+ Additional research in [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies "MDN") raises other several concerns with this option.
 
 As this goes far beyond my current skills, I have opt out to include it in future releases.
 
@@ -622,9 +627,15 @@ On click function:
     });
 
 ##### **Bug** #####
-EmailJS receives overview content in a single line.
+EmailJS receives the overview content in a single line.
 ##### **(Potential) Corrections** #####
-"overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "<br>"),
+Conducting a research on Stackoverflow, I have noticed that this is a common issue when using Javascript to feed the content to be transferred into the EmailJS.
+
+To solve this issue, after experimenting various options given by the online community (i.e. this [post](https://stackoverflow.com/questions/40352629/im-unable-to-add-newlines-to-the-emails-content "Stackoverflow"), I have reached the following line of code that replaces the "new line" created in Javascript for a break tag.
+
+"overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "< br>"),
+
+With this, EmailJS can read the content separated into new lines (I also had to use triple brackets for it recognition).
 
 ##### **Bug** #####
 When several coffees are selected, and the user decides that he/she no longer wants the first option, he/she can not deleted.
@@ -632,8 +643,12 @@ When several coffees are selected, and the user decides that he/she no longer wa
 For the time being, the user will have to move his last choice to the first, and delete the last appended option. This might be of a slight inconvenience for the user, the reason why I will implement in future releases a delete button that will only be displayed if more coffees have been selected, bring the other options up in the div.
 
 ##### **Bug** #####
-Overlay
+The FAB sub-buttons, as they overlap some content when active, especially in small devices, they can become a little confusing to the eye of the user, especially if the content that it is overlaping is text.
 ##### **(Potential) Corrections** #####
+To solve this bug, I implemented an overlay with an opacity of 0.1 thta is activated in all pages (except the landing page) when the padlock is clicked, which solves the issue.
+
+
+Several other bug were found during the development process. Though, it would not be possible to include all of them. For this reason, I have chosen to select the ones that I found the most challenging.
 
 [[Back to top]](#table-of-contents)
 
