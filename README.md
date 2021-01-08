@@ -87,7 +87,6 @@ As a user I aim for:
 * Concise and accurate information.
 * Minimalistic pages without distracting contents.
 * Appealing call-to-actions.
-* Responsive website across multiple-devices.
 
 #### **Stories**
 As a user, I want to:
@@ -108,7 +107,7 @@ As a user, I want to:
 * Easy navigation.
 * Reliable information.
 * Immeadiate feedback on data inputs and/or submissions.
-* Good responsiveness across multiple devices.
+* Good responsiveness across multiple devices and browsers.
 
 #### **Expectations**
 * Gracious feedback handling an error.
@@ -420,7 +419,7 @@ With these 4 pages, I have attainned the following features:
 ### **Test 1: Responsiveness**
 
 #### **User Stories and Requirements** ####
-* Responsive website across multiple-devices
+* Good responsiveness across multiple devices and browsers.
 
 ##### **UX** #####
 The user is able to access the webiste through multiple devices without issues.
@@ -438,6 +437,45 @@ Responsiveness is working properly across multiple browsers and devices and no r
 
 ##### **Conclusion** #####
 The test passes all the criteria
+
+
+### **Test 2: Navigation**
+
+#### **User Stories and Requirements** ####
+
+* Access easily my target page depending on the subject being dicussed with my business relationship.
+* Easily find the company's contacts.
+* Easily find the company's social networks.
+* Easy navigation.
+
+##### **UX** #####
+When user lands on the website, the attention is immeadiately brought to the padlock.
+
+The functionaility of the padlock gives the feeling to the user that he/she is in control.
+
+Also, the user can easily reach any given page on max two clicks, maximizing the UX. 
+
+The user can easily find all the contacts and social networks as they are placed at the footer of every page.
+
+##### **Execution** #####
+The padlock on the landing page is especially placed in the center so the user understands, as of the moment it uses it for the first time, that it is the core of the navigation.
+
+On the other pages, the padlock converts into a Floating Action Button, and is placed on the bottom right, being easily recognized by the user, not generating the feeling of being lost.
+
+The contacts and social links are placed as per convention on footer of the page, opening in new tabs.
+
+##### **Testing** #####
+Even though some might argue that in the landing page there is 1 unecessary click in order to access the padlock sub-buttons, this not only creates a sense of control to the user but also helps the user to engage better with the website.
+
+Also, if this was to be an issue, it would only be visable in large screens as it is standard for medium and small devices to use an 'hamburguer' menu to display the navigation bar.
+
+##### **Test result** #####
+Navigation is simply and intuitive and gives the user the constant feeling that he/she is in control.
+
+User can easily access every page at a distance of 2 clicks and contacts and social networks are well visible in every page.
+
+##### **Conclusion** #####
+The test passes all the criteria.
 
 [[Back to top]](#table-of-contents)
 
@@ -494,10 +532,13 @@ calc.html -> EmailJS receives overview content in a single line.
 "overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "<br>"),
 
 ##### **Bug** #####
-* When several coffees are selected, and the user decides that he/she no longer wants the first option, he/she can not deleted.
+When several coffees are selected, and the user decides that he/she no longer wants the first option, he/she can not deleted.
 ##### **(Potential) Corrections** #####
 For the time being, the user will have to move his last choice to the first, and delete the last appended option. This might be of a slight inconvenience for the user, the reason why I will implement in future releases a delete button that will only be displayed if more coffees have been selected, bring the other options up in the div.
 
+##### **Bug** #####
+Overlay
+##### **(Potential) Corrections** #####
 
 [[Back to top]](#table-of-contents)
 
