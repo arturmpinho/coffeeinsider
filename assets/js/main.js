@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+    $(document).mouseup(function(e) {
+    var container = $(".floating-btn");
+    if (!container.is(e.target)) 
+    {
+        $('#glossary-container').removeClass('overlay');
+        $('#news-container').removeClass('overlay');
+        $('#trading-container').removeClass('overlay');
+        $('#main-btn-unlock').hide();
+        $("#click-note").toggleClass("hide");
+        $("#main-btn-lock").show();
+        $(".sub-btns").hide();
+    }
+});
+
     //Floating action button//
     
     $("#main-btn-lock").click(function(e) {
