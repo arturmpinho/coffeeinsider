@@ -525,7 +525,7 @@ If, for instance, the articles can not be retreived, an error message shows on t
 ##### **Testing** #####
 Assured that the 'Check this Article' button opens in a new tab and redirects the user to the correct article.
 
-By changing the API key in the correspondent JS file, I was able to test the error message.
+By changing the API key in the corresponding JS file, I was able to test the error message.
 
 ##### **Test result** #####
 Articles are being displayed as wanted, loading spinner works as intended and error message is nicely showcased when necessary.
@@ -545,7 +545,7 @@ The test passes all the criteria.
 When the user enters the ***Trading*** page, he/she is welcomed by a well-defined data gathering process, ultimately being sent to the Company vie emaiJS, receiving immeadiate feedback on critical points of the offer request, as well as connection links to relevant pages, including the glossary, in case any doubt arises. 
 
 ##### **Execution** #####
-The execution of this step has been already presented in [Trading Page](#trading-page)
+The execution of this step has been already presented in the [Trading Page](#trading-page)
 
 ##### **Testing** #####
 I have gone through all the offer request steps several times, tackling immeadiately bugs that were being found, including the form validation.
@@ -574,15 +574,16 @@ Firstly, I have added the 'min="0"' as an attribute of the input field, only to 
 
 Therefore, I have created a an "external" validation in Javascript on the moment the user submits the form on the last step.
 
-<!-- ##### **Bug** #####
-trading.html -> Quantity Input field allows decimal numbers
+##### **Bug** #####
+Amount input field allows decimal numbers in trading.html. 
 ##### **(Potential) Corrections** #####
-Added 'min="0"' as an attribute of the input element. -->
+The user can still input decimal numbers, but there is now implemented an extra form validation that does not allow the user to proceed to the overview wqithout first correcting the amounts to whole number.
+Ideally, the user would not have the option to input a decimal number, avoiding the need of running this extra validation. This requires further investigation, the reason why it will be implemented on future releases.
 
 ##### **Bug** #####
-trading.html -> anchor tag oc incoterms does not allow spacing before and after.
+The anchor tag in the Incoterms area of the accordion does not recognize the sapce on the left from the previous text.
 ##### **(Potential) Corrections** #####
-Added a margin left to create the space necessary visually.
+Until now I did not discovered a plausible explanation for this bug. To overcome this issue, I have added a margin left to the anchor tag in order to create the visual necessary space.
 
 ##### **Bug** #####
 Access to XMLHttpRequest at 'https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc' from origin 'https://8000-e4e47aac-b552-443c-afb5-41a2746ebb9d.ws-eu03.gitpod.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
@@ -666,7 +667,7 @@ These are the deployment steps:
 
 2 - Scroll down to GitHub Pages section
 
-3 - Choose the correspondent master branch and click save
+3 - Choose the corresponding master branch and click save
 
 The page is now live on https://arturmpinho.github.io/coffeeinsider/
 
