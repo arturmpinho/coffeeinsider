@@ -187,11 +187,13 @@ a, a:hover, a:focus, a:active {
     margin-top: 1rem;
 }
 
-#clarification-link a {
+#clarification-link a,
+#additional-info-incoterm a {
     color: #ff6356;
 }
 
-#clarification-link a:hover {
+#clarification-link a:hover,
+#additional-info-incoterm a:hover {
     text-decoration: underline;
 }
 
@@ -286,7 +288,7 @@ a, a:hover, a:focus, a:active {
 
 #selected-coffees:disabled,
 #selected-contract:disabled {
-    background-color: #F4F9E9;
+    background-color: #fff;
     border-color: #b64037;
     color: #2D2926;
     opacity: 1;
@@ -301,8 +303,12 @@ a, a:hover, a:focus, a:active {
 .overview-input {
     width: 100%;
     border: none;
-    background-color: #F4F9E9;
+    background-color: #fff;
     color: #2D2926;
+}
+
+#contact-container {
+    width: 95%;
 }
 
 /* News Cards*/

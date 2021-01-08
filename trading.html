@@ -135,7 +135,7 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#auto-collapse">
                     <div class="card-body">
-                        <p class="d-flex justify-content-center mb-3">You can read more about the Incoterms® <a href="https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/" target="_blank" class="ml-2"> here</a>.</p>
+                        <p class="d-flex justify-content-center mb-3" id="additional-info-incoterm">You can read more about the Incoterms® <a href="https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/" target="_blank" class="ml-2"> here</a>.</p>
                         <div class="container">
                             <div class="row" id="incoterm-options">
                             </div> 
@@ -240,14 +240,16 @@
                 <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="overview">My Overview</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-body" id="my-overview">
+                <div class="modal-body container" id="my-overview">
                     <textarea id="selected-coffees" name="selectedCoffeesBulk" disabled></textarea>
                     <input id="selected-shipping" type="text" name="selectedShipping" class="overview-input" disabled>
                     <input id="selected-incoterm" type="text" name="selectedIncoterm" class="overview-input" disabled>
                     <textarea id="selected-contract" name="selectedContract" disabled></textarea>
-                    <div class="row">
+                    <div class="row" id="contact-container"> 
                         <h2 class="col-12 mt-4">Your contact Information:</h2>
                         <label for="fullname" class="contact-info-label d-block col-12 col-md-6">Full Name:</label>
                         <input id="fullname" type="text" name="fullname" class="overview-input col-12 col-md-6 pl-5" disabled>
