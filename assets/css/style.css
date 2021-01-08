@@ -29,7 +29,6 @@ h2, h3, h5 {
 }
 
 #main-header {
-    font-family: "Montserrat", sans-serif;
     font-size: min(max(2rem, 7vw), 8rem);
     font-weight: 900;
     text-align: center;

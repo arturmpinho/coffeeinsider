@@ -29,9 +29,6 @@ Thank you for visting my project!
     1.4 [Design Choices](#design-choices)
 
 2. [Wireframes](#wireframes)
- 
-    2.1 [Changes throughout the coding](#changes-throughout-the-coding)
-
 3. [Features](#features)
  
     3.1 [Existing Features](#existing-features)
@@ -173,10 +170,10 @@ Being the main purpose of this website to support B2B relationships in coffee tr
 Whilst some might see black as a pessimistic color, there are several shades that attenuate this feeling, and brings out in the target audience a feeling of confidence, sophistication and comfort.
 These feelings are usually consider a plus in any business relationship, reason why I have chosen for the Jet (black) color.
 
-This color is meant to be used as the background-color, displaying a nice contrast with the the Fire Opal or Ivory colors on evry occasion.
+This color is meant to be used as the background-color, displaying a nice contrast with the the Medium Carmine or Ivory colors on evry occasion.
 
-* Fire Opal: #ED665A;
-The Fire Opal color also gives the feeling to the user of confidence. As it can be considered as an attention-getting color and energizing, I aim to use it as the color for icons, buttons and any special feature that requires attention from the user throughout the website.
+* Medium Carmine: #B64037;
+The Medium Carmine color also gives the feeling to the user of confidence. As it can be considered as an attention-getting color and energizing, I aim to use it as the color for icons, buttons and any special feature that requires attention from the user throughout the website.
 
 * Ivory: #F4F9E9;
 The Ivory color bring outs as sense of calmness and relaxation, which is extremely important in every B2B relationship. For this reason, the main texts will have this color applied.
@@ -187,12 +184,12 @@ While creating this color scheme, I have resorted to the [Contrast-Checker](http
 
 |Text color  	|Background color  	|Result   	|
 |---	        |---	            |---	    |
-|Jet   	        |Fire Opal         	|Good     	|
-|Fire Opal   	|Jet               	|Good       |
+|Jet   	        |Medium Carmine     |Good     	|
+|Medium Carmine |Jet               	|Good       |
 |Jet   	        |Ivory              |Super     	|
 |Ivory          |Jet                |Super      |
-|Fire Opal      |Ivory              |Very Poor 	|
-|Ivory          |Fire Opal          |Very Poor  |
+|Medium Carmine |Ivory              |Very Poor 	|
+|Ivory          |Medium Carmine     |Very Poor  |
 
 Therefore, the last 2 pairings are excluded from the design choices.
 
@@ -236,10 +233,6 @@ contracts for coffee [GCA](http://www.greencoffeeassociation.org/images/uploads/
 [Large devices](wireframes/large-devices.png)
 
 <a></a>
-
-### **Changes throughout the coding**
-
-[[Back to top]](#table-of-contents)
 
 ---
 
