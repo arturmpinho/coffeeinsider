@@ -94,7 +94,7 @@ As a user, I want to:
 * Easily consult specific logistics terms.
 * Brief unsderstanding of the 2 main the coffee contracts (GCA & ESCC).
 * Stay updated with relevant coffee-related news.
-* Place and order request via the website.
+* Place an offer request via the website.
 * Easily find the company's contacts.
 * Easily find the company's social networks.
 
@@ -483,6 +483,7 @@ The test passes all the criteria.
 #### **User Stories and Requirements** ####
 * Easily consult specific logistics terms.
 * Brief unsderstanding of the 2 main the coffee contracts (GCA & ESCC).
+* Reliable information.
 
 ##### **UX** #####
 When the user enters the ***Glossary*** page he/she automatically perceives that it is the place to clarify any doubts in the website. The hero image plays an important role generating this feeling.
@@ -530,6 +531,32 @@ By changing the API key in the correspondent JS file, I was able to test the err
 
 ##### **Test result** #####
 Articles are being displayed as wanted, loading spinner works as intended and error message is nicely showcased when necessary.
+
+##### **Conclusion** #####
+The test passes all the criteria.
+
+
+### **Test 4: Offer Request**
+
+#### **User Stories and Requirements** ####
+* Place an offer request via the website.
+* Immeadiate feedback on data inputs and/or submissions.
+
+##### **UX** #####
+When the user enters the ***Trading*** page, he/she is welcomed by a well-defined data gathering process, ultimately being sent to the Company vie emaiJS, receiving immeadiate feedback on critical points of the offer request, as well as connection links to relevant pages, including the glossary, in case any doubt arises. 
+
+##### **Execution** #####
+The execution of this step has been already presented in [Trading Page]()
+
+##### **Testing** #####
+I have gone through all the offer request steps several times, tackling immeadiately bugs that were being found, including the form validation.
+
+##### **Test result** #####
+Select coffees dropdown list is being correctly populated.
+Add and remove buttons are working properly in the coffee selection.
+Select buttons from remaining sections and working correctly.
+Overview, Warning and Error modals are correctly validating form inputs, being properly displayed and showing correct information.
+emailJS is correctly sending the overview to the company email.
 
 ##### **Conclusion** #####
 The test passes all the criteria.
