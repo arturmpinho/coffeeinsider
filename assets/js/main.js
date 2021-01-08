@@ -1,18 +1,18 @@
 $(document).ready(function() {
 
     $(document).mouseup(function(e) {
-    var container = $(".floating-btn");
-    if (!container.is(e.target)) 
-    {
-        $('#glossary-container').removeClass('overlay');
-        $('#news-container').removeClass('overlay');
-        $('#trading-container').removeClass('overlay');
-        $('#main-btn-unlock').hide();
-        $("#click-note").toggleClass("hide");
-        $("#main-btn-lock").show();
-        $(".sub-btns").hide();
-    }
-});
+        const fabContainer = $(".floating-btn");
+        if (!fabContainer.is(e.target)) 
+        {
+            $('#glossary-container').removeClass('overlay');
+            $('#news-container').removeClass('overlay');
+            $('#trading-container').removeClass('overlay');
+            $('#main-btn-unlock').hide();
+            $("#click-note").toggleClass("hide");
+            $("#main-btn-lock").show();
+            $(".sub-btns").hide();
+        }
+    });
 
     //Floating action button//
     
@@ -197,7 +197,7 @@ $("#contact-form").submit(function(e) {
 
     let invalidAmountInput = false;
     for (let i = 0; i < coffeeAmount.length; i++) {
-        if (coffeeAmount[i] <= 0) {
+        if (coffeeAmount[i] <= 0 | (Number.isInteger(parseFloat(coffeeAmount[i])) == false )) {
             invalidAmountInput = true;
         }           
     }
