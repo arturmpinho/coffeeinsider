@@ -47,15 +47,15 @@ Thank you for visting my project!
 
 5. [Testing and Debugging](#testing-and-debugging)
  
-    5.1 [Test 1: Responsiveness](#test-1:-responsiveness)
+    5.1 [Responsiveness](#responsiveness)
  
-    5.2 [Test 2: Navigation](#test-2:-navigation)
+    5.2 [Navigation](#navigation)
  
-    5.4 [Test 3: Glossary](#test-3:-glossary)
+    5.3 [Glossary](#glossary)
 
-    5.4 [Test 4: News](#test-4:-news)
+    5.4 [News](#news)
  
-    5.5 [Test 5: Offer Request](#Test-5:-offer-request)
+    5.5 [Offer Request](#offer-request)
  
 6. [Deployment](#deployment)
 
@@ -403,8 +403,6 @@ With these 4 pages, I have attainned the following features:
 
 ---
 
-[[Back to top]](#table-of-contents)
-
 <a></a>
 
 ## **Testing and Debugging**
@@ -413,7 +411,7 @@ With these 4 pages, I have attainned the following features:
 
 <a></a>
 
-### **Test 1: Responsiveness**
+### **Responsiveness**
 
 #### **User Stories and Requirements** ####
 * Good responsiveness across multiple devices and browsers.
@@ -437,7 +435,7 @@ The test passes all the criteria
 
 <a></a>
 
-### **Test 2: Navigation**
+### **Navigation**
 
 #### **User Stories and Requirements** ####
 
@@ -477,7 +475,7 @@ The test passes all the criteria.
 
 <a></a>
 
-### **Test 3: Glossary**
+### **Glossary**
 
 #### **User Stories and Requirements** ####
 * Easily consult specific logistics terms.
@@ -505,8 +503,9 @@ Even though some additional styling can be put in place, the page fully covers i
 ##### **Conclusion** #####
 The test passes all the criteria.
 
+<a></a>
 
-### **Test 4: News**
+### **News**
 
 #### **User Stories and Requirements** ####
 * Stay updated with relevant coffee-related news.
@@ -534,8 +533,9 @@ Articles are being displayed as wanted, loading spinner works as intended and er
 ##### **Conclusion** #####
 The test passes all the criteria.
 
+<a></a>
 
-### **Test 5: Offer Request**
+### **Offer Request**
 
 #### **User Stories and Requirements** ####
 * Place an offer request via the website.
@@ -545,7 +545,7 @@ The test passes all the criteria.
 When the user enters the ***Trading*** page, he/she is welcomed by a well-defined data gathering process, ultimately being sent to the Company vie emaiJS, receiving immeadiate feedback on critical points of the offer request, as well as connection links to relevant pages, including the glossary, in case any doubt arises. 
 
 ##### **Execution** #####
-The execution of this step has been already presented in [Trading Page]()
+The execution of this step has been already presented in [Trading Page](#trading-page)
 
 ##### **Testing** #####
 I have gone through all the offer request steps several times, tackling immeadiately bugs that were being found, including the form validation.
@@ -663,8 +663,11 @@ The Coffee Insider project has been deployed via GitHub after its final push.
 These are the deployment steps:
 
 1 - Go to settings within the corresponding repository in GitHub
+
 2 - Scroll down to GitHub Pages section
+
 3 - Choose the correspondent master branch and click save
+
 The page is now live on https://arturmpinho.github.io/coffeeinsider/
 
 The page updates automatically after commit and push to Github any potential change.
@@ -672,9 +675,13 @@ The page updates automatically after commit and push to Github any potential cha
 To run the project locally:
 
 1 - Click the green Gitpod/Clone button or Download button on the Github Repository.
+
 2 - Copy the link shown in the Using the Clone with HTTPS option.
+
 3 - Open your IDE and Git Terminal.
+
 4 - Change the workspace directory to the location where you want to clone the Repository.
+
 5 - Input "git clone" followed by pasting the copied link.
 
 [[Back to top]](#table-of-contents)
@@ -690,14 +697,15 @@ To run the project locally:
 <a></a>
 
 ### **Credits**
-* All software and applications used to create this website are mentioned above in section [Languages_Libraries_Frameworks_and_Tools].
+* All software and applications used to create this website are mentioned above in section [Languages Libraries Frameworks and Tools](#languages-libraries-frameworks and-tools).
 * [MDN WebDocs](https://developer.mozilla.org/ "MDN WebDocs")
+
 #### **Media**
 You can find all the images sources through the Unslplash collection prepared [here](https://unsplash.com/collections/42079226/coffee-insider "Unsplash").
 
 #### **Content**
 * incoterms.json [Incoterms 2020](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms")
-* coffee.json: [Supremo](www.supremo.be "Supremo") and [ICO](http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf "")
+* coffees.json: [Supremo](www.supremo.be "Supremo") and [ICO](http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf "")
 * News API: [The NY Times](https://developer.nytimes.com/docs/articlesearch-product/1/overview "The New York Times")
 [[Back to top]](#table-of-contents)
 
@@ -712,6 +720,6 @@ A big thank you to my mentor, [Anna_Villanueva](https://github.com/annavillanuev
 
 To my friends and family that took time to test and re-test the website and for their valuable recommendations.
 
-The most special thank you to [Anouk](https://github.com/AnoukSmet/ "GitHub"), for all the patience with my constant questions, for the time spent next me supporting me and explaining in detail all my doubts. For all the suggestions and guidance during this last months.
+The most special thanks to [Anouk](https://github.com/AnoukSmet/ "GitHub"), for all the patience with my constant questions, for the time spent next me supporting me and explaining in detail all my doubts. For all the suggestions and guidance during this last months.
 
 [[Back to top]](#table-of-contents)
