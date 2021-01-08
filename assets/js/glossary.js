@@ -3,6 +3,9 @@ const incotermOptions = "assets/js/incoterms.json";
 let countries = [];
 let result = [];
 $( document).ready(function () {
+    /**
+    * Loops over the corresponding json file and populates anchor element for each unique country
+    */
     $.getJSON(coffeeVariaties, function (data) {
         $.each(data, function (key, entry) {
             countries.push(entry.country);
@@ -22,6 +25,11 @@ $( document).ready(function () {
                 </div>
             `);
         });
+
+        /**
+         * Append card for each coffee from json file at the country
+        */
+
         
         $.each(data, function (key, entry) {
             $.each( result, function(item, value) {
@@ -39,6 +47,10 @@ $( document).ready(function () {
                             </div>
                         </div>
                     `);
+                    /**
+                     * Appends screen size if the coffee has a screen size not equal to null
+                    */
+
                     if (entry.screenSize != null) {
                         $(`#${key}`).append(`
                             <p class="paragraph"><strong>Screen size:</strong> ${entry.screenSize}</p>
@@ -48,8 +60,11 @@ $( document).ready(function () {
             });
         });
     });
-    let incoterms = [];
+    /**
+     * Creates a card for each incoterm from json file with corresponding info
+    */
 
+    let incoterms = [];
     $.getJSON(incotermOptions, function (data) {
         $.each(data, function (key,entry) {
             incoterms.push(entry);

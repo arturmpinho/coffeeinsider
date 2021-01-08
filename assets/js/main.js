@@ -1,32 +1,38 @@
 $(document).ready(function() {
-
+    /**
+     * Function to hide navigation subbuttons and overlay when user clicks outside floating action button container
+     */
     $(document).mouseup(function(e) {
-        const fabContainer = $(".floating-btn");
-        if (!fabContainer.is(e.target)) 
-        {
+        const fabContainer = $('.floating-btn');
+        if (!fabContainer.is(e.target)) {
             $('#glossary-container').removeClass('overlay');
             $('#news-container').removeClass('overlay');
             $('#trading-container').removeClass('overlay');
             $('#main-btn-unlock').hide();
-            $("#click-note").toggleClass("hide");
-            $("#main-btn-lock").show();
-            $(".sub-btns").hide();
+            $('#click-note').toggleClass('hide');
+            $('#main-btn-lock').show();
+            $('.sub-btns').hide();
         }
     });
 
-    //Floating action button//
+    /**
+     * Function to toggle floating action button and adds overlay when unlocked
+     */
     
-    $("#main-btn-lock").click(function(e) {
+    $('#main-btn-lock').click(function(e) {
         e.preventDefault();
         $('#glossary-container').addClass('overlay');
         $('#news-container').addClass('overlay');
         $('#trading-container').addClass('overlay');
         $(this).hide();
-        $("#click-note").toggleClass("hide");
-        $("#main-btn-unlock").show();
+        $('#click-note').toggleClass('hide');
+        $('#main-btn-unlock').show();
         $(".sub-btns").show();
     });
 
+    /**
+     * Function to toggle floating action button and hides overlay when locked
+     */
     $("#main-btn-unlock").click(function(e) {
         e.preventDefault();
         $('#glossary-container').removeClass('overlay');
@@ -39,8 +45,9 @@ $(document).ready(function() {
     });
 });
 
-/* Coffees Select List */
-
+/**
+ * Function to retrieve data from json file and populate select dropdown box with all options
+*/
 const dropDownCoffeeUrl = "assets/js/coffees.json";
 
 $( document ).ready(function () {
@@ -57,6 +64,9 @@ const coffeeSelection = $(".coffee-selection");
 const addCoffee = `<div class="form-group"><div class="row"><select class="form-control form-control-lg coffees-list col-12"" onChange="addOptions(this)"></select></div><button onClick="removeDiv(this)"><i class="fas fa-trash-alt"></i></button></div>`;
 let x = 1;
     
+/**
+ * Function that add news select box on click of add coffee button and appends all options to last added select
+*/
     $(addButton).click(function(e){
         e.preventDefault();
         if(x < maxCoffees){ 
@@ -73,26 +83,32 @@ let x = 1;
         });     
     });
 
+/**
+ * Function to remove the corresponding select box when delete button is clicked
+*/
 
 function removeDiv(e) {
     $(e).parent("div").remove();
     x--;
 }
 
+/**
+ * Function that is triggered on change of select box and displays input fields and corresponding units
+*/
 function addOptions(e) {
     if ($(e).siblings('.metrics').length == 0) {
        if($(e).children("option:selected").val() != "Select your coffee") {
             $(".coffees-list").addClass("col-md-6"); 
             $(`<div class="metrics col-12 col-md-6">
                     <div class="row">
-                        <input type="number" min="1" class="form-control form-control-lg amount col-md-6" placeholder="Amount of Coffee *">
+                        <input type="number" class="form-control form-control-lg amount col-md-6" placeholder="Amount of Coffee *">
                         <div class="form-control form-control-lg units col-md-6"></div>
                     </div>
                 </div>
             `).insertAfter($(e));
         }
 }
-       if($(e).children("option:selected").val() != "Select your coffee") {
+       if($(e).children("option:selected").val() != "default") {
             $.getJSON(dropDownCoffeeUrl, function (data) {
                 $.each(data, function (key, entry) {
                     if (($(e).children("option:selected").attr('id')) == key) {
@@ -103,13 +119,15 @@ function addOptions(e) {
        }
 }
 
-/* Shipping months */
 
-// Based and adapted from: https://www.codeply.com/go/fVMtEP6yNw/javascript-loop-date-months
+/**
+ * Function to display all month - year combination for next 12 months
+ * Based and adapted from: https://www.codeply.com/go/fVMtEP6yNw/javascript-loop-date-months
+*/
 
 const getMonths = function(startDate, endDate){
-    var monthsOutput = [];
-    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    let monthsOutput = [];
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
     while (startDate <= endDate) {
         let shippingMonth = `${months[startDate.getMonth()]} ${startDate.getFullYear()}`;
@@ -133,6 +151,10 @@ for (let m in displayMonths) {
     $('#shipping-options').append(`<button class="col-4 shipmonths" value="${displayMonths[m].shippingMonth}">${displayMonths[m].shippingMonth}</button>`);
 }
 
+
+/**
+ * Function that save selected shipping months and highlights selected option
+*/
 let selectedMonth = [];
 $('.shipmonths').click(function(){
     while(selectedMonth.length>0){
@@ -143,8 +165,10 @@ $('.shipmonths').click(function(){
     selectedMonth.push($(this).val());
 });
 
-// Incoterms
 
+/**
+ * Function that retrieve data from json file and dislpay all options as buttons on page
+*/
 const incotermsUrl = 'assets/js/incoterms.json';
 let selectedIncoterm = [];
 
@@ -152,7 +176,9 @@ $.getJSON(incotermsUrl, function (data) {
     $.each(data, function (key, entry) {
         $('#incoterm-options').append(`<button class="col incoterms" value="${entry.abbreviation}">${entry.abbreviation}</button>`);
      });
-
+        /**
+        * Function that save selected Incoterm and highlights selected option
+        */
         $('.incoterms').click(function(){
             while(selectedIncoterm.length>0){
                 selectedIncoterm.pop();
@@ -163,8 +189,9 @@ $.getJSON(incotermsUrl, function (data) {
     });
 });
 
-// Base Contract
-
+/**
+ * Function that save selected Base Contract and highlights selected option
+*/
 let selectedContract = [];
 $('.contract-options').click(function(){
     while(selectedContract.length>0){
@@ -175,11 +202,17 @@ $('.contract-options').click(function(){
     selectedContract.push($(this).val());
 });
 
-// Overview
+/**
+ * Function to validate all input and triggers the correct modal
+*/
 let selectedCoffees = [];
 let coffeeAmount = [];
 $("#contact-form").submit(function(e) {
     e.preventDefault();
+    
+    /**
+     * Clears the array, adds the selected coffee and amounts to array
+    */
     while(selectedCoffees.length > 0){
         selectedCoffees.pop();
     }
@@ -192,21 +225,36 @@ $("#contact-form").submit(function(e) {
         coffeeAmount.push($(this).siblings('.metrics').children('.row').children('.amount').val());
     });
     
-    var rowsTextArea = selectedCoffees.length;
-   $('#selected-coffees').attr('rows', rowsTextArea);
+    /**
+     * Populates the amount of rows for textarea depending on amount of selected coffees
+    */
+    const rowsTextArea = selectedCoffees.length;
+    $('#selected-coffees').attr('rows', rowsTextArea);
 
+    /**
+     * Check whether amount input is a positive Integer or not
+    */
     let invalidAmountInput = false;
     for (let i = 0; i < coffeeAmount.length; i++) {
         if (coffeeAmount[i] <= 0 | (Number.isInteger(parseFloat(coffeeAmount[i])) == false )) {
             invalidAmountInput = true;
         }           
     }
-
+    /**
+     * Checks whether all the select boxes have a selected option which is not the default
+     * Checks whether the amount field is not empty or undefined
+     * Checks whether the invalidAmountInput was true
+     * If one of conditions not met, triggerws error modal with further explanation
+     * Otherwise Overview Modal is triggered
+    */
     if ($.inArray('default', selectedCoffees) >= 0 | $.inArray(undefined, coffeeAmount) >= 0 |$.inArray("", coffeeAmount) >= 0 | invalidAmountInput == true){
         $("#error-modal").modal("show");
     } else {
         $("#overview-modal").modal("show");
 
+        /**
+         * Merged list of selected coffees and corresponding amount
+        */
         let mergedOverviewList = [];
         let i = 0;
         while (i < selectedCoffees.length) {
@@ -215,7 +263,9 @@ $("#contact-form").submit(function(e) {
         }
         let j = 0;
         $("#selected-coffees").empty();
-
+        /**
+         * Populates new line in textarea for each 2 items in mergedOverviewlist
+        */
         while (j < mergedOverviewList.length) {
             let splittedOverviewList = mergedOverviewList[j].split("-");
             let amount = mergedOverviewList[j + 1];
@@ -233,6 +283,9 @@ $("#contact-form").submit(function(e) {
             });
         j += 2;
         }
+        /**
+         * Functions to set value on the overview to selected options
+        */
         if (selectedMonth.length != 0) {
             $("#selected-shipping").val(`Preferred shipping month: ${selectedMonth}`);
         }
@@ -242,7 +295,10 @@ $("#contact-form").submit(function(e) {
          if (selectedContract.length != 0) {
             $("#selected-contract").val(`Terms and conditions based on ${selectedContract}`);
         }
-        // Contact info input
+        
+        /**
+         * Retrieve form input from user and displays it on overview
+        */
 
         const fullName = $("#fname").val();
         const companyName = $("#cname").val();

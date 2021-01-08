@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Lora&family=Montserrat&display=swap');
 
+/* General styling */
 html {
     font-size: 62.5%;
 }
@@ -19,8 +20,13 @@ h2, h3, h5 {
     font-family: "Lora", sans-serif; 
 }
 
+.overlay {
+    opacity: 0.1;
+}
 
-  /* Logo & Header*/
+
+/* Logo & Header*/
+
 #logo {
     width: min(max(2rem, 7vw), 8rem);
     height: auto;
@@ -128,6 +134,7 @@ a, a:hover, a:focus, a:active {
 }
 
 /* Buttons */
+
 .btn {
     font-size: min(max(1.6rem, 2vw), 2rem);
     color: #F4F9E9 !important;
@@ -237,7 +244,12 @@ a, a:hover, a:focus, a:active {
     opacity: 1;
 }
 
-/* Overview */
+#submit-modal,
+#error-modal {
+    color: #2D2926;
+}
+
+/* Overview Modal */
 
 #overview {
     color: #2D2926;
@@ -293,13 +305,6 @@ a, a:hover, a:focus, a:active {
     color: #2D2926;
 }
 
-/* Submit Modal */
-
-#submit-modal,
-#error-modal {
-    color: #2D2926;
-}
-
 /* News Cards*/
 
 .card-title-news {
@@ -348,10 +353,6 @@ a, a:hover, a:focus, a:active {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-.overlay {
-    opacity: 0.1;
 }
 
 

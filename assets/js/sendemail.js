@@ -1,4 +1,7 @@
 function sendMail (offerRequest) {
+    /**
+     * Send all the required data via EmailJS 
+    */
     emailjs.send("service_2xj7twi","template_xrx5tns", {
         "overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "<br>"),
         "selected_shipping": offerRequest.selectedShipping.value,
@@ -10,6 +13,11 @@ function sendMail (offerRequest) {
         "phone": offerRequest.phonenumber.value,
     })
     .then(
+        /**
+         * When email was sent successfully
+         * Resets the form and clears all input
+         * Shows submit modal with corresponding feedback to the user
+         */
         function(response) {
             $("#contact-form").trigger("reset");
             $("#coffee-selection").trigger("reset");
@@ -23,6 +31,10 @@ function sendMail (offerRequest) {
             $("#submit-modal").modal("show");
             
         },
+        /**
+         * When email was not sent successfully
+         * Triggers submit modal with corresponding feedback to the user 
+        */
         function(error) {
             $("#overview-modal").modal("hide");
             $("#confirmation").html("Oops, something went wrong!");
