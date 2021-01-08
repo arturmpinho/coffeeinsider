@@ -47,16 +47,14 @@ Thank you for visting my project!
 
 5. [Testing and Debugging](#testing-and-debugging)
  
-    5.1 
+    5.1 [Test 1: Responsiveness](#test-1:-responsiveness)
  
-    5.2
+    5.2 [Test 2: Navigation](#test-2:-navigation)
  
-    5.3 
+    5.3 [Test 3: News](#test-3:-news)
  
-    5.4 
+    5.4 [Test 4: Offer Request](#Test-4:-offer-request)
  
-    5.5 
-
 6. [Deployment](#deployment)
 
 7. [Credits and Acknowledgments](#credits-and-acknowledgments)
@@ -198,7 +196,7 @@ My website will be divided into 4 different pages:
 **Landing Page**
 With a B2B relationship in mind, the landing page is aimed to be straight to the point.
 
-Without any nuisance, this page offers exclusively a brief introduction to what is the Coffee Insider and a particular "navigation menu" that will display on a click/hover all the
+Without any nuisance, this page offers exclusively a brief introduction to what is the Coffee Insider and a peculiar "navigation menu" that will display on a click all the
 other relevant pages, represented by intuitive icons.
 
 **Trading Page**
@@ -389,6 +387,7 @@ With these 4 pages, I have attainned the following features:
 * [Free Logo Design](https://www.freelogodesign.org "Free Logo Design")
 * [TinyPNG](https://tinypng.com/ "Tiny PNG")
 * [ConvertCSV](https://www.convertcsv.com/csv-to-json.htm "ConvertCSV")
+* [EmailJS](https://www.emailjs.com/ "EmailJS)
 * [Favicon](https://favicon.io/favicon-converter/ "Favcicon")
 * [Techsini](http://techsini.com/multi-mockup/ "Techsini")
 * [W3C-Markup-validation](https://validator.w3.org/ "Markup Validator")
@@ -684,7 +683,7 @@ You can find all the images sources through the Unslplash collection prepared [h
 #### **Content**
 * incoterms.json [Incoterms 2020](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms")
 * coffee.json: [Supremo](www.supremo.be "Supremo") and [ICO](http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf "")
-
+* News API: [The NY Times](https://developer.nytimes.com/docs/articlesearch-product/1/overview "The New York Times")
 [[Back to top]](#table-of-contents)
 
 <a></a>
