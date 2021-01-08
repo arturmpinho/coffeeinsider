@@ -11,6 +11,15 @@ body {
     font-size: 1.6rem;
   }
 
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2, h3, h5 {
+    font-family: "Lora", sans-serif; 
+}
+
+
   /* Logo & Header*/
 #logo {
     width: min(max(2rem, 7vw), 8rem);
