@@ -5,13 +5,13 @@
 ---
 
 ## **Project Goal** 
-The world of coffee might be one of the most complex in the commodites universe. This complexity is not only visable at the farm level, where new coffee varietals are being engineered and planted in order to achieve higher yields and rust-resistant plants, but through the entire supply chain.
+The world of coffee might be one of the most complex in the commodities universe. This complexity is not only visible at the farm level, where new coffee varietals are being engineered and planted in order to achieve higher yields and rust-resistant plants, but through the entire supply chain.
 
-Due to this complexity, trying to simplify the commercial and logistic side of any business is crucial in the commodities world. If attainned, it can exponetially strenght relationships and minimize potential future disputes.
+Due to this complexity, trying to simplify the commercial and logistic side of any business is crucial in the commodities world. If attained, it can exponentially strength relationships and minimize potential future disputes.
 
-Therefore, the main goal of the COFFEE iNSIDER, is to provide the user with an easy accessible and intuitive tool to both suppliers and customers, in order to increase the efficiency of the negotiation process and consequently have parameterized all the components of the logistic process. 
+Therefore, the main goal of the COFFEE iNSIDER, is to provide the user with an easily accessible and intuitive tool to both suppliers and customers, in order to increase the efficiency of the negotiation process and consequently have parameterized all the components of the logistic process. 
 
-Thank you for visting my project!
+Thank you for visiting my project!
 
 ---
 <a></a>
@@ -87,9 +87,9 @@ As a user I aim for:
 
 #### **Stories**
 As a user, I want to:
-* Access easily my target page depending on the subject being dicussed with my business relationship.
+* Access easily my target page depending on the subject being discussed with my business relationship.
 * Easily consult specific logistics terms.
-* Brief unsderstanding of the 2 main the coffee contracts (GCA & ESCC).
+* Brief understanding of the 2 main the coffee contracts (GCA & ESCC).
 * Stay updated with relevant coffee-related news.
 * Place an offer request via the website.
 * Easily find the company's contacts.
@@ -103,7 +103,7 @@ As a user, I want to:
 #### **Requirements**
 * Easy navigation.
 * Reliable information.
-* Immeadiate feedback on data inputs and/or submissions.
+* Immediate feedback on data inputs and/or submissions.
 * Good responsiveness across multiple devices and browsers.
 
 #### **Expectations**
@@ -124,7 +124,7 @@ As a user, I want to:
 * Provide the employees with a tool to aid the negotiation process.
 * Give potential and recurring customers an easy way to request an offer.
 * Increase the commercial. 
-* Provide (mainly) small businesses with limited knowledge about logistics and the coffee sector with the most relevant information in order to conduct their businesses.
+* Provide (mainly) small businesses with limited knowledge about logistics and the coffee sector with the most relevant information to conduct their businesses.
 * Expand the commercial relationships offering an appealing and informative tool for potential and recurring customers.
 * Display the latest news on coffee to both customers and employees.
 
@@ -136,9 +136,9 @@ As a user, I want to:
 ### **Design Choices**
 #### Fonts
 
-In order to find the best font pairing to my project, I have used the font pairing generator website [Font Joy](https://fontjoy.com/ "Font Joy")
+To find the best font pairing to my project, I have used the font pairing generator website [Font Joy](https://fontjoy.com/ "Font Joy")
 
-After running some trials, I have opted out for the below set of fonts to be used throught out the website.
+After running some trials, I have opted out for the below set of fonts to be used throughout the website.
 
 ##### Main Headings
 [Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont "Google Fonts")
@@ -151,14 +151,14 @@ After running some trials, I have opted out for the below set of fonts to be use
 
 In my opinion, these 3 fonts work very well together. From the bold, easy-readable and attractive [Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont "Google Fonts") 
 font to be used in the Main Headings, creating an interesting contrast with the [Lora](https://fonts.google.com/specimen/Lora?query=lora "Google Fonts") font in the sub-headings and 
-finilizing wth the overall content font, [Libre Frankline](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts"), which embeeds itself very well with the first two. Also,
+finalizing wth the overall content font, [Libre Frankline](https://fonts.google.com/specimen/Libre+Franklin "Google Fonts"), which embeds itself very well with the first two. Also,
 this font reflects reliability, which is of extreme importance when developing a business website.
 
 #### Icons
 
 Throughout out the website, I will be using icons provided by [FontAwesome](https://fontawesome.com/ "FontAwesome").
 
-The icons uses are self-explanatory and aid the navigation of the user, bringing an intuitive imagery to the website.
+The icons used are self-explanatory and aid the navigation of the user, bringing an intuitive imagery to the website.
 
 #### Colors
 
@@ -167,10 +167,10 @@ Being the main purpose of this website to support B2B relationships in coffee tr
 ![Color Scheme](wireframes/ci-color-palette.png)
 
 * Jet: #2D2926
-Whilst some might see black as a pessimistic color, there are several shades that attenuate this feeling, and brings out in the target audience a feeling of confidence, sophistication and comfort.
-These feelings are usually consider a plus in any business relationship, reason why I have chosen for the Jet (black) color.
+Whilst some might see black as a pessimistic color, there are several shades that attenuate this feeling, and brings out in the target audience a feeling of confidence, sophistication, and comfort.
+These feelings are usually considered a plus in any business relationship, reason why I have chosen for the Jet (black) color.
 
-This color is meant to be used as the background-color, displaying a nice contrast with the the Medium Carmine or Ivory colors on evry occasion.
+This color is meant to be used as the background-color, displaying a nice contrast with the Medium Carmine or Ivory colors on every occasion.
 
 * Medium Carmine: #B64037;
 The Medium Carmine color also gives the feeling to the user of confidence. As it can be considered as an attention-getting color and energizing, I aim to use it as the color for icons, buttons and any special feature that requires attention from the user throughout the website.
@@ -202,10 +202,10 @@ Without any nuisance, this page offers exclusively a brief introduction to what 
 other relevant pages, represented by intuitive icons.
 
 **Trading Page**
-The trading page will offer a tool for companies/customers to request personalized offers for differents coffees that The Coffee Insider can provide.
+The trading page will offer a tool for companies/customers to request personalized offers for different coffees that The Coffee Insider can provide.
 
 **News Page**
-It is always good to stay up to date, but much better when the news are exclusively about coffee. They simply taste better!
+It is always good to stay up to date, but much better when the news is exclusively about coffee. They simply taste better!
 
 The main goal of this page is to give the user the most recent news about the coffee industry, regardless if he/she is looking to buy coffee or just looking for fresh-brewed 
 coffee-related news.
@@ -247,19 +247,19 @@ contracts for coffee [GCA](http://www.greencoffeeassociation.org/images/uploads/
 
 The navigation will be supported in all pages (except the landing page) and devices with a Floating Action Button (FAB) instead of using a common navigation bar on top of the page.
 
-On the landing page, the same button will be displayed at the center, instead of at the right-bottom, and not floating. This is done on purpose in order to attract the attention of the user immeadiately to this button as it will be his/her navigation aid. With this, the intent is to get the user acquainted and engaged from the beginning, and not get lost because there is no navigation bar.
+On the landing page, the same button will be displayed at the center, instead of at the right-bottom, and not floating. This is done on purpose to attract the attention of the user immediately to this button as it will be his/her navigation aid. With this, the intent is to get the user acquainted and engaged from the beginning, and not get lost because there is no navigation bar.
 
-Also, the fact that th user has to click once in order to reveal the 'tools' is intentional as it gives the sense of being in control immeadiately to the user.
+Also, the fact that the user must click once to reveal the 'tools' is intentional as it gives the sense of being in control immediately to the user.
 
 This option allows the user to navigate across multiple pages via an intuitive option that accompanies the user through all its navigation and, at the same time, saving some real-estate.
 
-Whilst the button and sub-buttons have been included directly in the HTML files and styling in CSS, I have resorted to jQuery in order to attain the interactiveness and hide/show the sub-buttons linking to the other pages.
+Whilst the button and sub-buttons have been included directly in the HTML files and styling in CSS, I have resorted to jQuery to attain the interaction and hide/show the sub-buttons linking to the other pages.
 
-The rest of the landing page is self-explanatory, displaying some introductory paragraphs explaining the user what are his/her options, and by the footer the contacts and social links to the Coffee Insider.
+The rest of the landing page is self-explanatory, displaying some introductory paragraphs explaining the user what his/her options are, and by the footer the contacts and social links to the Coffee Insider.
 
 #### ***Trading Page***
 
-This page starts with an introductory paragraph, containinig an internal link to the [Glossary] in order to aid the user with the more specific terms that need to be considered at time of business within the coffee sector.
+This page starts with an introductory paragraph, containing an internal link to the [Glossary](#glossary) to aid the user with the more specific terms that need to be considered at time of business within the coffee sector.
 
 Following, the main part of the trading page consists of an accordion divided into 5 areas:
 * Coffee
@@ -270,27 +270,27 @@ Following, the main part of the trading page consists of an accordion divided in
 
 To attain the ***Coffee*** area as initially displayed, I have chosen to start with a only a dropdown select list. This list is being populated through jQuery via the own created 'coffees.json' file.
 
-After the user selects his/her first coffee, it triggers an onChange function which will append 2 new fields to the trading.html. At this point, the user will intuitively understand that he will have to fill in the amount of bags for the selected coffee. As this field is a required field, and won't pass the form validation at a later stage, the placeholder contains an asterisk, which is commonly recognized as the sign for a required field.
+After the user selects his/her first coffee, it triggers an onChange function which will append 2 new fields to the trading.html. At this point, the user will intuitively understand that he will have to fill in the amount of bags for the selected coffee. As this field is a required field and won't pass the form validation at a later stage, the placeholder contains an asterisk, which is commonly recognized as the sign for a required field.
 
-After his/her first selection, the user can opt for add an extra coffee or proceed to the next are inside the accordion. If he/she decides to add a new coffee by clicking the '+ Add Coffee' button, it will trigger an onClick function that will append a the dropdown select list mentioned above, and the same process starts again.
+After his/her first selection, the user can opt for add an extra coffee or proceed to the next are inside the accordion. If he/she decides to add a new coffee by clicking the '+ Add Coffee' button, it will trigger an onClick function that will append the dropdown select list mentioned above, and the same process starts again.
 
-In order to preserve a good UX, I have limited the amount of new inserted dropdown lists to 10, which can be considered, considering my experiecne within the coffee trading sector, as being on the high side of the amount of coffees someone might be interested in one purchase.
+In order to preserve a good UX, I have limited the amount of new inserted dropdown lists to 10, which can be considered, considering my experience within the coffee trading sector, as being on the high side of the amount of coffees someone might be interested in one purchase.
 
 The only difference between the first dropdown select list and the remaining ones is that these latter are accompanied by a 'trash' icon. This button when appended bring alongside with it an onClick function, that will remove the parent div from the equation.
 
-I have chosen to display it this way because, in order for someone to request an offer, it will always be necessary to have selected one type of coffee, giving the remove option only to the following one.
+I have chosen to display it this way because, for someone to request an offer, it will always be necessary to have selected one type of coffee, giving the remove option only to the following one.
 
-The following step of the Order Request process is to select the ***Shipping Month***. By clicking on it, the previous ***Coffee*** area collapses and this option shows.
+The following step of the Order Request process is to select the ***Shipping Month***. By clicking on it, the previous ***Coffee*** area collapses, and this option shows.
 
 In order to give the user the best experience possible, the shipping month selection has been implemented giving the user the option to select a given month within a one year period from the current date.
 
 To accomplish this, I have adapted the code shared by the user 'skelly' on [Codeply](https://www.codeply.com/go/fVMtEP6yNw/javascript-loop-date-months "Codeply").
 
-After selecting this option, the user can follow for the next step, ***Incoterms***. Once again, the previous area of the accordion is collapsed and the new onw shows.
+After selecting this option, the user can follow for the next step, ***Incoterms***. Once again, the previous area of the accordion is collapsed and the new one shows.
 
 Within this area of the accordion, given the high specificity of the terms used, the user has the option of opening the official link of the [Incoterms](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms") to support him/her if the [Glossary] page was not enough.
 
-If all is clear, the user can pick one delivery term out of the 11 available. To attain this options, I have created a JSON file 'incoterms.json' with all the necessary information for the [Glossary] out of which I loop through all the entries and retreive the needed abbreviation, appending it as a button.
+If all is clear, the user can pick one delivery term out of the 11 available. To attain this options, I have created a JSON file 'incoterms.json' with all the necessary information for the [Glossary] out of which I loop through all the entries and retrieve the needed abbreviation, appending it as a button.
 
 Following to the next step, ***Base Contract***, the user is shown only 2 options, representative of the most common contracts that rule coffee business transactions. As these are only two, they were added directly in the trading.html.
 
@@ -298,37 +298,37 @@ The final step of the Order Request, is merely a contact form where the user wil
 
 To access the ***Overview***, the user will click the "Check my Overview" button, opening a modal displaying all the inputs passed on by the user throughout the accordion.
 
-If the user failed to input the 'Select your Coffee' and/or the 'Amount', a Warning modal will pop-up guiding the user to the first step. If contact form fields are not filled the embeeded tootips from Bootstrap for the effect will jump out.
+If the user failed to input the 'Select your Coffee' and/or the 'Amount', a Warning modal will pop-up guiding the user to the first step. If contact form fields are not filled the embedded tooltips from Bootstrap for the effect will jump out.
 
-On the contrary, if all is in order, the user has the ability to review his request, and at a click of a button request a personalized offer by clicking the 'Request Offer' button. When this happens, an email is sent via emailJS to my personal email, triggering a confirmation modal and reseting the accordion completely.
+On the contrary, if all is in order, the user has the ability to review his request, and at a click of a button request a personalized offer by clicking the 'Request Offer' button. When this happens, an email is sent via emailJS to my personal email, triggering a confirmation modal and resetting the accordion completely.
 
 #### ***Glossary Page***
 
 The ***Glossary Page*** is intended to give the user support for the most complex terms of the trading process.
 
-In order to accomplish this goal, the info displayed about ***Coffees*** and the ***Incoterms*** have its source on the respective JSON files, compiled by me. To display this info, I have looped over the files and retreived the necessary information, appending the information via jQuery in the respective IDs.
+To accomplish this goal, the info displayed about ***Coffees*** and the ***Incoterms*** have its source on the respective JSON files, compiled by me. To display this info, I have looped over the files and retrieved the necessary information, appending the information via jQuery in the respective IDs.
 
-Regarding the ***Base COntracts***, these have been added directly to the glossary.html via an href, giving the user access to the most updated contracts in pdf format.
+Regarding the ***Base Contracts***, these have been added directly to the glossary.html via an href, giving the user access to the most updated contracts in pdf format.
 
 #### ***News Page***
 
-The ***News Page*** is a simple and eye-catching page that retreives from the external API from The New York Times, all relevant news regarding coffee.
+The ***News Page*** is a simple and eye-catching page that retrieves from the external API from The New York Times, all relevant news regarding coffee.
 
-The concept is the same as the one used to retreive data from the JSON files, but in this case, being an external API, the loading time is higher than the other data gathering.
+The concept is the same as the one used to retrieve data from the JSON files, but in this case, being an external API, the loading time is higher than the other data gathering.
 
 For this reason, I have implemented a Loading Spinner, to pass the feeling of the machine being working for the user and not the user waiting for the machine, improving the UX.
 
 #### ***Footer/Contacts***
-The footer includes the points of contact with the company, devided into direct contacts and social links, the later represented solely by its representative icons from
+The footer includes the points of contact with the company, divided into direct contacts and social links, the later represented solely by its representative icons from
 [FontAwesome](https://fontawesome.com/ "FontAwesome").
 
 
-With these 4 pages, I have attainned the following features:
+With these 4 pages, I have attained the following features:
 
 * Use of external API from [The NY Times](https://developer.nytimes.com/docs/articlesearch-product/1/overview "The New York Times").
 * Use of [emailJS](https://www.emailjs.com/docs/ "emailJS")
 * Form validation
-* Immeadiate feedback to user
+* Immediate feedback to user
 
 [[Back to top]](#table-of-contents)
 
@@ -417,7 +417,7 @@ With these 4 pages, I have attainned the following features:
 * Good responsiveness across multiple devices and browsers.
 
 ##### **UX** #####
-The user is able to access the webiste through multiple devices without issues.
+The user is able to access the website through multiple devices without issues.
 
 ##### **Execution** #####
 To tackle this need, I have used Bootstrap across all the pages, the reason why I am confident that the responsiveness of the entire website is very good.
@@ -439,15 +439,15 @@ The test passes all the criteria
 
 #### **User Stories and Requirements** ####
 
-* Access easily my target page depending on the subject being dicussed with my business relationship.
+* Access easily my target page depending on the subject being discussed with my business relationship.
 * Easily find the company's contacts.
 * Easily find the company's social networks.
 * Easy navigation.
 
 ##### **UX** #####
-When user lands on the website, the attention is immeadiately brought to the padlock.
+When user lands on the website, the attention is immediately brought to the padlock.
 
-The functionaility of the padlock gives the feeling to the user that he/she is in control.
+The functionality of the padlock gives the feeling to the user that he/she is in control.
 
 Also, the user can easily reach any given page on max two clicks, maximizing the UX. 
 
@@ -461,9 +461,9 @@ On the other pages, the padlock converts into a Floating Action Button, and is p
 The contacts and social links are placed as per convention on footer of the page, opening in new tabs.
 
 ##### **Testing** #####
-Even though some might argue that in the landing page there is 1 unecessary click in order to access the padlock sub-buttons, this not only creates a sense of control to the user but also helps the user to engage better with the website.
+Even though some might argue that in the landing page there is 1 unnecessary click in order to access the padlock sub-buttons, this not only creates a sense of control to the user but also helps the user to engage better with the website.
 
-Also, if this was to be an issue, it would only be visable in large screens as it is standard for medium and small devices to use an 'hamburguer' menu to display the navigation bar.
+Also, if this was to be an issue, it would only be visible in large screens as it is standard for medium and small devices to use a 'hamburger' menu to display the navigation bar.
 
 ##### **Test result** #####
 Navigation is simply and intuitive and gives the user the constant feeling that he/she is in control.
@@ -479,11 +479,11 @@ The test passes all the criteria.
 
 #### **User Stories and Requirements** ####
 * Easily consult specific logistics terms.
-* Brief unsderstanding of the 2 main the coffee contracts (GCA & ESCC).
+* Brief understanding of the 2 main the coffee contracts (GCA & ESCC).
 * Reliable information.
 
 ##### **UX** #####
-When the user enters the ***Glossary*** page he/she automatically perceives that it is the place to clarify any doubts in the website. The hero image plays an important role generating this feeling.
+When the user enters the ***Glossary*** page, he/she automatically perceives that it is the place to clarify any doubts in the website. The hero image plays an important role generating this feeling.
 
 The user is shown 3 different topics that he might want to address. 
 
@@ -495,7 +495,7 @@ The first topic are the coffee types grouped by country of origin, followed by a
 ##### **Testing** #####
 Careful verification of all the content, if all the info was being pushed correctly and that the cards are being displayed correctly.
 
-All internal and external links are funtioning properly.
+All internal and external links are functioning properly.
 
 ##### **Test result** #####
 Even though some additional styling can be put in place, the page fully covers its intent and tackles the user stories and requirements.
@@ -514,13 +514,13 @@ The test passes all the criteria.
 Intuitively, the user understands what to do in the page: Either read only the article brief or, if a deeper read is wanted, click in the desired article button to check the full article.
 
 ##### **Execution** #####
-When the user enters the ***News*** page he/she is automatically confrontated with the loading spinner, which works as an immeadiate feedback to the user.
+When the user enters the ***News*** page he/she is automatically confronted with the loading spinner, which works as an immediate feedback to the user.
 
-After articles are retreived from The New York Times API, these are displayed in cards, transmitting the sense of being reading an actual newspaper.
+After articles are retrieved from The New York Times API, these are displayed in cards, transmitting the sense of being reading an actual newspaper.
 
-On top of this, the articles displayed are ordered from the most recent to oldest, thus always showing the most recent news first avoding the user to have to scroll-down to stay updated.
+On top of this, the articles displayed are ordered from the most recent to oldest, thus always showing the most recent news first avoiding the user to have to scroll-down to stay updated.
 
-If, for instance, the articles can not be retreived, an error message shows on the page, requesting the user to try again.
+If, for instance, the articles can not be retrieved, an error message shows on the page, requesting the user to try again.
 
 ##### **Testing** #####
 Assured that the 'Check this Article' button opens in a new tab and redirects the user to the correct article.
@@ -539,16 +539,16 @@ The test passes all the criteria.
 
 #### **User Stories and Requirements** ####
 * Place an offer request via the website.
-* Immeadiate feedback on data inputs and/or submissions.
+* Immediate feedback on data inputs and/or submissions.
 
 ##### **UX** #####
-When the user enters the ***Trading*** page, he/she is welcomed by a well-defined data gathering process, ultimately being sent to the Company vie emaiJS, receiving immeadiate feedback on critical points of the offer request, as well as connection links to relevant pages, including the glossary, in case any doubt arises. 
+When the user enters the ***Trading*** page, he/she is welcomed by a well-defined data gathering process, ultimately being sent to the Company vie emaiJS, receiving immediate feedback on critical points of the offer request, as well as connection links to relevant pages, including the glossary, in case any doubt arises. 
 
 ##### **Execution** #####
 The execution of this step has been already presented in the [Trading Page](#trading-page)
 
 ##### **Testing** #####
-I have gone through all the offer request steps several times, tackling immeadiately bugs that were being found, including the form validation.
+I have gone through all the offer request steps several times, tackling immediately bugs that were being found, including the form validation.
 
 ##### **Test result** #####
 Select coffees dropdown list is being correctly populated.
@@ -577,13 +577,13 @@ Therefore, I have created a an "external" validation in Javascript on the moment
 ##### **Bug** #####
 Amount input field allows decimal numbers in trading.html. 
 ##### **(Potential) Corrections** #####
-The user can still input decimal numbers, but there is now implemented an extra form validation that does not allow the user to proceed to the overview wqithout first correcting the amounts to whole number.
+The user can still input decimal numbers, but there is now implemented an extra form validation that does not allow the user to proceed to the overview without first correcting the amounts to whole number.
 Ideally, the user would not have the option to input a decimal number, avoiding the need of running this extra validation. This requires further investigation, the reason why it will be implemented on future releases.
 
 ##### **Bug** #####
-The anchor tag in the Incoterms area of the accordion does not recognize the sapce on the left from the previous text.
+The anchor tag in the Incoterms area of the accordion does not recognize the space on the left from the previous text.
 ##### **(Potential) Corrections** #####
-Until now I did not discovered a plausible explanation for this bug. To overcome this issue, I have added a margin left to the anchor tag in order to create the visual necessary space.
+Until now I did not discover a plausible explanation for this bug. To overcome this issue, I have added a margin left to the anchor tag to create the visual necessary space.
 
 ##### **Bug** #####
 Access to XMLHttpRequest at 'https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc' from origin 'https://8000-e4e47aac-b552-443c-afb5-41a2746ebb9d.ws-eu03.gitpod.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
@@ -592,7 +592,7 @@ Not possible to use the load method form jQuery to present the external website 
 
 Therefore, I started implementing this feature with an <iframe> instead.
 
-Nonethless, this option also retreives the following error originated externally:
+Nonetheless, this option also retrieves the following error originated externally:
 
     Uncaught TypeError: Cannot read property 'querySelector' of undefined
     at getElement (tradingcharts-emailsignup.js:265)
@@ -600,7 +600,7 @@ Nonethless, this option also retreives the following error originated externally
  
  Additional research in [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies "MDN") raises other several concerns with this option.
 
-As this goes far beyond my current skills, I have opt out to include it in future releases.
+As this goes far beyond my current skills, I have decided to include it in future releases.
 
 ##### **Bug** #####
 On click function:
@@ -636,18 +636,17 @@ To solve this issue, after experimenting various options given by the online com
 
 "overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "< br>"),
 
-With this, EmailJS can read the content separated into new lines (I also had to use triple brackets for it recognition).
+With this, EmailJS can read the content separated into new lines (I also had to use triple brackets for its recognition).
 
 ##### **Bug** #####
-When several coffees are selected, and the user decides that he/she no longer wants the first option, he/she can not deleted.
+When several coffees are selected, and the user decides that he/she no longer wants the first option, he/she can not be deleted.
 ##### **(Potential) Corrections** #####
 For the time being, the user will have to move his last choice to the first, and delete the last appended option. This might be of a slight inconvenience for the user, the reason why I will implement in future releases a delete button that will only be displayed if more coffees have been selected, bring the other options up in the div.
 
 ##### **Bug** #####
-The FAB sub-buttons, as they overlap some content when active, especially in small devices, they can become a little confusing to the eye of the user, especially if the content that it is overlaping is text.
+The FAB sub-buttons, as they overlap some content when active, especially in small devices, they can become a little confusing to the eye of the user, especially if the content that it is overlapping is text.
 ##### **(Potential) Corrections** #####
-To solve this bug, I implemented an overlay with an opacity of 0.1 thta is activated in all pages (except the landing page) when the padlock is clicked, which solves the issue.
-
+To solve this bug, I implemented an overlay with an opacity of 0.1 that is activated in all pages (except the landing page) when the padlock is clicked, which solves the issue.
 
 Several other bug were found during the development process. Though, it would not be possible to include all of them. For this reason, I have chosen to select the ones that I found the most challenging.
 

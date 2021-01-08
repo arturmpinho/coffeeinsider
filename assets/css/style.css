@@ -286,7 +286,7 @@ a, a:hover, a:focus, a:active {
 
 #selected-coffees:disabled,
 #selected-contract:disabled {
-    background-color: #fff;
+    background-color: #F4F9E9;
     border-color: #b64037;
     color: #2D2926;
     opacity: 1;
@@ -301,7 +301,7 @@ a, a:hover, a:focus, a:active {
 .overview-input {
     width: 100%;
     border: none;
-    background-color: #fff;
+    background-color: #F4F9E9;
     color: #2D2926;
 }
 
