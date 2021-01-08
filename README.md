@@ -184,15 +184,12 @@ While creating this color scheme, I have resorted to the [Contrast-Checker](http
 
 |Text color  	|Background color  	|Result   	|
 |---	        |---	            |---	    |
-|Jet   	        |Medium Carmine     |Good     	|
-|Medium Carmine |Jet               	|Good       |
+|Jet   	        |Medium Carmine     |Very Poor  |
+|Medium Carmine |Jet               	|Very Poor  |
 |Jet   	        |Ivory              |Super     	|
 |Ivory          |Jet                |Super      |
-|Medium Carmine |Ivory              |Very Poor 	|
+|Medium Carmine |Ivory              |Good    	|
 |Ivory          |Medium Carmine     |Very Poor  |
-
-Therefore, the last 2 pairings are excluded from the design choices.
-
 
 #### Structure
 
@@ -397,7 +394,8 @@ With these 4 pages, I have attainned the following features:
 * [W3C-Markup-validation](https://validator.w3.org/ "Markup Validator")
 * [W3C-Jigsaw](https://jigsaw.w3.org/css-validator/ "Jigsaw Validator")
 * [W3C-Spell Checker](https://www.w3.org/2002/01/spellchecker "Spell Checker")
-* [Google-Lightouse](https://developers.google.com/web/tools/lighthouse "Google Lighthouse") 
+* [Google-Lightouse](https://developers.google.com/web/tools/lighthouse "Google Lighthouse")
+* [JSHint](https://jshint.com/ "JSHint")
 
 [[Back to top]](#table-of-contents)
 
@@ -678,18 +676,28 @@ To run the project locally:
 <a></a>
 
 ### **Credits**
+* All software and applications used to create this website are mentioned above in section [Languages_Libraries_Frameworks_and_Tools].
 * [MDN WebDocs](https://developer.mozilla.org/ "MDN WebDocs")
 #### **Media**
-#### **Content**
-* [Incoterms 2020](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms")
-##### **JSON files**
+You can find all the images sources through the Unslplash collection prepared [here](https://unsplash.com/collections/42079226/coffee-insider "Unsplash").
 
-coffee.json: www.supremo.be and http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf
+#### **Content**
+* incoterms.json [Incoterms 2020](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/ "Incoterms")
+* coffee.json: [Supremo](www.supremo.be "Supremo") and [ICO](http://www.ico.org/projects/Good-Hygiene-Practices/cnt/cnt_en/sec_3/docs_3.3/Grading%20&%20class.pdf "")
 
 [[Back to top]](#table-of-contents)
 
 <a></a>
 
 ### **Acknowledgments**
+To [Stackoverflow](https://stackoverflow.com/ "Stackoverflow") community and to [W3Schools](https://www.w3schools.com/ "W3Schools") for all the content made publicly available.
+
+To [skelly](https://www.codeply.com/u/skelly "Codeply") for the snippet made available that inspired my "datepicker".
+
+A big thank you to my mentor, [Anna_Villanueva](https://github.com/annavillanueva "GitHub"), for all the inputs and guidance throughout this project.
+
+To my friends and family that took time to test and re-test the website and for their valuable recommendations.
+
+The most special thank you to [Anouk](https://github.com/AnoukSmet/ "GitHub"), for all the patience with my constant questions, for the time spent next me supporting me and explaining in detail all my doubts. For all the suggestions and guidance during this last months.
 
 [[Back to top]](#table-of-contents)
