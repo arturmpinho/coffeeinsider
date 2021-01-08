@@ -9,7 +9,6 @@ $(document).ready(function() {
             $('#news-container').removeClass('overlay');
             $('#trading-container').removeClass('overlay');
             $('#main-btn-unlock').hide();
-            $('#click-note').toggleClass('hide');
             $('#main-btn-lock').show();
             $('.sub-btns').hide();
         }
