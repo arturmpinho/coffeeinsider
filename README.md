@@ -569,19 +569,16 @@ The test passes all the criteria.
 #### **Known Bugs and Corrections** ####
 
 ##### **Bug** #####
-calc.html -> Input field allows negative numbers
+When selecting the amount to coffee bags desired, the input field was allowing negative numbers.
 ##### **(Potential) Corrections** #####
-Added 'min="0"' as an attribute of the input element.
+Firstly, I have added the 'min="0"' as an attribute of the input field, only to come to the realization that this was not the way to go, as user does not submit any form when moving to the next step, thus not validating the input attribute.
 
-##### **Bug** #####
+Therefore, I have created a an "external" validation in Javascript on the moment the user submits the form on the last step.
+
+<!-- ##### **Bug** #####
 calc.html -> Quantity Input field allows decimal numbers
 ##### **(Potential) Corrections** #####
-Added 'min="0"' as an attribute of the input element.
-
-##### **Bug** #####
-calc.html -> for on click of TAB key is not focusing on the next field
-##### **(Potential) Corrections** #####
-Added tabindex="num" as an attribute of the input and select elements
+Added 'min="0"' as an attribute of the input element. -->
 
 ##### **Bug** #####
 calc.html -> anchor tag oc incoterms does not allow spacing before and after.
@@ -603,15 +600,34 @@ Nonethless, this option also retreives the following error originated externally
  
  Additional research [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies "MDN") raises other several concerns with this option.
 
-In the end, I am using solely an external link so user can access the current market prices of the coffee futures for their reference.
+As this goes far beyond my current skills, I have opt out to include it in future releases.
 
 ##### **Bug** #####
-calc.html -> on click funtion of incoterms is not pushing value to selectedIncoterm variable
+On click function:
+    $('.incoterms').click(function(){
+            while(selectedIncoterm.length>0){
+                selectedIncoterm.pop();
+            }
+    });
+    $('.incoterms').removeClass("selected-choice");
+        $(this).addClass("selected-choice");
+        selectedIncoterm.push($(this).val()
+    );
+
+ is not pushing value to selectedIncoterm variable
+
 ##### **(Potential) Corrections** #####
-Moved .incoterms click function inside the getJSON funtction
+    $('.incoterms').click(function(){
+            while(selectedIncoterm.length>0){
+                selectedIncoterm.pop();
+            }
+        $('.incoterms').removeClass("selected-choice");
+        $(this).addClass("selected-choice");
+        selectedIncoterm.push($(this).val());
+    });
 
 ##### **Bug** #####
-calc.html -> EmailJS receives overview content in a single line.
+EmailJS receives overview content in a single line.
 ##### **(Potential) Corrections** #####
 "overview": offerRequest.selectedCoffeesBulk.value.replace(/\n/g, "<br>"),
 
