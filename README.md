@@ -477,6 +477,50 @@ User can easily access every page at a distance of 2 clicks and contacts and soc
 ##### **Conclusion** #####
 The test passes all the criteria.
 
+
+### **Test 2: Glossary**
+
+#### **User Stories and Requirements** ####
+* Easily consult specific logistics terms.
+* Brief unsderstanding of the 2 main the coffee contracts (GCA & ESCC).
+
+##### **UX** #####
+When the user enters the ***Glossary*** page he/she automatically perceives that it is the place to clarify any doubts in the website. The hero image plays an important role generating this feeling.
+
+The user is shown 3 different topics that he might want to address. 
+
+##### **Execution** #####
+As a merely informative page, the interactivity with the user is limited, only being smoothen by the dynamics of the grouped coffees.
+
+The first topic are the coffee types grouped by country of origin, followed by an extensive list of the Incoterms and corresponding information, finalizing with the two Base Contracts and corresponding access in pdf format.
+
+##### **Testing** #####
+Careful verification of all the content, if all the info was being pushed correctly and that the cards are being displayed correctly.
+
+All internal and external links are funtioning properly.
+
+##### **Test result** #####
+Even though some additional styling can be put in place, the page fully covers its intent and tackles the user stories and requirements.
+
+##### **Conclusion** #####
+The test passes all the criteria.
+
+
+### **Test 3: News**
+
+#### **User Stories and Requirements** ####
+
+##### **UX** #####
+
+##### **Execution** #####
+
+##### **Testing** #####
+
+##### **Test result** #####
+
+##### **Conclusion** #####
+
+
 [[Back to top]](#table-of-contents)
 
 <a></a>
