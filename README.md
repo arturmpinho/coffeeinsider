@@ -345,7 +345,11 @@ With these 4 pages, I have attainned the following features:
 <a></a>
 
 ### **Future Features**
-
+* Customer portal with visibility of offers requested and received.
+* Additional sources of articles related to the coffee sector.
+* Price idea space in the trading.html to display the market prices of coffee as mentioned below in [Bugs]().
+* Unit conversion to uniform the amounts of coffee in a selected unit.
+* Calculate the Estimated Transit Time from port x to port y.
 
 [[Back to top]](#table-of-contents)
 
@@ -576,19 +580,19 @@ Firstly, I have added the 'min="0"' as an attribute of the input field, only to 
 Therefore, I have created a an "external" validation in Javascript on the moment the user submits the form on the last step.
 
 <!-- ##### **Bug** #####
-calc.html -> Quantity Input field allows decimal numbers
+trading.html -> Quantity Input field allows decimal numbers
 ##### **(Potential) Corrections** #####
 Added 'min="0"' as an attribute of the input element. -->
 
 ##### **Bug** #####
-calc.html -> anchor tag oc incoterms does not allow spacing before and after.
+trading.html -> anchor tag oc incoterms does not allow spacing before and after.
 ##### **(Potential) Corrections** #####
 Unfixed at the moment
 
 ##### **Bug** #####
 Access to XMLHttpRequest at 'https://futures.tradingcharts.com/futures/quotes/kc.html?cbase=kc' from origin 'https://8000-e4e47aac-b552-443c-afb5-41a2746ebb9d.ws-eu03.gitpod.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
 ##### **(Potential) Corrections** #####
-Not possible use the load method form jQuery to present the external website info on calc.html.
+Not possible to use the load method form jQuery to present the external website info on trading.html.
 
 Therefore, I started implementing this feature with an <iframe> instead.
 
@@ -604,6 +608,7 @@ As this goes far beyond my current skills, I have opt out to include it in futur
 
 ##### **Bug** #####
 On click function:
+
     $('.incoterms').click(function(){
             while(selectedIncoterm.length>0){
                 selectedIncoterm.pop();
