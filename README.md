@@ -509,17 +509,30 @@ The test passes all the criteria.
 ### **Test 3: News**
 
 #### **User Stories and Requirements** ####
+* Stay updated with relevant coffee-related news.
 
 ##### **UX** #####
+Intuitively, the user understands what to do in the page: Either read only the article brief or, if a deeper read is wanted, click in the desired article button to check the full article.
 
 ##### **Execution** #####
+When the user enters the ***News*** page he/she is automatically confrontated with the loading spinner, which works as an immeadiate feedback to the user.
+
+After articles are retreived from The New York Times API, these are displayed in cards, transmitting the sense of being reading an actual newspaper.
+
+On top of this, the articles displayed are ordered from the most recent to oldest, thus always showing the most recent news first avoding the user to have to scroll-down to stay updated.
+
+If, for instance, the articles can not be retreived, an error message shows on the page, requesting the user to try again.
 
 ##### **Testing** #####
+Assured that the 'Check this Article' button opens in a new tab and redirects the user to the correct article.
+
+By changing the API key in the correspondent JS file, I was able to test the error message.
 
 ##### **Test result** #####
+Articles are being displayed as wanted, loading spinner works as intended and error message is nicely showcased when necessary.
 
 ##### **Conclusion** #####
-
+The test passes all the criteria.
 
 [[Back to top]](#table-of-contents)
 
